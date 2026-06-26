@@ -9,9 +9,13 @@
       "label": "Ban",
       "color": "var(--maroon)"
     },
-    "allowed": {
-      "label": "BESS allowed (regulated)",
+    "healthy": {
+      "label": "Healthy BESS code",
       "color": "var(--green)"
+    },
+    "overstrict": {
+      "label": "Over-strict BESS code",
+      "color": "#c2680a"
     },
     "silent": {
       "label": "No BESS code",
@@ -562,8 +566,8 @@
     },
     {
       "name": "Town of Greenburgh",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — full 3-tier (≤80 / ≤6,000 kWh / ≤80 MWh)",
       "window": "MODEL",
       "windowClass": "p-open",
@@ -647,11 +651,11 @@
     },
     {
       "name": "Village of Briarcliff Manor",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "overstrict",
+      "statusLabel": "OVER-STRICT",
       "scope": "Allowed — Tier 1 ≤600 kWh; Tier 2 prohibited",
-      "window": "MODEL",
-      "windowClass": "p-open",
+      "window": "TOO STRICT",
+      "windowClass": "p-strict",
       "subtitle": "Northern Westchester",
       "snapshot": [
         [
@@ -666,14 +670,15 @@
       "meetings": [],
       "officials": [],
       "links": [],
-      "flags": [],
-      "dr": true,
-      "drReason": "Adopted a clean Tier-1 framework — allows residential/commercial-scale storage while drawing a clear line at utility-scale."
+      "flags": [
+        "Over-strict: Prohibits Tier 2 (>600 kWh) — blocks utility-scale storage. An engagement target to loosen toward a Croton-style tiered code."
+      ],
+      "dr": false
     },
     {
       "name": "Village of Croton-on-Hudson",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — Tier 1 ≤200 kWh; Tier 2 >200 kWh",
       "window": "MODEL",
       "windowClass": "p-open",
@@ -702,8 +707,8 @@
     },
     {
       "name": "Village of Larchmont",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — Tier 1 ≤600 kWh; Tier 2 >600 kWh",
       "window": "MODEL",
       "windowClass": "p-open",
@@ -732,8 +737,8 @@
     },
     {
       "name": "Village of Port Chester",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — Tier 1 (<300 kWh); Tier 2 (>300 kWh)",
       "window": "MODEL",
       "windowClass": "p-open",
@@ -800,11 +805,11 @@
     },
     {
       "name": "City of Mount Vernon",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed via solar code (no standalone BESS law)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Southern Westchester — city bordering the Bronx",
       "snapshot": [
         [
@@ -845,11 +850,11 @@
     },
     {
       "name": "City of Peekskill",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "overstrict",
+      "statusLabel": "OVER-STRICT",
       "scope": "Tier 1 (<80 kWh) allowed; Tier 2 moratorium lapsed 5/31/26 (confirm)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "TOO STRICT",
+      "windowClass": "p-strict",
       "subtitle": "Northwestern Westchester — Hudson River city",
       "snapshot": [
         [
@@ -874,7 +879,8 @@
         "As a city with a Common Council, Peekskill's process differs from the towns — engagement runs through the Mayor and Council."
       ],
       "flags": [
-        "Confirm the current expiration date and the six Common Council members' names/contacts on the city site."
+        "Confirm the current expiration date and the six Common Council members' names/contacts on the city site.",
+        "Over-strict: Tier 1 (<80 kWh) only; the Tier 2 moratorium lapsed 5/31/26 with no Tier 2 pathway yet. An engagement target to loosen toward a Croton-style tiered code."
       ],
       "committees": [
         "<b>Mayor & Common Council</b> — the legislative body for any BESS law.",
@@ -919,11 +925,11 @@
     },
     {
       "name": "City of Rye",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "overstrict",
+      "statusLabel": "OVER-STRICT",
       "scope": "Allowed — Tier 1 (<80 kWh) only",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "TOO STRICT",
+      "windowClass": "p-strict",
       "subtitle": "Southeastern Westchester — Long Island Sound city (distinct from Town of Rye)",
       "snapshot": [
         [
@@ -939,7 +945,8 @@
         "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the City Council, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
-        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site."
+        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site.",
+        "Over-strict: Tier 1 (<80 kWh) only — no pathway for larger systems. An engagement target to loosen toward a Croton-style tiered code."
       ],
       "committees": [
         "City Council",
@@ -960,12 +967,12 @@
     },
     {
       "name": "Town / Village of Harrison",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "original": true,
       "scope": "Allowed under solar code (moratorium expired)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Central Westchester — coterminous Town and Village government",
       "snapshot": [
         [
@@ -1068,11 +1075,11 @@
     },
     {
       "name": "Town of Lewisboro",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed via solar code (2025, Ch 220 Art XIII)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Northeastern Westchester — rural; South Salem, Cross River, Goldens Bridge",
       "snapshot": [
         [
@@ -1109,11 +1116,11 @@
     },
     {
       "name": "Town of Mamaroneck",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed via solar code (2025, Ch 181)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Southeastern Westchester — distinct from the Village of Mamaroneck (listed separately)",
       "snapshot": [
         [
@@ -1154,11 +1161,11 @@
     },
     {
       "name": "Town of North Castle",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — Type 3 ≤80, Type 2 ≤600, Type 1 >600 kWh",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Northern Westchester — Armonk, North White Plains, Banksville",
       "snapshot": [
         [
@@ -1195,11 +1202,11 @@
     },
     {
       "name": "Town of North Salem",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "overstrict",
+      "statusLabel": "OVER-STRICT",
       "scope": "Allowed — on-site use only (§250-13)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "TOO STRICT",
+      "windowClass": "p-strict",
       "subtitle": "Northeastern Westchester — rural; Croton Falls, Purdys, Salem Center",
       "snapshot": [
         [
@@ -1215,7 +1222,8 @@
         "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
-        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the town's official site."
+        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the town's official site.",
+        "Over-strict: On-site use only — bars standalone/utility-scale storage. An engagement target to loosen toward a Croton-style tiered code."
       ],
       "committees": [
         "Town Board",
@@ -1236,11 +1244,11 @@
     },
     {
       "name": "Town of Ossining",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — Tier 1 ≤600, Tier 2 >600 kWh (Floating Zone, 2021)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Western Westchester — Hudson River; includes Village of Ossining & Briarcliff Manor",
       "snapshot": [
         [
@@ -1277,12 +1285,12 @@
     },
     {
       "name": "Town of Pound Ridge",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "overstrict",
+      "statusLabel": "OVER-STRICT",
       "original": true,
       "scope": "Allowed on-site only — primarily for the property where located (no utility-scale)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "TOO STRICT",
+      "windowClass": "p-strict",
       "subtitle": "Northeastern Westchester — broadest scope of the moratorium towns",
       "snapshot": [
         [
@@ -1307,7 +1315,8 @@
         "A March 24, 2026 hearing extended the moratorium, so it remains active. The town's strong sustainability infrastructure gives the workgroup credible allies to argue that well-sited, code-compliant storage can coexist with climate goals rather than being banned outright."
       ],
       "flags": [
-        "Status shifted from a broad moratorium to an 'on-site use only' allowance per the workgroup code review — confirm the current operative law and whether utility-scale remains barred."
+        "Status shifted from a broad moratorium to an 'on-site use only' allowance per the workgroup code review — confirm the current operative law and whether utility-scale remains barred.",
+        "Over-strict: On-site use only — effectively bars utility-scale storage. An engagement target to loosen toward a Croton-style tiered code."
       ],
       "committees": [
         "<b>Sustainability Committee</b> (formerly Energy Action Committee) — key ally.",
@@ -1393,11 +1402,11 @@
     },
     {
       "name": "Town of Yorktown",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — Tier 1 (≤40/80 kWh); Tier 2 >80 kWh",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Northern Westchester — Yorktown Heights, Jefferson Valley",
       "snapshot": [
         [
@@ -1474,11 +1483,11 @@
     },
     {
       "name": "Village of Elmsford",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — special permit; Tier 1 ≤600, Tier 2 >600 kWh",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Central Westchester",
       "snapshot": [
         [
@@ -1498,11 +1507,11 @@
     },
     {
       "name": "Village of Hastings-on-Hudson",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — via green building code (no BESS-specific tiers)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Southwestern Westchester — Hudson River",
       "snapshot": [
         [
@@ -1522,11 +1531,11 @@
     },
     {
       "name": "Village of Irvington",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — via solar code (Ch 224)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Western Westchester — Hudson River",
       "snapshot": [
         [
@@ -1546,11 +1555,11 @@
     },
     {
       "name": "Village of Mamaroneck",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "overstrict",
+      "statusLabel": "OVER-STRICT",
       "scope": "Allowed — Tier 1 only",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "TOO STRICT",
+      "windowClass": "p-strict",
       "subtitle": "Southeastern Westchester — Long Island Sound shoreline",
       "snapshot": [
         [
@@ -1576,7 +1585,8 @@
       ],
       "flags": [
         "Carina's tracker (refreshed June 26, 2026) reclassified Mamaroneck Village as LIFTED, but Village records contradict this: the moratorium was extended repeatedly in 2025, most recently by Local Law 14-2025 amending Chapter 342 (Zoning). Status kept ACTIVE; confirm the current LL 14-2025 expiration date on the Village site.",
-        "Confirm the current moratorium expiration and the Mayor/Trustee roster + contacts on the Village site."
+        "Confirm the current moratorium expiration and the Mayor/Trustee roster + contacts on the Village site.",
+        "Over-strict: Tier 1 only — no Tier 2 pathway. An engagement target to loosen toward a Croton-style tiered code."
       ],
       "committees": [
         "<b>Board of Trustees</b> — Mayor + 4 Trustees; the legislative body.",
@@ -1622,12 +1632,12 @@
     },
     {
       "name": "Village of Rye Brook",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "overstrict",
+      "statusLabel": "OVER-STRICT",
       "original": true,
       "scope": "Allowed — Tier 1 only (no BESS moratorium on record)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "TOO STRICT",
+      "windowClass": "p-strict",
       "subtitle": "Southeastern Westchester — the clearest “get ahead of it” opportunity",
       "snapshot": [
         [
@@ -1652,7 +1662,8 @@
         "Best opportunity to get ahead of the issue: approach the Board of Trustees, Planning Board, and the Village's Sustainability Committee now to encourage a balanced, safety-forward ordinance."
       ],
       "flags": [
-        "Included in the original five, but the workgroup data shows Rye Brook PERMITS Tier 1 BESS (it has a code) and has no BESS moratorium. No separate non-BESS moratorium was found either — confirm with the boss what prompted Rye Brook's inclusion."
+        "Included in the original five, but the workgroup data shows Rye Brook PERMITS Tier 1 BESS (it has a code) and has no BESS moratorium. No separate non-BESS moratorium was found either — confirm with the boss what prompted Rye Brook's inclusion.",
+        "Over-strict: Tier 1 only — no Tier 2 pathway. An engagement target to loosen toward a Croton-style tiered code."
       ],
       "committees": [
         "<b>Board of Trustees</b> — the legislative body; any BESS law starts here.",
@@ -1720,11 +1731,11 @@
     },
     {
       "name": "Village of Sleepy Hollow",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — commercial (C-2) districts only",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Western Westchester — Hudson River",
       "snapshot": [
         [
@@ -1744,11 +1755,11 @@
     },
     {
       "name": "Village of Tarrytown",
-      "status": "allowed",
-      "statusLabel": "ALLOWED",
+      "status": "healthy",
+      "statusLabel": "HEALTHY CODE",
       "scope": "Allowed — BESS >600 kWh in Floating Zone (OB & MU)",
-      "window": "ADOPTED",
-      "windowClass": "p-open",
+      "window": "HEALTHY",
+      "windowClass": "p-high",
       "subtitle": "Western Westchester — Hudson River",
       "snapshot": [
         [
