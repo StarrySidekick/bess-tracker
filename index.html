@@ -22,13 +22,17 @@
   .sub{color:var(--muted);font-size:16px}
   .updated{display:inline-block;margin-top:8px;font-size:12.5px;color:var(--muted);background:#eef2f8;border:1px solid var(--line);border-radius:20px;padding:3px 11px}
   .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}
-  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-align:center}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-align:center;cursor:pointer;font-family:inherit;width:100%;transition:border-color .12s,box-shadow .12s}
+  .stat:hover{border-color:var(--accent)}
+  .stat.sel{border-color:var(--navy);box-shadow:0 0 0 2px var(--navy) inset}
   .stat .n{font-size:28px;font-weight:700;line-height:1}
   .stat .l{font-size:12.5px;color:var(--muted);margin-top:5px}
   .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 18px}
   .controls input{flex:1;min-width:180px;padding:9px 12px;border:1px solid #ccd3e0;border-radius:8px;font-size:15px;font-family:inherit}
-  .chip{border:1px solid #ccd3e0;background:#fff;border-radius:20px;padding:6px 13px;font-size:13.5px;cursor:pointer;font-family:inherit}
-  .chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .exportbtn{border:1px solid #ccd3e0;background:#fff;border-radius:8px;padding:9px 14px;font-size:14px;cursor:pointer;font-family:inherit;font-weight:600;color:var(--navy)}
+  .exportbtn:hover{background:#eef2f8}
+  .showall{border:1px solid #ccd3e0;background:#fff;border-radius:20px;padding:7px 14px;font-size:13.5px;cursor:pointer;font-family:inherit}
+  .showall:hover{background:#eef2f8}
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:14px;overflow:hidden;border-left:6px solid var(--line)}
   .card.active{border-left-color:var(--red)}
   .card.ban{border-left-color:var(--maroon)}
@@ -66,6 +70,8 @@
   footer{color:var(--muted);font-size:12.5px;margin-top:26px;text-align:center}
   .hide{display:none!important}
 </style>
+  <script src="https://cdn.jsdelivr.net/npm/html2pdf.js@0.10.2/dist/html2pdf.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html-docx-js@0.3.1/dist/html-docx.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -83,12 +89,9 @@
 
   <div class="controls">
     <input id="search" type="text" placeholder="Search towns, officials, committees…">
-    <button class="chip on" data-f="all">All</button>
-    <button class="chip" data-f="active">Active moratorium</button>
-    <button class="chip" data-f="ban">Ban</button>
-    <button class="chip" data-f="regulated">Regulated</button>
-    <button class="chip" data-f="expired">Expired</button>
-    <button class="chip" data-f="none">No moratorium</button>
+    <button type="button" id="showall" class="showall" onclick="setFilter('all')" style="display:none">✕ Show all</button>
+    <button type="button" class="exportbtn" onclick="exportPDF()" title="Towns with action only (excludes 'no moratorium')">⤓ PDF</button>
+    <button type="button" class="exportbtn" onclick="exportDOCX()" title="Towns with action only (excludes 'no moratorium')">⤓ Word</button>
   </div>
 
   <div id="cards"></div>
@@ -108,6 +111,7 @@ const DATA = {"lastUpdated": "2026-06-26", "statusMeta": {"active": {"label": "A
 
 /* ============== RENDER ============== */
 const el = s => document.querySelector(s);
+let currentFilter = "all";
 const linkList = arr => `<div class="links">${arr.map(l=>`<a href="${l[1]}" target="_blank" rel="noopener">${l[0]} ↗</a>`).join("")}</div>`;
 
 function contactLine(o){
@@ -123,8 +127,18 @@ function renderStats(){
   DATA.towns.forEach(t=>{counts[t.status]=(counts[t.status]||0)+1;});
   el("#stats").innerHTML=order.map(k=>{
     const m=DATA.statusMeta[k];
-    return `<div class="stat"><div class="n" style="color:${m.color}">${counts[k]||0}</div><div class="l">${m.label}</div></div>`;
+    return `<button type="button" class="stat" data-status="${k}" onclick="setFilter('${k}')" title="Filter to: ${m.label}"><div class="n" style="color:${m.color}">${counts[k]||0}</div><div class="l">${m.label}</div></button>`;
   }).join("");
+  highlightStats();
+}
+function highlightStats(){
+  document.querySelectorAll(".stat").forEach(s=>s.classList.toggle("sel", s.dataset.status===currentFilter));
+}
+function setFilter(s){
+  currentFilter = (currentFilter===s) ? "all" : s;
+  highlightStats();
+  const sa=el("#showall"); if(sa) sa.style.display = (currentFilter==="all") ? "none" : "inline-block";
+  applyFilter();
 }
 
 const sec = (title, html) => html ? `<h3>${title}</h3>${html}` : "";
@@ -178,9 +192,49 @@ function renderBlocks(){
 
 function fmtDate(d){const o={year:"numeric",month:"long",day:"numeric"};return new Date(d+"T12:00:00").toLocaleDateString("en-US",o);}
 
+/* ---- Export: towns with action only (excludes status "none") ---- */
+const _esc = s => String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const _strip = s => String(s==null?"":s).replace(/<[^>]+>/g,"");
+function _reportTowns(){ return DATA.towns.filter(t=>t.status!=="none"); }
+function buildReportHTML(){
+  const d=fmtDate(DATA.lastUpdated), towns=_reportTowns(), excluded=DATA.towns.length-towns.length;
+  let h=`<div style="font-family:Calibri,Arial,sans-serif;color:#111;font-size:11pt;line-height:1.4">`
+    +`<h1 style="color:#1f3864;font-size:20pt;margin:0 0 2px">Westchester BESS Policy — Towns with Action</h1>`
+    +`<div style="color:#555;font-size:9.5pt;margin-bottom:8px">BCW / EarthKind · Clean Energy Action Coalition · Data as of ${d} · ${towns.length} towns (excludes ${excluded} with no moratorium on record)</div>`
+    +`<hr style="border:none;border-top:2px solid #2e75b6;margin-bottom:6px">`;
+  towns.forEach(t=>{
+    h+=`<h2 style="color:#1f3864;font-size:14pt;margin:14px 0 1px">${_esc(t.name)} — ${_esc(t.statusLabel)}</h2>`;
+    h+=`<div style="color:#555;font-size:9.5pt;margin-bottom:4px">${_esc(t.scope)}${t.subtitle?" · "+_esc(t.subtitle):""}</div>`;
+    (t.snapshot||[]).forEach(r=>h+=`<p style="margin:2px 0"><b>${_esc(r[0])}:</b> ${_esc(r[1])}</p>`);
+    if(t.summary&&t.summary.length){h+=`<p style="margin:6px 0 1px"><b>BESS activity, news &amp; decisions</b></p>`;t.summary.forEach(p=>h+=`<p style="margin:2px 0">${_esc(p)}</p>`);}
+    if(t.flags&&t.flags.length){t.flags.forEach(f=>h+=`<p style="margin:2px 0;color:#8a6d00"><i>Confidence flag — ${_esc(f)}</i></p>`);}
+    if(t.committees&&t.committees.length){h+=`<p style="margin:6px 0 1px"><b>Relevant committees</b></p><ul style="margin:2px 0 2px 18px">`+t.committees.map(c=>`<li>${_strip(c)}</li>`).join("")+`</ul>`;}
+    if(t.meetings&&t.meetings.length){h+=`<p style="margin:6px 0 1px"><b>Meetings — agendas &amp; hearings</b></p>`+t.meetings.map(m=>`<p style="margin:2px 0">${_strip(m)}</p>`).join("");}
+    if(t.officials&&t.officials.length){h+=`<p style="margin:6px 0 1px"><b>Key officials &amp; contacts</b></p>`+t.officials.map(o=>`<p style="margin:2px 0">${_esc(o.role)}: ${_esc(o.name)}${o.email?" · "+_esc(o.email):""}${o.phone?" · "+_esc(o.phone):""}</p>`).join("");}
+    if(t.links&&t.links.length){h+=`<p style="margin:6px 0 1px"><b>Links:</b> `+t.links.map(l=>`${_esc(l[0])} (${_esc(l[1])})`).join(" · ")+`</p>`;}
+  });
+  h+=`</div>`;
+  return h;
+}
+function exportPDF(){
+  if(!window.html2pdf){alert("PDF library is still loading — please try again in a moment.");return;}
+  const wrap=document.createElement("div");wrap.style.padding="6px";wrap.innerHTML=buildReportHTML();
+  html2pdf().set({margin:[12,12,14,12],filename:"Westchester_BESS_Report.pdf",
+    image:{type:"jpeg",quality:0.98},html2canvas:{scale:2,useCORS:true},
+    jsPDF:{unit:"mm",format:"letter",orientation:"portrait"},
+    pagebreak:{mode:["css","legacy"]}}).from(wrap).save();
+}
+function exportDOCX(){
+  if(!window.htmlDocx){alert("Word library is still loading — please try again in a moment.");return;}
+  const full="<!DOCTYPE html><html><head><meta charset='utf-8'></head><body>"+buildReportHTML()+"</body></html>";
+  const blob=window.htmlDocx.asBlob(full);
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Westchester_BESS_Report.docx";
+  document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1500);
+}
+
 function applyFilter(){
   const q=el("#search").value.trim().toLowerCase();
-  const f=document.querySelector(".chip.on").dataset.f;
+  const f=currentFilter;
   document.querySelectorAll(".card").forEach((c,i)=>{
     const t=DATA.towns[i];
     const hay=JSON.stringify(t).toLowerCase();
@@ -195,10 +249,6 @@ document.addEventListener("DOMContentLoaded",()=>{
   el("#footer").innerHTML=`Prepared for the BCW / EarthKind BESS Workgroup · Data as of ${fmtDate(DATA.lastUpdated)}.<br>BESS status reflects the May 2026 statewide tracker and town records; confirm the latest votes at each town's next meeting.`;
   renderStats();renderCards();renderBlocks();
   el("#search").addEventListener("input",applyFilter);
-  document.querySelectorAll(".chip").forEach(ch=>ch.addEventListener("click",()=>{
-    document.querySelectorAll(".chip").forEach(x=>x.classList.remove("on"));
-    ch.classList.add("on");applyFilter();
-  }));
 });
 </script>
 </body>
