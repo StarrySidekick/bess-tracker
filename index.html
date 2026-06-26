@@ -9,7 +9,7 @@
     --ink:#111;--muted:#5a5a5a;--line:#e2e6ee;--bg:#f6f8fb;--card:#fff;
     --navy:#1f3864;--red:#c0392b;--maroon:#7b1d12;--amber:#b8860b;--green:#2e7d32;--accent:#2e75b6;
   }
-  *{box-sizing:border-box}
+  *{box-sizing:border-box;border-radius:0 !important}
   body{margin:0;font-family:Calibri,"Segoe UI",Candara,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
   a{color:var(--accent);text-decoration:none}
   a:hover{text-decoration:underline}
@@ -60,8 +60,15 @@
   .contact{font-size:14px;margin:4px 0}
   .contact b{color:#222}
   .links a{display:inline-block;margin:3px 12px 3px 0;font-size:13.5px}
-  section.block{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 20px 18px;margin-top:18px}
+  section.block,.foldable{background:var(--card);border:1px solid var(--line);margin-top:18px}
+  section.block{padding:6px 20px 18px}
   section.block h2{font-size:21px;border-bottom:2px solid var(--line);padding-bottom:8px}
+  .foldable>summary{font-size:21px;font-weight:700;cursor:pointer;list-style:none;padding:14px 20px}
+  .foldable>summary::-webkit-details-marker{display:none}
+  .foldable>summary::before{content:"▸";color:var(--accent);display:inline-block;width:20px}
+  .foldable[open]>summary{border-bottom:2px solid var(--line)}
+  .foldable[open]>summary::before{content:"▾"}
+  .foldable>div{padding:10px 20px 18px}
   .pill{display:inline-block;font-size:11.5px;font-weight:700;border-radius:6px;padding:2px 8px;margin-left:6px}
   .p-high{background:#e8f5e9;color:var(--green)}
   .p-med{background:#fbf3e0;color:var(--amber)}
@@ -96,10 +103,9 @@
 
   <div id="cards"></div>
 
-  <section class="block" id="context"></section>
-  <section class="block" id="steps"></section>
-  <section class="block" id="verify"></section>
-  <section class="block" id="changelog"></section>
+  <details class="block foldable" id="context"><summary>Why Local Moratoriums Matter — State Context</summary><div id="context-body"></div></details>
+  <details class="block foldable" id="verify"><summary>Verification &amp; Confidence</summary><div id="verify-body"></div></details>
+  <details class="block foldable" id="changelog" style="display:none"><summary>What Changed</summary><div id="changelog-body"></div></details>
   <section class="block" id="sources"></section>
 
   <footer id="footer"></footer>
@@ -177,16 +183,18 @@ function toggle(i){
 }
 
 function renderBlocks(){
-  el("#context").innerHTML=`<h2>Why Local Moratoriums Matter — State Context</h2>`+
+  el("#context-body").innerHTML=
     DATA.state.points.map(p=>`<p><b>${p[0]}</b> ${p[1]}</p>`).join("")+linkList(DATA.state.links);
-  el("#steps").innerHTML=`<h2>Recommended Next Steps</h2><ul>${DATA.steps.map(s=>`<li>${s}</li>`).join("")}</ul>`;
   const vf=DATA.towns.filter(t=>t.flags&&t.flags.length).map(t=>`<li><b>${t.name.replace(/^(Town \/ Village of |Village\/Town of |Town of |Village of |City of )/,"")}:</b> ${t.flags.join(" ")}</li>`).join("");
-  el("#verify").innerHTML=`<h2>Verification & Confidence</h2>
+  el("#verify-body").innerHTML=`
     <p><b>High confidence (verified against official sites + the May 2026 statewide tracker):</b> moratorium/ban status for all towns; meeting schedules and officials for Cortlandt, Rye Brook, Pound Ridge, Mount Pleasant, Peekskill, Yorktown, Greenburgh, Mamaroneck (Village); the State Context / ORES points; all links below.</p>
     <p><b>Newly added towns:</b> rosters and some phone numbers come from public directories and official sites and should be confirmed before formal outreach. Items to re-confirm:</p><ul>${vf}</ul>
     <p><b>Reference entries:</b> the remaining Westchester towns and cities are listed for completeness with a “NONE on record” badge. They do not appear in the statewide moratorium tracker (May 2026) and were not individually researched in depth — confirm directly before relying on them. (Somers is an exception: it amended its code to ban large battery farms.)</p>
     <p style="font-size:13px;color:var(--muted)"><b>Link check:</b> all town, board, tracker, and NYSERDA links resolve. Some town sites (New Castle, eCode360) load via JavaScript, so their live content renders only in a browser — the URLs are correct.</p>`;
-  if(DATA.changelog) el("#changelog").innerHTML = `<h2>What Changed</h2>` + DATA.changelog.slice(0,8).map(c=>`<p><b>${c.date}:</b> ${c.items.join(" ")}</p>`).join("");
+  if(DATA.changelog && DATA.changelog.length){
+    el("#changelog").style.display="";
+    el("#changelog-body").innerHTML = DATA.changelog.slice(0,8).map(c=>`<p><b>${c.date}:</b> ${c.items.join(" ")}</p>`).join("");
+  }
   el("#sources").innerHTML=`<h2>Sources</h2>${linkList(DATA.sources)}`;
 }
 
@@ -196,38 +204,48 @@ function fmtDate(d){const o={year:"numeric",month:"long",day:"numeric"};return n
 const _esc = s => String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 const _strip = s => String(s==null?"":s).replace(/<[^>]+>/g,"");
 function _reportTowns(){ return DATA.towns.filter(t=>t.status!=="none"); }
+function _statusColor(s){return ({active:"#c0392b",ban:"#7b1d12",expired:"#b8860b",regulated:"#2e75b6",none:"#2e7d32"})[s]||"#1f3864";}
 function buildReportHTML(){
   const d=fmtDate(DATA.lastUpdated), towns=_reportTowns(), excluded=DATA.towns.length-towns.length;
-  let h=`<div style="font-family:Calibri,Arial,sans-serif;color:#111;font-size:11pt;line-height:1.4">`
-    +`<h1 style="color:#1f3864;font-size:20pt;margin:0 0 2px">Westchester BESS Policy — Towns with Action</h1>`
-    +`<div style="color:#555;font-size:9.5pt;margin-bottom:8px">BCW / EarthKind · Clean Energy Action Coalition · Data as of ${d} · ${towns.length} towns (excludes ${excluded} with no moratorium on record)</div>`
-    +`<hr style="border:none;border-top:2px solid #2e75b6;margin-bottom:6px">`;
+  let h=`<div style="font-family:Calibri,Arial,sans-serif;color:#111;font-size:11pt;line-height:1.45">`
+    +`<div style="border-bottom:3px solid #1f3864;padding-bottom:8px;margin-bottom:16px">`
+    +`<div style="color:#2e75b6;font-size:10pt;font-weight:bold;letter-spacing:.4px">BCW / EARTHKIND &nbsp;·&nbsp; CLEAN ENERGY ACTION COALITION</div>`
+    +`<div style="color:#1f3864;font-size:22pt;font-weight:bold;margin-top:3px">Westchester BESS Policy — Towns with Action</div>`
+    +`<div style="color:#555;font-size:10pt;margin-top:4px">Battery energy storage moratoriums, bans &amp; regulations &nbsp;·&nbsp; Data as of ${d} &nbsp;·&nbsp; ${towns.length} towns (excludes ${excluded} with no moratorium on record)</div>`
+    +`</div>`;
   towns.forEach(t=>{
-    h+=`<h2 style="color:#1f3864;font-size:14pt;margin:14px 0 1px">${_esc(t.name)} — ${_esc(t.statusLabel)}</h2>`;
-    h+=`<div style="color:#555;font-size:9.5pt;margin-bottom:4px">${_esc(t.scope)}${t.subtitle?" · "+_esc(t.subtitle):""}</div>`;
+    const col=_statusColor(t.status);
+    h+=`<div style="page-break-inside:avoid;break-inside:avoid;border-left:4px solid ${col};padding:1px 0 6px 12px;margin:0 0 18px 0">`
+      +`<div style="font-size:14.5pt;font-weight:bold;color:#1f3864;margin-bottom:3px">${_esc(t.name)} `
+      +`<span style="font-size:9pt;color:#fff;background:${col};padding:1px 7px;font-weight:bold">${_esc(t.statusLabel)}</span></div>`
+      +`<div style="color:#555;font-size:9.5pt;margin-bottom:6px">${_esc(t.scope)}${t.subtitle?" &nbsp;·&nbsp; "+_esc(t.subtitle):""}</div>`;
     (t.snapshot||[]).forEach(r=>h+=`<p style="margin:2px 0"><b>${_esc(r[0])}:</b> ${_esc(r[1])}</p>`);
-    if(t.summary&&t.summary.length){h+=`<p style="margin:6px 0 1px"><b>BESS activity, news &amp; decisions</b></p>`;t.summary.forEach(p=>h+=`<p style="margin:2px 0">${_esc(p)}</p>`);}
-    if(t.flags&&t.flags.length){t.flags.forEach(f=>h+=`<p style="margin:2px 0;color:#8a6d00"><i>Confidence flag — ${_esc(f)}</i></p>`);}
-    if(t.committees&&t.committees.length){h+=`<p style="margin:6px 0 1px"><b>Relevant committees</b></p><ul style="margin:2px 0 2px 18px">`+t.committees.map(c=>`<li>${_strip(c)}</li>`).join("")+`</ul>`;}
-    if(t.meetings&&t.meetings.length){h+=`<p style="margin:6px 0 1px"><b>Meetings — agendas &amp; hearings</b></p>`+t.meetings.map(m=>`<p style="margin:2px 0">${_strip(m)}</p>`).join("");}
-    if(t.officials&&t.officials.length){h+=`<p style="margin:6px 0 1px"><b>Key officials &amp; contacts</b></p>`+t.officials.map(o=>`<p style="margin:2px 0">${_esc(o.role)}: ${_esc(o.name)}${o.email?" · "+_esc(o.email):""}${o.phone?" · "+_esc(o.phone):""}</p>`).join("");}
-    if(t.links&&t.links.length){h+=`<p style="margin:6px 0 1px"><b>Links:</b> `+t.links.map(l=>`${_esc(l[0])} (${_esc(l[1])})`).join(" · ")+`</p>`;}
+    if(t.summary&&t.summary.length){h+=`<p style="margin:8px 0 1px;color:#1f3864"><b>BESS activity, news &amp; decisions</b></p>`;t.summary.forEach(p=>h+=`<p style="margin:2px 0">${_esc(p)}</p>`);}
+    if(t.flags&&t.flags.length){t.flags.forEach(f=>h+=`<p style="margin:3px 0;color:#8a6d00"><i>Confidence flag — ${_esc(f)}</i></p>`);}
+    if(t.committees&&t.committees.length){h+=`<p style="margin:8px 0 1px;color:#1f3864"><b>Relevant committees</b></p><ul style="margin:2px 0 2px 18px;padding:0">`+t.committees.map(c=>`<li style="margin:1px 0">${_strip(c)}</li>`).join("")+`</ul>`;}
+    if(t.meetings&&t.meetings.length){h+=`<p style="margin:8px 0 1px;color:#1f3864"><b>Meetings — agendas &amp; hearings</b></p>`+t.meetings.map(m=>`<p style="margin:2px 0">${_strip(m)}</p>`).join("");}
+    if(t.officials&&t.officials.length){h+=`<p style="margin:8px 0 1px;color:#1f3864"><b>Key officials &amp; contacts</b></p>`+t.officials.map(o=>`<p style="margin:2px 0">${_esc(o.role)}: ${_esc(o.name)}${o.email?" &nbsp;·&nbsp; "+_esc(o.email):""}${o.phone?" &nbsp;·&nbsp; "+_esc(o.phone):""}</p>`).join("");}
+    if(t.links&&t.links.length){h+=`<p style="margin:8px 0 1px"><b>Links:</b> `+t.links.map(l=>`${_esc(l[0])} (${_esc(l[1])})`).join(" &nbsp;·&nbsp; ")+`</p>`;}
+    h+=`</div>`;
   });
   h+=`</div>`;
   return h;
 }
 function exportPDF(){
   if(!window.html2pdf){alert("PDF library is still loading — please try again in a moment.");return;}
-  const wrap=document.createElement("div");wrap.style.padding="6px";wrap.innerHTML=buildReportHTML();
-  html2pdf().set({margin:[12,12,14,12],filename:"Westchester_BESS_Report.pdf",
-    image:{type:"jpeg",quality:0.98},html2canvas:{scale:2,useCORS:true},
-    jsPDF:{unit:"mm",format:"letter",orientation:"portrait"},
-    pagebreak:{mode:["css","legacy"]}}).from(wrap).save();
+  const wrap=document.createElement("div");
+  wrap.style.width="760px";wrap.style.background="#fff";wrap.style.padding="0";
+  wrap.innerHTML=buildReportHTML();
+  html2pdf().set({margin:[14,14,16,14],filename:"Westchester_BESS_Report.pdf",
+    image:{type:"jpeg",quality:0.98},
+    html2canvas:{scale:2,useCORS:true,windowWidth:820,backgroundColor:"#ffffff"},
+    jsPDF:{unit:"mm",format:"letter",orientation:"portrait",compress:true},
+    pagebreak:{mode:["avoid-all","css","legacy"]}}).from(wrap).save();
 }
 function exportDOCX(){
   if(!window.htmlDocx){alert("Word library is still loading — please try again in a moment.");return;}
   const full="<!DOCTYPE html><html><head><meta charset='utf-8'></head><body>"+buildReportHTML()+"</body></html>";
-  const blob=window.htmlDocx.asBlob(full);
+  const blob=window.htmlDocx.asBlob(full,{orientation:"portrait",margins:{top:720,right:720,bottom:720,left:720}});
   const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Westchester_BESS_Report.docx";
   document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},1500);
 }
