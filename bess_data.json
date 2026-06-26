@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25",
+  "lastUpdated": "2026-06-26",
   "statusMeta": {
     "active": {
       "label": "Active moratorium",
@@ -26,7 +26,7 @@
     "points": [
       [
         "New York is the epicenter of BESS restrictions.",
-        "As of May 2026 the state had 104 active local moratoriums — more than 80% of every active BESS moratorium in the U.S. Westchester County is tied for the most of any NY county with 8 active (and several towns have gone further, to outright bans)."
+        "As of the June 2026 tracker refresh, New York had over 100 active local BESS moratoriums — more than 80% of every active BESS moratorium in the U.S. Westchester remains among the most-restricted counties. Note: the Carina tracker now lists 5 active Westchester moratoriums after reclassifying several towns, but town records confirm Mamaroneck Village and Pound Ridge each extended their moratoriums in 2025–2026 — so the coalition tracks 7 active moratorium towns plus several outright bans."
       ],
       [
         "Local control is decisive for standalone projects.",
@@ -34,7 +34,7 @@
       ],
       [
         "Legislation to watch.",
-        "Senate Bill S5506 (Kavanagh) and Assembly Bill A8378 (Levenberg) would expand ORES to standalone storage. Introduced Feb 2025, still in committee as of May 2026, not passed. Several Westchester municipalities (e.g., Yorktown) passed resolutions opposing it."
+        "Senate Bill S5506 (Kavanagh) and Assembly Bill A8378 (Levenberg) would expand ORES to standalone storage. Introduced Feb 2025, still in the Energy & Telecommunications Committee as of June 2026, not passed either chamber. Several Westchester municipalities (e.g., Yorktown) passed resolutions opposing it."
       ],
       [
         "Most moratoriums are temporary — but some harden into bans.",
@@ -262,6 +262,7 @@
         "A March 24, 2026 hearing extended the moratorium, so it remains active. The town's strong sustainability infrastructure gives the workgroup credible allies to argue that well-sited, code-compliant storage can coexist with climate goals rather than being banned outright."
       ],
       "flags": [
+        "Carina's tracker (refreshed June 26, 2026) reclassified Pound Ridge as LIFTED, but this appears to be aggregator lag: the Town Clerk noticed a public hearing on a 2nd extension of the BESS moratorium for March 24, 2026, so the ALL-BESS moratorium was extended and remains ACTIVE. Status kept ACTIVE; confirm the new expiration date via the Town Clerk / adopted local law.",
         "Supervisor email listed as supervisor@townofpoundridge.gov to match the other members; the official page also references a .com variant. Both reach the office — confirm the preferred address."
       ],
       "committees": [
@@ -507,6 +508,7 @@
         "With the Village Attorney actively presenting BESS proposals, there is an open window to weigh in on the permanent standards."
       ],
       "flags": [
+        "Carina's tracker (refreshed June 26, 2026) reclassified Mamaroneck Village as LIFTED, but Village records contradict this: the moratorium was extended repeatedly in 2025, most recently by Local Law 14-2025 amending Chapter 342 (Zoning). Status kept ACTIVE; confirm the current LL 14-2025 expiration date on the Village site.",
         "Confirm the current moratorium expiration and the Mayor/Trustee roster + contacts on the Village site."
       ],
       "committees": [
@@ -1048,7 +1050,7 @@
         "As one of the hardest-line jurisdictions in the county, Mount Pleasant is mainly a monitor-and-watch town unless the Board revisits the ban."
       ],
       "flags": [
-        "Status shown as a permanent ban per the town's Dec 2025 prohibition local law and press release. Note: the Carina moratorium tracker (refreshed June 14, 2026) still lists Mount Pleasant as an ACTIVE moratorium rather than a ban — likely a tracker classification lag; the adopted local-law text governs. Bans can be challenged or revised; track any reconsideration, variance pathway, or litigation."
+        "Status shown as a permanent ban per the town's Dec 2025 prohibition local law and press release. The Carina tracker (refreshed June 26, 2026) now lists Mount Pleasant's moratorium as LIFTED (type BAN) — consistent with the moratorium having been replaced by the adopted prohibition law, which governs. Bans can be challenged or revised; track any reconsideration, variance pathway, or litigation."
       ],
       "committees": [
         "<b>Town Board</b> — adopted the ban.",
@@ -1759,6 +1761,16 @@
     ]
   ],
   "changelog": [
+    {
+      "date": "2026-06-26",
+      "items": [
+        "Carina Energy NY tracker refreshed June 26, 2026 reclassified three Westchester towns: Mamaroneck Village and Pound Ridge from ACTIVE to LIFTED, and Mount Pleasant (BAN) to LIFTED — dropping its Westchester active count from 8 to 5.",
+        "Verified against official town sources: Pound Ridge noticed a 2nd-extension public hearing for its BESS moratorium on March 24, 2026, and Mamaroneck Village extended its moratorium via Local Law 14-2025 (Chapter 342). Both moratoriums remain ACTIVE — statuses NOT changed; Carina's 'lifted' labels treated as aggregator lag.",
+        "Mount Pleasant kept as permanent BAN; Carina's 'lifted moratorium' is consistent with the Dec 2025 prohibition law having superseded the prior moratorium.",
+        "NY S5506 (Kavanagh) / A8378 (Levenberg) ORES standalone-storage expansion — still in the Energy & Telecommunications Committee as of June 2026; not passed.",
+        "No new Westchester municipality adopted a BESS rule; no new public hearing/vote surfaced for the other monitored towns (Cortlandt, New Castle, Bedford, Peekskill, Yonkers)."
+      ]
+    },
     {
       "date": "2026-06-25",
       "items": [
