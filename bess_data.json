@@ -887,7 +887,8 @@
         "Local law: Sec 224-A(9): BESS allowed under the solar code. (per the workgroup GIS sheet)."
       ],
       "flags": [
-        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site."
+        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site.",
+        "Big-city context — permits BESS through normal site-plan/permitting rather than a special code; deprioritized for code advocacy."
       ],
       "committees": [
         "City Council",
@@ -1995,7 +1996,8 @@
         "Local law: Code is silent on BESS. (per the workgroup GIS sheet)."
       ],
       "flags": [
-        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site."
+        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site.",
+        "Big-city context — permits BESS through normal site-plan/permitting rather than a special code; deprioritized for code advocacy."
       ],
       "committees": [
         "Common Council",
@@ -2051,7 +2053,8 @@
       ],
       "flags": [
         "Workgroup data marks Yonkers 'code silent on BESS,' which conflicts with 2025 news of a Council moratorium. Confirm whether that moratorium lapsed or was never codified.",
-        "Carina Energy's June 2026 statewide update lists Yonkers as an ACTIVE moratorium alongside Bedford, Cortlandt, New Castle, and Peekskill — a further conflict with the 'silent' classification here. Given the contradictory signals, status is left as-is pending direct confirmation from the City Council/Mayor's office."
+        "Carina Energy's June 2026 statewide update lists Yonkers as an ACTIVE moratorium alongside Bedford, Cortlandt, New Castle, and Peekskill — a further conflict with the 'silent' classification here. Given the contradictory signals, status is left as-is pending direct confirmation from the City Council/Mayor's office.",
+        "Big-city context — permits BESS through normal site-plan/permitting rather than a special code; deprioritized for code advocacy."
       ],
       "committees": [
         "<b>City Council</b> — Council President + council members; the legislative body.",
@@ -2753,11 +2756,6 @@
       "action": "Engage before 8/17/26 to add a Tier 2 pathway; weigh effort vs. limited grid value."
     },
     {
-      "name": "City of Yonkers",
-      "why": "Code silent; county's largest city = highest raw potential; Moderate capacity.",
-      "action": "Proactively propose a healthy tiered code before a project forces a reactive ban."
-    },
-    {
       "name": "Village of Rye Brook",
       "why": "Restrictive (Tier 1 only); High capacity; flagged by the boss among the original five.",
       "action": "Confirm why Rye Brook was flagged, then push a Tier 2 pathway."
@@ -2776,6 +2774,11 @@
       "name": "Village of Briarcliff Manor",
       "why": "Restrictive — prohibits Tier 2 (>600 kWh); Low capacity (75% red).",
       "action": "Push to allow Tier 2 with siting standards when capacity allows."
+    },
+    {
+      "name": "Village of Larchmont",
+      "why": "Restrictive — LL 2-2026 prohibits Tier 2 (>600 kWh); High grid capacity (100% yellow).",
+      "action": "Push to add a Tier 2 pathway with siting/safety standards."
     }
   ],
   "hearingNote": "Specific public-hearing dates are not centrally published — towns post them as one-off legal notices (often via eCode360 or the town-clerk page). Recurring board meetings below are computed; confirm exact hearing dates per town. Gaps to research: firm 2026 hearing dates for Cortlandt, New Castle, and Ossining Village.",
