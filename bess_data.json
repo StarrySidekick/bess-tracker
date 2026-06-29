@@ -67,6 +67,10 @@
       "subtitle": "Northern Westchester — Bedford Hills, Katonah, Bedford Village",
       "snapshot": [
         [
+          "Grid hosting capacity",
+          "100% Red — Low capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
+        [
           "Governing law",
           "Moratorium adopted Aug 13, 2024; extended ~6 months — was set to expire July 16, 2025, extended through Jan 16, 2026 (confirm any further extension)."
         ],
@@ -127,7 +131,11 @@
           "https://bedfordny.gov/AgendaCenter"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Red",
+        "tier": "Low capacity"
+      }
     },
     {
       "name": "Town of Cortlandt (Cortlandt Manor)",
@@ -139,6 +147,10 @@
       "windowClass": "p-high",
       "subtitle": "Northwestern Westchester — Hudson River to the Putnam County line",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "LL 2-2024 (original) → LL 10-2024 → LL 2 of 2025 extended through Dec 31, 2025. Listed ACTIVE on the statewide tracker in 2026."
@@ -218,7 +230,11 @@
           "https://www.townofcortlandtny.gov/documents/LL%202-25%20Battery%20Storage%20Moratorium%20Extension.pdf"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Town of New Castle (Chappaqua / Millwood)",
@@ -230,6 +246,10 @@
       "windowClass": "p-high",
       "subtitle": "Central Westchester",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "50% Red, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Proposed permanent law",
           "A draft permanent BESS local law would allow Tier 1 (≤80 kWh) only and explicitly prohibit Tier 2 and Tier 3 — stricter than the tiered Tier 1/2/3 framework previously described here. Referred to the Planning Board, which issued its response March 4, 2026; not yet shown as adopted by the Town Board."
@@ -318,7 +338,11 @@
           "https://ecode360.com/NE0395"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "50% Red, 50% Yellow",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "Village of Ossining",
@@ -328,7 +352,12 @@
       "window": "HIGH",
       "windowClass": "p-high",
       "subtitle": "Western Westchester — Hudson River",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Red — Low capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Local Law 4-2026: moratorium on all BESS, an 8-month term effective ~4/22/2026 — implying an expiration around late December 2026 (computed estimate, not independently confirmed). (Verified in the workgroup GIS sheet.)"
       ],
@@ -344,7 +373,11 @@
       "flags": [
         "The ~late-December-2026 expiration is computed from the workgroup's '8-month moratorium from 04-2026' note, not from an independently verified end date — confirm the exact adoption date and term in Local Law 4-2026's text before treating this as firm."
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Red",
+        "tier": "Low capacity"
+      }
     },
     {
       "name": "Town of Mount Pleasant",
@@ -355,6 +388,10 @@
       "windowClass": "p-low",
       "subtitle": "Central Westchester — Valhalla, Thornwood, Hawthorne",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "50% Orange, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "Local law (Dec 2025) permanently bans the siting/construction of new BESS — moving from a Sept 2024–Sept 2025 moratorium to a ban. Effective immediately."
@@ -418,7 +455,11 @@
           "https://mtpleasantny.gov/DocumentCenter/View/2165/Local-Law-Prohibiting-Battery-Energy-Storage-Systems-8252025"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "50% Orange, 50% Yellow",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "Town of Somers",
@@ -429,6 +470,10 @@
       "windowClass": "p-low",
       "subtitle": "Northern Westchester — rural; Lincolndale, Somers hamlet, Granite Springs",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "NYSEG — NYSEG territory (not on the ConEd map) (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "Town amended its code to ban large-scale battery farms after a 116 MW BESS proposal (East Point Energy, Miller Road, near the Mahopac border) was withdrawn in early 2025."
@@ -471,7 +516,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "NYSEG",
+        "tier": "NYSEG territory (not on the ConEd map)"
+      }
     },
     {
       "name": "Village/Town of Mount Kisco",
@@ -482,6 +531,10 @@
       "windowClass": "p-low",
       "subtitle": "Northern Westchester",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Red — Low capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "Aug 2025: Village Board voted unanimously not to classify BESS as a 'public utility,' effectively prohibiting new BESS village-wide — after twice extending a 2024 moratorium."
@@ -543,7 +596,11 @@
           "https://www.theexaminernews.com/mount-kisco-enacts-moratorium-on-battery-energy-storage-systems/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Red",
+        "tier": "Low capacity"
+      }
     },
     {
       "name": "Town of Greenburgh",
@@ -554,6 +611,10 @@
       "windowClass": "p-open",
       "subtitle": "Central Westchester — six villages + unincorporated area",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "75% Yellow, 25% Orange — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "Already has a BESS law; the Town is considering amendments as part of broader land-use code changes."
@@ -625,7 +686,11 @@
         ]
       ],
       "dr": true,
-      "drReason": "Adopted a complete, balanced three-tier BESS code (small / medium / utility-scale) back in 2021 — a full framework other towns can copy, now being refreshed."
+      "drReason": "Adopted a complete, balanced three-tier BESS code (small / medium / utility-scale) back in 2021 — a full framework other towns can copy, now being refreshed.",
+      "hosting": {
+        "raw": "75% Yellow, 25% Orange",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "Village of Briarcliff Manor",
@@ -635,7 +700,12 @@
       "window": "TOO STRICT",
       "windowClass": "p-strict",
       "subtitle": "Northern Westchester",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "75% Red, 25% Yellow — Low capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Adopted June 2025 (Ch 178 Art II): Tier 1 to 600 kWh; prohibits Tier 2 > 600 kWh. (Verified in the workgroup GIS sheet.)"
       ],
@@ -646,7 +716,11 @@
       "flags": [
         "Over-strict: Prohibits Tier 2 (>600 kWh) — blocks utility-scale storage. An engagement target to loosen toward a Croton-style tiered code."
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "75% Red, 25% Yellow",
+        "tier": "Low capacity"
+      }
     },
     {
       "name": "Village of Croton-on-Hudson",
@@ -656,7 +730,12 @@
       "window": "MODEL",
       "windowClass": "p-open",
       "subtitle": "Northwestern Westchester — Hudson River (within Cortlandt)",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Red — Low capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Adopted May 2024 (Ch 230 Definitions): Tier 1 to 200 kWh; Tier 2 over 200 kWh. Already permitting real projects (e.g., a 280 kWh system at Croton Auto Park). (Verified in the workgroup GIS sheet.)"
       ],
@@ -671,7 +750,11 @@
       ],
       "flags": [],
       "dr": true,
-      "drReason": "The flagship 'doing it right' case: a clear, adopted tiered code (2024) that permits storage with sensible size thresholds, and is actively used to approve real projects."
+      "drReason": "The flagship 'doing it right' case: a clear, adopted tiered code (2024) that permits storage with sensible size thresholds, and is actively used to approve real projects.",
+      "hosting": {
+        "raw": "100% Red",
+        "tier": "Low capacity"
+      }
     },
     {
       "name": "Village of Larchmont",
@@ -681,7 +764,12 @@
       "window": "TOO STRICT",
       "windowClass": "p-strict",
       "subtitle": "Southeastern Westchester — Long Island Sound",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "LL 1-2026 (§100-6): Tier 1 to 600 kWh permitting; Tier 2 over 600 kWh. (Verified in the workgroup GIS sheet.)"
       ],
@@ -697,7 +785,11 @@
       "flags": [
         "Over-strict: LL 2-2026 prohibits Tier 2 (>600 kWh). An engagement target to loosen toward a Croton-style tiered code."
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Village of Port Chester",
@@ -708,6 +800,10 @@
       "windowClass": "p-open",
       "subtitle": "Southeastern Westchester — Long Island Sound, NY/CT border",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "Ended its moratorium in early 2025 and adopted permanent BESS regulations amending Chapter 345 (Zoning), after a SEQRA negative declaration."
@@ -762,7 +858,11 @@
         ]
       ],
       "dr": true,
-      "drReason": "Chose to write permanent, tiered zoning rules instead of banning or extending a moratorium — a clean post-moratorium model."
+      "drReason": "Chose to write permanent, tiered zoning rules instead of banning or extending a moratorium — a clean post-moratorium model.",
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "City of Mount Vernon",
@@ -773,6 +873,10 @@
       "windowClass": "p-high",
       "subtitle": "Southern Westchester — city bordering the Bronx",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Red — Low capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker."
@@ -804,7 +908,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Red",
+        "tier": "Low capacity"
+      }
     },
     {
       "name": "City of Peekskill",
@@ -815,6 +923,10 @@
       "windowClass": "p-strict",
       "subtitle": "Northwestern Westchester — Hudson River city",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "Moratorium on lithium-ion BESS over 80 kW enacted May 2025 (unanimous); extended in late 2025."
@@ -877,7 +989,11 @@
           "https://www.cityofpeekskillny.gov/AgendaCenter"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "City of Rye",
@@ -888,6 +1004,10 @@
       "windowClass": "p-strict",
       "subtitle": "Southeastern Westchester — Long Island Sound city (distinct from Town of Rye)",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker."
@@ -916,7 +1036,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Town / Village of Harrison",
@@ -928,6 +1052,10 @@
       "windowClass": "p-high",
       "subtitle": "Central Westchester — coterminous Town and Village government",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "LL 1 of 2025 — a 6-month moratorium effective March 6, 2025; lapsed ~September 2025 (Town Code Article XVII), succeeded by the tiered BESS standards now codified at §235-95."
@@ -1021,7 +1149,11 @@
           "https://ecode360.com/46804381"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Town of Lewisboro",
@@ -1032,6 +1164,10 @@
       "windowClass": "p-high",
       "subtitle": "Northeastern Westchester — rural; South Salem, Cross River, Goldens Bridge",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "NYSEG — NYSEG territory (not on the ConEd map) (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker. Neighbors Pound Ridge — worth watching given regional activity."
@@ -1059,7 +1195,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "NYSEG",
+        "tier": "NYSEG territory (not on the ConEd map)"
+      }
     },
     {
       "name": "Town of Mamaroneck",
@@ -1070,6 +1210,10 @@
       "windowClass": "p-high",
       "subtitle": "Southeastern Westchester — distinct from the Village of Mamaroneck (listed separately)",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified for the Town as of the May 2026 statewide tracker. Note: the Village of Mamaroneck has an active moratorium (separate entry)."
@@ -1101,7 +1245,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Town of North Castle",
@@ -1112,6 +1260,10 @@
       "windowClass": "p-open",
       "subtitle": "Northern Westchester — Armonk, North White Plains, Banksville",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "25% Red, 75% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker."
@@ -1140,7 +1292,11 @@
         ]
       ],
       "dr": true,
-      "drReason": "Full three-type framework (≤80 / ≤600 / >600 kWh) that permits every scale with clear standards."
+      "drReason": "Full three-type framework (≤80 / ≤600 / >600 kWh) that permits every scale with clear standards.",
+      "hosting": {
+        "raw": "25% Red, 75% Yellow",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "Town of North Salem",
@@ -1151,6 +1307,10 @@
       "windowClass": "p-strict",
       "subtitle": "Northeastern Westchester — rural; Croton Falls, Purdys, Salem Center",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "NYSEG — NYSEG territory (not on the ConEd map) (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker. Rural land may attract utility-scale interest — worth watching."
@@ -1179,7 +1339,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "NYSEG",
+        "tier": "NYSEG territory (not on the ConEd map)"
+      }
     },
     {
       "name": "Town of Ossining",
@@ -1190,6 +1354,10 @@
       "windowClass": "p-high",
       "subtitle": "Western Westchester — Hudson River; includes Village of Ossining & Briarcliff Manor",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Red — Low capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker."
@@ -1217,7 +1385,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Red",
+        "tier": "Low capacity"
+      }
     },
     {
       "name": "Town of Pound Ridge",
@@ -1229,6 +1401,10 @@
       "windowClass": "p-high",
       "subtitle": "Northeastern Westchester — broadest scope of the moratorium towns",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "NYSEG — NYSEG territory (not on the ConEd map) (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Scope",
           "ALL battery storage, any size — one of only ~10 such jurisdictions in NY."
@@ -1332,7 +1508,11 @@
           "https://www.townofpoundridge.gov/townclerk/notice-public-hearing-regarding-extension-moratorium-battery-energy-storage-systems-bess-0"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "NYSEG",
+        "tier": "NYSEG territory (not on the ConEd map)"
+      }
     },
     {
       "name": "Town of Yorktown",
@@ -1343,6 +1523,10 @@
       "windowClass": "p-high",
       "subtitle": "Northern Westchester — Yorktown Heights, Jefferson Valley",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "90% Yellow, 10% Red — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "Public hearing held Oct 1, 2024 on a BESS moratorium; the moratorium is listed EXPIRED on the statewide tracker."
@@ -1410,7 +1594,11 @@
           "https://www.yorktownny.gov/bc"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "90% Yellow, 10% Red",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "Village of Elmsford",
@@ -1420,7 +1608,12 @@
       "window": "HEALTHY",
       "windowClass": "p-high",
       "subtitle": "Central Westchester",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "2022 (Ch 335-23-J(4)): special-permit use, Tier 1 to 600 kWh, Tier 2 over 600 kWh. (Verified in the workgroup GIS sheet.)"
       ],
@@ -1429,7 +1622,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Village of Hastings-on-Hudson",
@@ -1439,7 +1636,12 @@
       "window": "HEALTHY",
       "windowClass": "p-high",
       "subtitle": "Southwestern Westchester — Hudson River",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Orange — Low capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Ch 160 Green Building Code; no BESS-specific provisions, so storage is permitted by default. (Verified in the workgroup GIS sheet.)"
       ],
@@ -1448,7 +1650,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Orange",
+        "tier": "Low capacity"
+      }
     },
     {
       "name": "Village of Irvington",
@@ -1458,7 +1664,12 @@
       "window": "HEALTHY",
       "windowClass": "p-high",
       "subtitle": "Western Westchester — Hudson River",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Ch 224 Attachment 3, Solar Energy Equipment Guidelines (2018). (Verified in the workgroup GIS sheet.)"
       ],
@@ -1467,7 +1678,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Village of Mamaroneck",
@@ -1478,6 +1693,10 @@
       "windowClass": "p-strict",
       "subtitle": "Southeastern Westchester — Long Island Sound shoreline",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "Moratorium extended multiple times in 2025 (LL 7-2025, LL 11-2025, LL 14-2025) amending Chapter 342 (Zoning). The Board of Trustees held an April 27, 2026 public hearing on a proposed local law ('PLL G of 2026') addressing the BESS moratorium — the likely action that concluded the moratorium phase."
@@ -1541,7 +1760,11 @@
           "https://www.villageofmamaroneckny.gov/planning-board"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Village of Rye Brook",
@@ -1553,6 +1776,10 @@
       "windowClass": "p-strict",
       "subtitle": "Southeastern Westchester — the clearest “get ahead of it” opportunity",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "No BESS moratorium or dedicated local law identified; not in the statewide tracker as of May 2026. NY's 2025 Fire Code applies as a baseline."
@@ -1637,7 +1864,11 @@
           "https://ryebrookny.gov/contact"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Village of Sleepy Hollow",
@@ -1647,7 +1878,12 @@
       "window": "HEALTHY",
       "windowClass": "p-high",
       "subtitle": "Western Westchester — Hudson River",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "2022 (Ch 450 Art XX): development incentives, C-2 district only. (Verified in the workgroup GIS sheet.)"
       ],
@@ -1656,7 +1892,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Village of Tarrytown",
@@ -1666,7 +1906,12 @@
       "window": "HEALTHY",
       "windowClass": "p-high",
       "subtitle": "Western Westchester — Hudson River",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "2025: BESS over 600 kWh allowed via a Floating Zone in the OB and MU zones. (Verified in the workgroup GIS sheet.)"
       ],
@@ -1675,7 +1920,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "City of New Rochelle",
@@ -1686,6 +1935,10 @@
       "windowClass": "p-open",
       "subtitle": "Southern Westchester — Long Island Sound city",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "50% Red, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker."
@@ -1713,7 +1966,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "50% Red, 50% Yellow",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "City of White Plains",
@@ -1724,6 +1981,10 @@
       "windowClass": "p-open",
       "subtitle": "Central Westchester — the county seat",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "25% Orange, 75% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker."
@@ -1751,7 +2012,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "25% Orange, 75% Yellow",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "City of Yonkers",
@@ -1762,6 +2027,10 @@
       "windowClass": "p-open",
       "subtitle": "Southwestern Westchester — the county's largest city",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "25% Yellow, 75% Orange — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Governing law",
           "City Council adopted a 180-day moratorium (extendable another 180 days) on lithium-ion battery (and self-storage) facilities; extended in 2025."
@@ -1828,7 +2097,11 @@
           "https://www.yonkersny.gov/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "25% Yellow, 75% Orange",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "Town of Eastchester",
@@ -1839,6 +2112,10 @@
       "windowClass": "p-open",
       "subtitle": "Southern Westchester — includes Tuckahoe & Bronxville areas",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "75% Yellow, 25% Orange — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker."
@@ -1866,7 +2143,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "75% Yellow, 25% Orange",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "Town of Pelham",
@@ -1877,6 +2158,10 @@
       "windowClass": "p-open",
       "subtitle": "Southern Westchester — Villages of Pelham & Pelham Manor",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker. Built-out suburb; the two villages hold most land-use authority."
@@ -1904,7 +2189,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Town of Rye",
@@ -1915,6 +2204,10 @@
       "windowClass": "p-open",
       "subtitle": "Southeastern Westchester — mostly comprises Port Chester & Rye Brook (listed separately)",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "NYSEG/see Port Chester & Rye Brook — NYSEG territory (not on the ConEd map) (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated Town BESS law identified as of the May 2026 statewide tracker. The Town's territory is largely the Villages of Port Chester and Rye Brook, which hold land-use authority."
@@ -1941,7 +2234,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "NYSEG/see Port Chester & Rye Brook",
+        "tier": "NYSEG territory (not on the ConEd map)"
+      }
     },
     {
       "name": "Town/Village of Scarsdale",
@@ -1952,6 +2249,10 @@
       "windowClass": "p-open",
       "subtitle": "Central Westchester — coterminous town/village government",
       "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
         [
           "Status",
           "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker."
@@ -1979,7 +2280,11 @@
           "https://carina.energy/bess-moratoriums/new-york/"
         ]
       ],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Village of Ardsley",
@@ -1989,7 +2294,12 @@
       "window": "OPEN",
       "windowClass": "p-open",
       "subtitle": "Central Westchester",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "50% Orange, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
       ],
@@ -1998,7 +2308,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "50% Orange, 50% Yellow",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "Village of Bronxville",
@@ -2008,7 +2322,12 @@
       "window": "OPEN",
       "windowClass": "p-open",
       "subtitle": "Southern Westchester",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "50% Red, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
       ],
@@ -2017,7 +2336,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "50% Red, 50% Yellow",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "Village of Buchanan",
@@ -2027,7 +2350,12 @@
       "window": "OPEN",
       "windowClass": "p-open",
       "subtitle": "Northwestern Westchester (near Indian Point)",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
       ],
@@ -2036,7 +2364,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Village of Dobbs Ferry",
@@ -2046,7 +2378,12 @@
       "window": "OPEN",
       "windowClass": "p-open",
       "subtitle": "Western Westchester — Hudson River",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "50% Orange, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
       ],
@@ -2055,7 +2392,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "50% Orange, 50% Yellow",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "Village of Pelham",
@@ -2065,7 +2406,12 @@
       "window": "OPEN",
       "windowClass": "p-open",
       "subtitle": "Southern Westchester",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
       ],
@@ -2074,7 +2420,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     },
     {
       "name": "Village of Pelham Manor",
@@ -2084,7 +2434,12 @@
       "window": "OPEN",
       "windowClass": "p-open",
       "subtitle": "Southern Westchester",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Red — Low capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
       ],
@@ -2093,7 +2448,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Red",
+        "tier": "Low capacity"
+      }
     },
     {
       "name": "Village of Pleasantville",
@@ -2103,7 +2462,12 @@
       "window": "OPEN",
       "windowClass": "p-open",
       "subtitle": "Central Westchester",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "50% Orange, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
       ],
@@ -2112,7 +2476,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "50% Orange, 50% Yellow",
+        "tier": "Moderate capacity"
+      }
     },
     {
       "name": "Village of Tuckahoe",
@@ -2122,7 +2490,12 @@
       "window": "OPEN",
       "windowClass": "p-open",
       "subtitle": "Southern Westchester",
-      "snapshot": [],
+      "snapshot": [
+        [
+          "Grid hosting capacity",
+          "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ]
+      ],
       "summary": [
         "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
       ],
@@ -2131,7 +2504,11 @@
       "officials": [],
       "links": [],
       "flags": [],
-      "dr": false
+      "dr": false,
+      "hosting": {
+        "raw": "100% Yellow",
+        "tier": "High capacity"
+      }
     }
   ],
   "steps": [
@@ -2352,54 +2729,55 @@
   "priority": [
     {
       "name": "Town of Cortlandt (Cortlandt Manor)",
-      "why": "Active moratorium on ALL BESS expires 7/31/26; large northern town.",
+      "why": "Active moratorium on ALL BESS expires 7/31/26; large town; High grid capacity (100% yellow).",
       "action": "Attend Town Board before 7/31/26 and push a Croton-style tiered code instead of another extension."
     },
     {
       "name": "Town of New Castle (Chappaqua / Millwood)",
-      "why": "Moratorium lapsed 5/31/26; a tiered law is proposed but not yet adopted — window is open now.",
-      "action": "Comment at Town Board to shape thresholds toward a permissive Tier 1 and a reasonable Tier 3."
-    },
-    {
-      "name": "Village of Ossining",
-      "why": "Fresh 8-month moratorium (from 4/22/26, ~ends Dec 2026); early in its study window.",
-      "action": "Engage the Village Board now to steer the permanent code toward 'allowed,' not a ban."
-    },
-    {
-      "name": "Town of Bedford",
-      "why": "Tier 1 allowed but a large-scale moratorium runs until 8/17/26; sizable town.",
-      "action": "Push a defined Tier 2 / utility-scale pathway before the moratorium is extended."
+      "why": "Moratorium lapsed 5/31/26; tiered law proposed but not adopted — open window now; Moderate capacity.",
+      "action": "Comment at Town Board to shape thresholds toward a permissive Tier 1 and reasonable Tier 3."
     },
     {
       "name": "Town / Village of Harrison",
-      "why": "Moratorium expired; code now allows up to Tier 3 by special permit — relatively healthy, big commercial base.",
+      "why": "Moratorium expired; code already allows to Tier 3 by permit; big commercial base; High capacity — high impact, low friction.",
       "action": "Lock in / formalize the tiered standards and build relationships before any reactive rollback."
     },
     {
       "name": "City of Peekskill",
-      "why": "Tier 1 only; Tier 2 moratorium lapsed 5/31/26 — opening to add a Tier 2 pathway; Hudson city.",
-      "action": "Advocate a Tier 2 standard at Common Council."
+      "why": "Tier 1 only with the Tier 2 moratorium just lapsed (5/31/26) — clear opening; Hudson city; High capacity.",
+      "action": "Advocate a Tier 2 standard at Common Council now."
+    },
+    {
+      "name": "Town of Bedford",
+      "why": "Large-scale moratorium until 8/17/26 (urgent deadline), but Low grid capacity (100% red) tempers payoff.",
+      "action": "Engage before 8/17/26 to add a Tier 2 pathway; weigh effort vs. limited grid value."
     },
     {
       "name": "City of Yonkers",
-      "why": "Code silent on BESS; the county's largest city = highest potential impact.",
+      "why": "Code silent; county's largest city = highest raw potential; Moderate capacity.",
       "action": "Proactively propose a healthy tiered code before a project forces a reactive ban."
     },
     {
       "name": "Village of Rye Brook",
-      "why": "Restrictive (Tier 1 only); flagged by the boss among the original five.",
-      "action": "Confirm with the boss why Rye Brook was flagged, then push a Tier 2 pathway."
+      "why": "Restrictive (Tier 1 only); High capacity; flagged by the boss among the original five.",
+      "action": "Confirm why Rye Brook was flagged, then push a Tier 2 pathway."
     },
     {
       "name": "Village of Mamaroneck",
-      "why": "Restrictive — LL 7-2026 prohibits anything over 80 kWh.",
+      "why": "Restrictive — prohibits >80 kWh (LL 7-2026); High capacity.",
       "action": "Advocate raising the cap / adding a Tier 2 pathway."
     },
     {
+      "name": "Village of Ossining",
+      "why": "Fresh 8-month moratorium (ends ~Dec 2026) — good timing, but Low grid capacity (100% red) limits impact.",
+      "action": "Engage the Village Board to steer toward 'allowed,' but prioritize higher-capacity towns first."
+    },
+    {
       "name": "Village of Briarcliff Manor",
-      "why": "Restrictive — prohibits Tier 2 (>600 kWh).",
-      "action": "Push to allow Tier 2 with siting and safety standards."
+      "why": "Restrictive — prohibits Tier 2 (>600 kWh); Low capacity (75% red).",
+      "action": "Push to allow Tier 2 with siting standards when capacity allows."
     }
   ],
-  "hearingNote": "Specific public-hearing dates are not centrally published — towns post them as one-off legal notices (often via eCode360 or the town-clerk page). Recurring board meetings below are computed; confirm exact hearing dates per town. Gaps to research: firm 2026 hearing dates for Cortlandt, New Castle, and Ossining Village."
+  "hearingNote": "Specific public-hearing dates are not centrally published — towns post them as one-off legal notices (often via eCode360 or the town-clerk page). Recurring board meetings below are computed; confirm exact hearing dates per town. Gaps to research: firm 2026 hearing dates for Cortlandt, New Castle, and Ossining Village.",
+  "hostingNote": "Grid hosting capacity is a proxy read from the ConEd hosting-capacity map colors in the workgroup sheet: more green/yellow = more available capacity (better BESS siting value); orange = limited; red = constrained. NYSEG-territory towns aren't on that map. Confirm against the utility legend before relying on it."
 }
