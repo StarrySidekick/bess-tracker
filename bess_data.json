@@ -363,8 +363,34 @@
       ],
       "committees": [],
       "meetings": [],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Mayor",
+          "name": "Rika Levin",
+          "phone": "(914) 762-6232"
+        },
+        {
+          "role": "Trustees",
+          "name": "include Manuel Quezada and Dana White (confirm full roster)",
+          "phone": "(914) 762-6232"
+        },
+        {
+          "role": "Village Clerk",
+          "name": "Susan Donnelly",
+          "email": "Sdonnelly@townofossining.com",
+          "phone": "(914) 762-8428"
+        },
+        {
+          "role": "Village Hall",
+          "name": "16 Croton Ave, Ossining, NY 10562",
+          "phone": "(914) 762-6232"
+        }
+      ],
       "links": [
+        [
+          "Board of Trustees",
+          "https://www.villageofossiningny.gov/board-trustees"
+        ],
         [
           "Ossining Village moratorium (PDF)",
           "https://ecode360.com/OS1500/laws/LF2668147.pdf"
@@ -711,8 +737,35 @@
       ],
       "committees": [],
       "meetings": [],
-      "officials": [],
-      "links": [],
+      "officials": [
+        {
+          "role": "Mayor",
+          "name": "Steven A. Vescio",
+          "phone": "(914) 944-2782"
+        },
+        {
+          "role": "Board of Trustees",
+          "name": "Mayor + four Trustees",
+          "phone": "(914) 944-2782"
+        },
+        {
+          "role": "Village Clerk",
+          "name": "Christine Dennett",
+          "email": "clerksoffice@briarcliffmanor.org",
+          "phone": "(914) 941-4801"
+        },
+        {
+          "role": "Village Office",
+          "name": "1111 Pleasantville Road, Briarcliff Manor, NY 10510",
+          "phone": "(914) 941-4800"
+        }
+      ],
+      "links": [
+        [
+          "Board of Trustees",
+          "https://briarcliffmanor.gov/281/Board-of-Trustees"
+        ]
+      ],
       "flags": [
         "Over-strict: Prohibits Tier 2 (>600 kWh) — blocks utility-scale storage. An engagement target to loosen toward a Croton-style tiered code."
       ],
@@ -775,8 +828,34 @@
       ],
       "committees": [],
       "meetings": [],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Mayor",
+          "name": "Sarah Bauer",
+          "phone": "(914) 834-6230"
+        },
+        {
+          "role": "Trustees",
+          "name": "Peter Fanelli, Dawn Magid, Terence Paré, Ian Post",
+          "phone": "(914) 834-6230"
+        },
+        {
+          "role": "Village Clerk",
+          "name": "Aylone Katzin",
+          "email": "villageclerk@larchmontny.gov",
+          "phone": "(914) 834-6230 x1"
+        },
+        {
+          "role": "Village Hall",
+          "name": "120 Larchmont Ave, Larchmont, NY 10538",
+          "phone": "(914) 834-6230"
+        }
+      ],
       "links": [
+        [
+          "Board of Trustees",
+          "https://www.larchmontny.gov/government/decision_making_boards/board_of_trustees/index.php"
+        ],
         [
           "Larchmont LL 1-2026 (PDF)",
           "https://ecode360.com/LA0851/laws/LF2719891.pdf"
@@ -1799,7 +1878,6 @@
         "Local law: BESS allowed, Tier 1 only. No BESS moratorium found in the workgroup data or code. (per the workgroup GIS sheet)."
       ],
       "flags": [
-        "Included in the original five, but the workgroup data shows Rye Brook PERMITS Tier 1 BESS (it has a code) and has no BESS moratorium. No separate non-BESS moratorium was found either — confirm with the boss what prompted Rye Brook's inclusion.",
         "Over-strict: Tier 1 only — no Tier 2 pathway. An engagement target to loosen toward a Croton-style tiered code."
       ],
       "committees": [
@@ -2805,8 +2883,8 @@
     },
     {
       "name": "Village of Rye Brook",
-      "why": "Restrictive (Tier 1 only); High capacity; flagged by the boss among the original five.",
-      "action": "Confirm why Rye Brook was flagged, then push a Tier 2 pathway.",
+      "why": "Restrictive — Tier 1 only (no Tier 2 pathway); High grid capacity, making it a strong target to loosen.",
+      "action": "Push the Board of Trustees to add a Tier 2 pathway with siting and safety standards.",
       "engage": "Board of Trustees meets 2nd & 4th Tuesday at Village Hall (938 King St). Agendas/video on the CivicWeb meeting portal; reach officials via the Village Administrator's office.",
       "notify": {
         "who": "Shari Melillo, Secretary to the Administrator",
@@ -2829,7 +2907,7 @@
       "name": "Village of Ossining",
       "why": "Fresh 8-month moratorium (ends ~Dec 2026) — good timing, but Low grid capacity (100% red) limits impact.",
       "action": "Engage the Village Board to steer toward 'allowed,' but prioritize higher-capacity towns first.",
-      "engage": "Board of Trustees — agendas on the village site/Clerk. The 8-month moratorium study (to ~Dec 2026) is the window; attend Board meetings and ask to address the permanent BESS code.",
+      "engage": "Board of Trustees at 16 Croton Ave; the 8-month moratorium study (to ~Dec 2026) is the window. Comment at Board meetings; email the Clerk to be notified of the BESS hearing.",
       "notify": {
         "who": "Village Clerk Susan Donnelly",
         "email": "Sdonnelly@townofossining.com",
@@ -2840,22 +2918,22 @@
       "name": "Village of Briarcliff Manor",
       "why": "Restrictive — prohibits Tier 2 (>600 kWh); Low capacity (75% red).",
       "action": "Push to allow Tier 2 with siting standards when capacity allows.",
-      "engage": "Village Board — check the Village of Briarcliff Manor site for the meeting calendar and agendas; comment at Board meetings. If no BESS item is posted, email the Village Clerk to request a Tier 2 amendment.",
+      "engage": "Village Board meets at 1111 Pleasantville Rd; agendas on the village site. Comment at Board meetings; email the Clerk to be added to BESS/hearing notices and request a Tier 2 amendment.",
       "notify": {
-        "who": "Village Clerk's Office",
-        "email": "",
-        "phone": ""
+        "who": "Village Clerk Christine Dennett",
+        "email": "clerksoffice@briarcliffmanor.org",
+        "phone": "(914) 941-4801"
       }
     },
     {
       "name": "Village of Larchmont",
       "why": "Restrictive — LL 2-2026 prohibits Tier 2 (>600 kWh); High grid capacity (100% yellow).",
       "action": "Push to add a Tier 2 pathway with siting/safety standards.",
-      "engage": "Board of Trustees — check the Village of Larchmont site for meeting dates/agendas; comment at Board meetings about adding a Tier 2 pathway. Email the Clerk for hearing notices.",
+      "engage": "Board of Trustees meets at 120 Larchmont Ave; agendas on the village site. Comment at Board meetings about adding a Tier 2 pathway; email the Clerk for hearing notices.",
       "notify": {
-        "who": "Village Clerk's Office",
-        "email": "",
-        "phone": ""
+        "who": "Village Clerk Aylone Katzin",
+        "email": "villageclerk@larchmontny.gov",
+        "phone": "(914) 834-6230 x1"
       }
     }
   ],
