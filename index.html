@@ -288,13 +288,14 @@ function buildReportHTML(){
     const col=_statusColor(t.status);
     const host=(t.hosting&&t.hosting.raw)?` &nbsp;·&nbsp; Grid capacity: ${_esc(t.hosting.tier)} (${_esc(t.hosting.raw)})`:"";
     const links=(t.links&&t.links.length)?`<p style="margin:5px 0"><b>Links:</b> `+t.links.map(l=>`<a href="${l[1]}" style="color:#2e75b6">${_esc(l[0])}</a>`).join(" &nbsp;·&nbsp; ")+`</p>`:"";
+    const offs=(t.officials&&t.officials.length)?`<p style="margin:6px 0 1px"><b>Officials &amp; contacts:</b></p>`+t.officials.map(o=>`<p style="margin:1px 0">${_esc(o.role)}: ${_esc(o.name)}${o.email?` &nbsp;·&nbsp; <a href="mailto:${o.email}" style="color:#2e75b6">${_esc(o.email)}</a>`:""}${o.phone?" &nbsp;·&nbsp; "+_esc(o.phone):""}</p>`).join(""):`<p style="margin:6px 0 1px;color:#8a6d00"><i>Officials/contacts not yet compiled for this municipality — use the links below or the town/village site.</i></p>`;
     h+=`<div style="page-break-inside:avoid;break-inside:avoid;border-left:4px solid ${col};padding:1px 0 8px 12px;margin:0 0 16px 0">`
       +`<div style="font-size:14.5pt;font-weight:bold;color:#1f3864">${i+1}. ${_esc(p.name)} <span style="font-size:9pt;color:#fff;background:${col};padding:1px 7px">${_esc(t.statusLabel||'')}</span></div>`
       +`<div style="color:#555;font-size:9.5pt;margin:2px 0 4px">${_esc(t.scope||'')}${host}</div>`
       +`<p style="margin:5px 0"><b>Why it ranks here:</b> ${_esc(p.why)}</p>`
       +`<p style="margin:5px 0"><b>Recommended action:</b> ${_esc(p.action)}</p>`
       +`<p style="margin:5px 0"><b>How to engage:</b> ${_esc(p.engage||"Attend the board's regular meetings and use the public-comment period; check the Clerk / eCode360 for the hearing notice.")}</p>`
-      +links+`</div>`;
+      +offs+links+`</div>`;
   });
   h+=`</div>`;
   return h;
