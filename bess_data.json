@@ -2752,61 +2752,111 @@
       "name": "Town of Cortlandt (Cortlandt Manor)",
       "why": "Active moratorium on ALL BESS expires 12/31/26 (LL 7-2025); large town; High grid capacity (100% yellow). Next Town Board: July 21, 2026.",
       "action": "Engage Town Board now — push a Croton-style tiered code so permanent rules allow Tier 2+ rather than defaulting to the current Tier 3 prohibition.",
-      "engage": "Town Board meets monthly on a Tuesday, 7:00 PM, Nyberg Room, Town Hall (1 Heady St). Use the public-comment period. Watch the town's Legal Notices / Public Hearings page for the BESS hearing before the 7/31/26 expiry; if none is posted, email the Town Clerk to be added to notifications."
+      "engage": "Town Board meets monthly on a Tuesday, 7:00 PM, Nyberg Room, Town Hall (1 Heady St). Use the public-comment period. Watch the town's Legal Notices / Public Hearings page for the BESS hearing before the 7/31/26 expiry; if none is posted, email the Town Clerk to be added to notifications.",
+      "notify": {
+        "who": "Town Clerk Laroue Shatzkin",
+        "email": "Laroues@townofcortlandt.com",
+        "phone": "(914) 734-1020"
+      }
     },
     {
       "name": "Town of New Castle (Chappaqua / Millwood)",
       "why": "Moratorium lapsed 5/31/26; tiered law proposed but not adopted — open window now; Moderate capacity.",
       "action": "Comment at Town Board to shape thresholds toward a permissive Tier 1 and reasonable Tier 3.",
-      "engage": "Town Board work sessions & meetings at 200 S. Greeley Ave, Chappaqua. The draft BESS law is on the town's Proposed Legislation page. Email the Town Clerk to be notified of the hearing and comment at the work session."
+      "engage": "Town Board work sessions & meetings at 200 S. Greeley Ave, Chappaqua. The draft BESS law is on the town's Proposed Legislation page. Email the Town Clerk to be notified of the hearing and comment at the work session.",
+      "notify": {
+        "who": "Town Clerk's Office",
+        "email": "cpapes@mynewcastle.org",
+        "phone": "(914) 238-4771"
+      }
     },
     {
       "name": "Town / Village of Harrison",
       "why": "Moratorium expired; code already allows to Tier 3 by permit; big commercial base; High capacity — high impact, low friction.",
       "action": "Lock in / formalize the tiered standards and build relationships before any reactive rollback.",
-      "engage": "Town/Village Board meets 1st & 3rd Thursday, 7:00 PM (1 Heineman Pl). Public comment at meetings; agendas on the board page. For a hearing, check board agendas or email the Clerk."
+      "engage": "Town/Village Board meets 1st & 3rd Thursday, 7:00 PM (1 Heineman Pl). Public comment at meetings; agendas on the board page. For a hearing, check board agendas or email the Clerk.",
+      "notify": {
+        "who": "Town/Village Clerk's Office (or Mayor's office)",
+        "email": "mayor@harrison-ny.gov",
+        "phone": "(914) 670-3000"
+      }
     },
     {
       "name": "City of Peekskill",
       "why": "Tier 1 only with the Tier 2 moratorium just lapsed (5/31/26) — clear opening; Hudson city; High capacity.",
       "action": "Advocate a Tier 2 standard at Common Council now.",
-      "engage": "Common Council meets Mondays (work session then meeting) at City Hall, 840 Main St. Email the City Clerk; comment at Common Council. Hearings post on the city Agenda Center."
+      "engage": "Common Council meets Mondays (work session then meeting) at City Hall, 840 Main St. Email the City Clerk; comment at Common Council. Hearings post on the city Agenda Center.",
+      "notify": {
+        "who": "City Clerk Cassandra Redd",
+        "email": "credd@cityofpeekskill.com",
+        "phone": "(914) 734-4233"
+      }
     },
     {
       "name": "Town of Bedford",
       "why": "Large-scale moratorium until 8/17/26 (urgent deadline), but Low grid capacity (100% red) tempers payoff.",
       "action": "Engage before 8/17/26 to add a Tier 2 pathway; weigh effort vs. limited grid value.",
-      "engage": "Town Board meets 1st & 3rd Tuesday at the Town House (321 Bedford Rd, Bedford Hills); public sessions at start/end, Zoom available. Agendas on the Agenda Center; watch for the large-scale BESS hearing before 8/17/26."
+      "engage": "Town Board meets 1st & 3rd Tuesday at the Town House (321 Bedford Rd, Bedford Hills); public sessions at start/end, Zoom available. Agendas on the Agenda Center; watch for the large-scale BESS hearing before 8/17/26.",
+      "notify": {
+        "who": "Town Clerk's Office",
+        "email": "townclerk@bedfordny.gov",
+        "phone": "(914) 666-4534"
+      }
     },
     {
       "name": "Village of Rye Brook",
       "why": "Restrictive (Tier 1 only); High capacity; flagged by the boss among the original five.",
       "action": "Confirm why Rye Brook was flagged, then push a Tier 2 pathway.",
-      "engage": "Board of Trustees meets 2nd & 4th Tuesday at Village Hall (938 King St). Agendas/video on the CivicWeb meeting portal; reach officials via the Village Administrator's office."
+      "engage": "Board of Trustees meets 2nd & 4th Tuesday at Village Hall (938 King St). Agendas/video on the CivicWeb meeting portal; reach officials via the Village Administrator's office.",
+      "notify": {
+        "who": "Shari Melillo, Secretary to the Administrator",
+        "email": "smelillo@ryebrook.org",
+        "phone": "(914) 939-0111"
+      }
     },
     {
       "name": "Village of Mamaroneck",
       "why": "Restrictive — prohibits >80 kWh (LL 7-2026); High capacity.",
       "action": "Advocate raising the cap / adding a Tier 2 pathway.",
-      "engage": "Board of Trustees meets 2nd & 4th Monday (work session ~5 PM, regular ~8 PM), Village Courtroom (169 Mt. Pleasant Ave). Agendas on the village site; comment at the meeting."
+      "engage": "Board of Trustees meets 2nd & 4th Monday (work session ~5 PM, regular ~8 PM), Village Courtroom (169 Mt. Pleasant Ave). Agendas on the village site; comment at the meeting.",
+      "notify": {
+        "who": "Village Clerk's Office",
+        "email": "",
+        "phone": ""
+      }
     },
     {
       "name": "Village of Ossining",
       "why": "Fresh 8-month moratorium (ends ~Dec 2026) — good timing, but Low grid capacity (100% red) limits impact.",
       "action": "Engage the Village Board to steer toward 'allowed,' but prioritize higher-capacity towns first.",
-      "engage": "Board of Trustees — agendas on the village site/Clerk. The 8-month moratorium study (to ~Dec 2026) is the window; attend Board meetings and ask to address the permanent BESS code."
+      "engage": "Board of Trustees — agendas on the village site/Clerk. The 8-month moratorium study (to ~Dec 2026) is the window; attend Board meetings and ask to address the permanent BESS code.",
+      "notify": {
+        "who": "Village Clerk Susan Donnelly",
+        "email": "Sdonnelly@townofossining.com",
+        "phone": "(914) 762-8428"
+      }
     },
     {
       "name": "Village of Briarcliff Manor",
       "why": "Restrictive — prohibits Tier 2 (>600 kWh); Low capacity (75% red).",
       "action": "Push to allow Tier 2 with siting standards when capacity allows.",
-      "engage": "Village Board — check the Village of Briarcliff Manor site for the meeting calendar and agendas; comment at Board meetings. If no BESS item is posted, email the Village Clerk to request a Tier 2 amendment."
+      "engage": "Village Board — check the Village of Briarcliff Manor site for the meeting calendar and agendas; comment at Board meetings. If no BESS item is posted, email the Village Clerk to request a Tier 2 amendment.",
+      "notify": {
+        "who": "Village Clerk's Office",
+        "email": "",
+        "phone": ""
+      }
     },
     {
       "name": "Village of Larchmont",
       "why": "Restrictive — LL 2-2026 prohibits Tier 2 (>600 kWh); High grid capacity (100% yellow).",
       "action": "Push to add a Tier 2 pathway with siting/safety standards.",
-      "engage": "Board of Trustees — check the Village of Larchmont site for meeting dates/agendas; comment at Board meetings about adding a Tier 2 pathway. Email the Clerk for hearing notices."
+      "engage": "Board of Trustees — check the Village of Larchmont site for meeting dates/agendas; comment at Board meetings about adding a Tier 2 pathway. Email the Clerk for hearing notices.",
+      "notify": {
+        "who": "Village Clerk's Office",
+        "email": "",
+        "phone": ""
+      }
     }
   ],
   "hearingNote": "Specific public-hearing dates are not centrally published — towns post them as one-off legal notices (often via eCode360 or the town-clerk page). Recurring board meetings below are computed; confirm exact hearing dates per town. Gaps to research: firm 2026 hearing dates for Cortlandt, New Castle, and Ossining Village.",
