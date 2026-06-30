@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29",
+  "lastUpdated": "2026-06-30",
   "statusMeta": {
     "moratorium": {
       "label": "Active moratorium",
@@ -26,7 +26,7 @@
     "points": [
       [
         "New York is the epicenter of BESS restrictions.",
-        "As of the June 2026 tracker refresh, New York had over 100 active local BESS moratoriums — more than 80% of every active BESS moratorium in the U.S. Westchester remains among the most-restricted counties. The coalition tracks 4 towns with an active moratorium today (Bedford, Cortlandt, New Castle, and the Village of Ossining); Mamaroneck Village and Pound Ridge each concluded their moratorium drafting period in 2026 and now sit under restrictive permanent codes (Tier 1-only / on-site-only) — consistent with Carina Energy's June 2026 update marking both LIFTED — plus several outright bans (Mount Pleasant, Mount Kisco, Somers)."
+        "As of the June 2026 tracker refresh, New York had over 100 active local BESS moratoriums — more than 80% of every active BESS moratorium in the U.S. Westchester remains among the most-restricted counties. The coalition tracks 5 towns with an active moratorium (Bedford, Cortlandt, New Castle, the Village of Ossining, and Pound Ridge); Cortlandt's moratorium runs through Dec 31, 2026 per LL 7-2025, and Pound Ridge's through Sept 24, 2026. Mamaroneck Village concluded its moratorium drafting period and adopted a permanent restrictive code (LL 7-2026: Tier 1 ≤40/80 kWh; >80 kWh prohibited). Several towns have outright bans (Mount Pleasant, Mount Kisco, Somers)."
       ],
       [
         "Local control is decisive for standalone projects.",
@@ -142,7 +142,7 @@
       "status": "moratorium",
       "statusLabel": "MORATORIUM",
       "original": true,
-      "scope": "Active moratorium — all BESS (expires 7/31/26); code prohibits Tier 3",
+      "scope": "Active moratorium — all BESS (expires 12/31/26 per LL 7-2025); code prohibits Tier 3",
       "window": "HIGH",
       "windowClass": "p-high",
       "subtitle": "Northwestern Westchester — Hudson River to the Putnam County line",
@@ -153,7 +153,7 @@
         ],
         [
           "Governing law",
-          "LL 2-2024 (original) → LL 10-2024 → LL 2 of 2025 extended through Dec 31, 2025. Listed ACTIVE on the statewide tracker in 2026."
+          "LL 2-2024 (original) → LL 10-2024 → LL 2-2025 (through Dec 31, 2025) → LL 7-2025 (through Dec 31, 2026, per the Dec 9, 2025 public hearing notice). Active moratorium."
         ],
         [
           "Why a moratorium",
@@ -167,10 +167,10 @@
       "summary": [
         "Cortlandt has had a moratorium in place continuously since 2024. After strong developer interest, the Town Board enacted LL 2-2024, convened a committee to draft a permanent law, and extended via LL 10-2024 and LL 2 of 2025 (through Dec 31, 2025). Still ACTIVE in 2026.",
         "Because the town is openly drafting, this is one of the best chances to influence the actual ordinance — setbacks, fire/safety standards, permitted zones.",
-        "Local law: Moratorium on all BESS, expires 07/31/2026; the default code prohibits Tier 3 (utility-scale) systems. (per the workgroup GIS sheet)."
+        "Local law: LL 7-2025 extends the moratorium on all BESS through 12/31/2026 (confirmed via the Town Board's Dec 9, 2025 public hearing notice; note that the workgroup GIS sheet notation 'until 07-2026' appears to be a date-entry issue — the legal notice text controls). The default code prohibits Tier 3 (utility-scale) systems."
       ],
       "flags": [
-        "Exact current expiration unconfirmed. LL 2-2025 ran through Dec 31, 2025 and the town is still ACTIVE in 2026, but a specific end date / final adopted ordinance could not be verified. Confirm via the Town Clerk / Legal Notices."
+        "LL 7-2025 confirmed to extend the moratorium through Dec 31, 2026, per the Town Board's public hearing notice for the December 9, 2025 meeting (fetched 6/30/26). The workgroup GIS sheet notes 'until 07-2026,' but the legal notice text stating 'through the end of 2026' is authoritative. Confirm LL 7-2025 was formally adopted at the Dec 9, 2025 meeting via the Town Clerk."
       ],
       "committees": [
         "<b>Green Team / Climate Smart Task Force</b> — sustainability body; natural ally.",
@@ -1421,7 +1421,7 @@
       ],
       "summary": [
         "Pound Ridge's moratorium covered ALL battery storage regardless of size (only ~10 NY jurisdictions go this far). The Board passed the original six-month moratorium unanimously after a public hearing, then noticed a 2nd-extension hearing for March 24, 2026.",
-        "Carina Energy's June 2026 update lists the moratorium as LIFTED rather than extended again, consistent with the workgroup's own 'on-site use only' characterization of the town's current rule — i.e., the broad ALL_BESS moratorium appears to have given way to a narrower permanent allowance for on-site storage rather than another extension. The town's strong sustainability infrastructure gives the workgroup credible allies to argue that well-sited, code-compliant storage can coexist with climate goals rather than being effectively barred.",
+        "The workgroup GIS sheet (updated 2026-06-18) records the moratorium as active through 9/24/26, treating this as the authoritative source. Carina Energy's June 2026 update shows Pound Ridge as LIFTED — likely aggregator lag — and the sheet's 'on-site use only' code description reflects the baseline rule that will govern once the moratorium expires. Confirm with the Town Clerk what the March 24, 2026 extension hearing formally produced (another extension vs. permanent on-site rule).",
         "Local law: BESS only allowed when “providing energy primarily for the property on which they are located” — effectively bars utility-scale. (per the workgroup GIS sheet)."
       ],
       "flags": [
@@ -1689,7 +1689,7 @@
       "name": "Village of Mamaroneck",
       "status": "overstrict",
       "statusLabel": "RESTRICTIVE",
-      "scope": "Allowed — Tier 1 only",
+      "scope": "Allowed — Tier 1 ≤40/80 kWh; >80 kWh prohibited (LL 7-2026, confirmed)",
       "window": "TOO STRICT",
       "windowClass": "p-strict",
       "subtitle": "Southeastern Westchester — Long Island Sound shoreline",
@@ -1714,12 +1714,11 @@
       "summary": [
         "The Village of Mamaroneck extended its BESS moratorium repeatedly through 2025 (Local Laws 7-2025, 11-2025, and 14-2025, amending Chapter 342, Zoning) while preparing permanent regulations, then held an April 27, 2026 Board of Trustees hearing on a proposed local law specifically addressing the moratorium.",
         "Carina Energy's June 2026 statewide update lists Mamaroneck Village's moratorium as LIFTED — consistent with the Village having concluded its drafting period and landed on a permanent Tier 1-only BESS framework rather than extending the pause again. There is now an open window to push for a defined Tier 2 pathway before the permanent code settles further.",
-        "Local law: BESS allowed, Tier 1 only. (per the workgroup GIS sheet)."
+        "Local law: LL 7-2026 (confirmed in workgroup GIS sheet updated 6/18/26): Tier 1 ≤40/80 kWh; >80 kWh prohibited. The moratorium chain (LL 7/11/14-2025) concluded into this permanent Tier-1-only framework after the April 27, 2026 Board of Trustees hearing. (Verified in the workgroup GIS sheet.)"
       ],
       "flags": [
-        "Confirm the exact local law number and adoption date for the law that resulted from the April 27, 2026 hearing on 'PLL G of 2026' — the Village's online Recently Adopted Local Laws page had no 2026 list available as of this check (6/29/26). This would confirm whether the permanent Tier 1-only framework described here is fully adopted.",
         "Confirm the current Mayor/Trustee roster + contacts on the Village site.",
-        "Over-strict: Tier 1 only — no Tier 2 pathway. An engagement target to loosen toward a Croton-style tiered code."
+        "Over-strict: LL 7-2026 prohibits >80 kWh (Tier 2). An engagement target to loosen toward a Croton-style tiered code."
       ],
       "committees": [
         "<b>Board of Trustees</b> — Mayor + 4 Trustees; the legislative body.",
@@ -2592,6 +2591,15 @@
   ],
   "changelog": [
     {
+      "date": "2026-06-30",
+      "items": [
+        "Cortlandt CORRECTION (major): LL 7-2025 confirmed to extend the moratorium through Dec 31, 2026 — not July 31, 2026 as the dashboard previously showed. Source: the Town Board's public hearing notice for December 9, 2025 (fetched from the Town's legal notices page 6/30/26) states the extension runs 'through the end of 2026.' The workgroup GIS sheet notation 'until 07-2026' was likely a date-entry error; the legal notice text controls. Updated scope, governing-law snapshot, summary, flags, calendar deadline, and priority entry accordingly. Added Nov 17 and Dec 8 Town Board meetings to the calendar.",
+        "Mamaroneck Village: confirmed adopted law is LL 7-2026 (Tier 1 ≤40/80 kWh; >80 kWh prohibited) per the workgroup GIS sheet (updated 2026-06-18). Removed the 'unconfirmed law number' flag and updated scope and summary to reflect the confirmed law. Consistent with the April 27, 2026 Board of Trustees hearing on 'PLL G of 2026' that concluded the moratorium chain.",
+        "Pound Ridge: fixed summary inconsistency — previously said the moratorium 'appears to have given way,' but the workgroup GIS sheet (authoritative) shows moratorium active through 9/24/26. Summary rewritten to clearly state the workgroup source is being treated as controlling over Carina's 'LIFTED' label.",
+        "Carina Energy tracker and workgroup GIS spreadsheet (last updated 2026-06-18) checked — no new Westchester municipalities adopted BESS rules or new public hearings surfaced since 6/29/26. NY S5506/A8378 unchanged, still in committee."
+      ]
+    },
+    {
       "date": "2026-06-29",
       "items": [
         "New Castle: confirmed via Carina Energy's June 2026 update that the moratorium remains ACTIVE through roughly August 2026 (not lapsed 5/31/26 as the workgroup spreadsheet suggested); the Town's online Approved Legislation page still shows no 2026 entries, so the exact extension law is unconfirmed — flagged as a possible legal gap pending direct Town Clerk confirmation. Also found the proposed permanent law has shifted toward prohibiting Tier 2/3 outright (Tier 1 ≤80 kWh only), a stricter direction than previously described; Planning Board responded to the referral March 4, 2026, Town Board vote still pending.",
@@ -2708,12 +2716,22 @@
         "date": "2026-10-20",
         "town": "Cortlandt Town Board",
         "time": "7:00 PM"
+      },
+      {
+        "date": "2026-11-17",
+        "town": "Cortlandt Town Board",
+        "time": "7:00 PM"
+      },
+      {
+        "date": "2026-12-08",
+        "town": "Cortlandt Town Board",
+        "time": "7:00 PM"
       }
     ],
     "deadlines": [
       {
-        "date": "2026-07-31",
-        "label": "Cortlandt — BESS moratorium expires (act before this)"
+        "date": "2026-12-31",
+        "label": "Cortlandt — BESS moratorium expires 12/31/26 per LL 7-2025 (engage before year-end)"
       },
       {
         "date": "2026-08-17",
@@ -2732,8 +2750,8 @@
   "priority": [
     {
       "name": "Town of Cortlandt (Cortlandt Manor)",
-      "why": "Active moratorium on ALL BESS expires 7/31/26; large town; High grid capacity (100% yellow).",
-      "action": "Attend Town Board before 7/31/26 and push a Croton-style tiered code instead of another extension."
+      "why": "Active moratorium on ALL BESS expires 12/31/26 (LL 7-2025); large town; High grid capacity (100% yellow). Next Town Board: July 21, 2026.",
+      "action": "Engage Town Board now — push a Croton-style tiered code so permanent rules allow Tier 2+ rather than defaulting to the current Tier 3 prohibition."
     },
     {
       "name": "Town of New Castle (Chappaqua / Millwood)",
