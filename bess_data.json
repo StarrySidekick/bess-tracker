@@ -85,8 +85,7 @@
       ],
       "summary": [
         "Bedford adopted a BESS moratorium on Aug 13, 2024 and extended it (originally to expire July 16, 2025) through January 16, 2026 while it studies safety and prepares regulations; listed ACTIVE on the tracker.",
-        "The moratorium supersedes the usual Town/Planning/Zoning Board application timelines. Engage during this drafting window.",
-        "Local law: LL 1 of 2026: Tier 1 < 80 kWh allowed; Tier 2 > 80 kWh under a large-scale moratorium until 8/17/2026. (per the workgroup GIS sheet)."
+        "The moratorium supersedes the usual Town/Planning/Zoning Board application timelines. Engage during this drafting window."
       ],
       "flags": [
         "Bedford remains ACTIVE on the Carina tracker (refreshed June 14, 2026), so the moratorium was extended past Jan 16, 2026 — but the current expiration date is unconfirmed. The full Town Board roster / a direct phone weren't verified. Confirm via the Town Board page and Agenda Center."
@@ -135,7 +134,9 @@
       "hosting": {
         "raw": "100% Red",
         "tier": "Low capacity"
-      }
+      },
+      "moratoriumReason": "Large-scale systems are paused (to 8/17/26) while the Town studies utility-scale siting; Tier 1 (<80 kWh) is already allowed.",
+      "localLaw": "LL 1 of 2026: Tier 1 < 80 kWh allowed; Tier 2 > 80 kWh under a large-scale moratorium until 8/17/2026. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of Cortlandt (Cortlandt Manor)",
@@ -166,8 +167,7 @@
       ],
       "summary": [
         "Cortlandt has had a moratorium in place continuously since 2024. After strong developer interest, the Town Board enacted LL 2-2024, convened a committee to draft a permanent law, and extended via LL 10-2024 and LL 2 of 2025 (through Dec 31, 2025). Still ACTIVE in 2026.",
-        "Because the town is openly drafting, this is one of the best chances to influence the actual ordinance — setbacks, fire/safety standards, permitted zones.",
-        "Local law: LL 7-2025 extends the moratorium on all BESS through 12/31/2026 (confirmed via the Town Board's Dec 9, 2025 public hearing notice; note that the workgroup GIS sheet notation 'until 07-2026' appears to be a date-entry issue — the legal notice text controls). The default code prohibits Tier 3 (utility-scale) systems."
+        "Because the town is openly drafting, this is one of the best chances to influence the actual ordinance — setbacks, fire/safety standards, permitted zones."
       ],
       "flags": [
         "LL 7-2025 confirmed to extend the moratorium through Dec 31, 2026, per the Town Board's public hearing notice for the December 9, 2025 meeting (fetched 6/30/26). The workgroup GIS sheet notes 'until 07-2026,' but the legal notice text stating 'through the end of 2026' is authoritative. Confirm LL 7-2025 was formally adopted at the Dec 9, 2025 meeting via the Town Clerk."
@@ -234,7 +234,9 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "moratoriumReason": "The Town Board paused all BESS to study fire-safety and siting standards before adopting permanent zoning; the default code otherwise prohibits Tier 3 (utility-scale).",
+      "localLaw": "LL 7-2025 extends the moratorium on all BESS through 12/31/2026 (confirmed via the Town Board's Dec 9, 2025 public hearing notice; note that the workgroup GIS sheet notation 'until 07-2026' appears to be a date-entry issue — the legal notice text controls). The default code prohibits Tier 3 (utility-scale) systems."
     },
     {
       "name": "Town of New Castle (Chappaqua / Millwood)",
@@ -265,8 +267,7 @@
       ],
       "summary": [
         "New Castle paused battery-storage (and large-scale solar) development while it writes siting rules. Supervisor Victoria Tipp framed it as balancing NY's clean-energy targets against safety concerns from BESS fires elsewhere. Per Carina Energy's June 2026 tracker, the moratorium remains active through roughly August 2026.",
-        "The permanent law under consideration has shifted from a permissive tiered framework toward one that would bar Tier 2 and Tier 3 storage entirely (Tier 1 ≤80 kWh only) — a meaningfully stricter direction than earlier drafts. The Planning Board responded to the referral March 4, 2026; the Town Board has not yet voted. Real room to influence the final thresholds before adoption.",
-        "Local law: Moratorium on BESS / large-scale solar (LL 1-2025, extended by LL 7-2025); the workgroup's spreadsheet shows the extension chain running through ~5/31/2026, but Carina Energy's June 2026 statewide update lists New Castle as ACTIVE through approximately August 2026 — likely a further extension not yet posted to the Town's online Approved Legislation page (checked 6/29/26, no 2026 entries listed yet). (per the workgroup GIS sheet)."
+        "The permanent law under consideration has shifted from a permissive tiered framework toward one that would bar Tier 2 and Tier 3 storage entirely (Tier 1 ≤80 kWh only) — a meaningfully stricter direction than earlier drafts. The Planning Board responded to the referral March 4, 2026; the Town Board has not yet voted. Real room to influence the final thresholds before adoption."
       ],
       "flags": [
         "Confirm (1) the full Town Board roster + member emails — the site is JavaScript-driven, so only Tipp, Saland, Levin, and Morton were verifiable — and (2) the exact current expiration date: the workgroup spreadsheet implies the original extension chain ran only through 5/31/2026, but Carina's June 2026 update says ACTIVE through ~Aug 2026 and the Town's Approved Legislation page shows no 2026 entries yet — there is a real possibility of a legal gap if no further extension was actually adopted. Verify directly with the Town Clerk before relying on either source.",
@@ -342,7 +343,9 @@
       "hosting": {
         "raw": "50% Red, 50% Yellow",
         "tier": "Moderate capacity"
-      }
+      },
+      "moratoriumReason": "A six-month moratorium (lapsed 5/31/26) was enacted to develop tiered siting rules; a Tier 1/2/3 law is proposed but not yet adopted.",
+      "localLaw": "Moratorium on BESS / large-scale solar (LL 1-2025, extended by LL 7-2025); the workgroup's spreadsheet shows the extension chain running through ~5/31/2026, but Carina Energy's June 2026 statewide update lists New Castle as ACTIVE through approximately August 2026 — likely a further extension not yet posted to the Town's online Approved Legislation page (checked 6/29/26, no 2026 entries listed yet). (per the workgroup GIS sheet)."
     },
     {
       "name": "Village of Ossining",
@@ -358,9 +361,7 @@
           "100% Red — Low capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Local Law 4-2026: moratorium on all BESS, an 8-month term effective ~4/22/2026 — implying an expiration around late December 2026 (computed estimate, not independently confirmed). (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [
@@ -403,7 +404,9 @@
       "hosting": {
         "raw": "100% Red",
         "tier": "Low capacity"
-      }
+      },
+      "moratoriumReason": "Eight-month moratorium (from 4/22/26) to study BESS before setting permanent tiered rules.",
+      "localLaw": "Local Law 4-2026: moratorium on all BESS, an 8-month term effective ~4/22/2026 — implying an expiration around late December 2026 (computed estimate, not independently confirmed). (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Town of Mount Pleasant",
@@ -433,8 +436,7 @@
       ],
       "summary": [
         "Mount Pleasant moved from a moratorium to a permanent ban on new BESS in December 2025. Supervisor Carl Fulgenzi said the decision followed considerable public input and study of BESS mishaps nationwide; the Board referenced the July 2025 US EPA safety guidance.",
-        "As one of the hardest-line jurisdictions in the county, Mount Pleasant is mainly a monitor-and-watch town unless the Board revisits the ban.",
-        "Local law: Town Code §218-20.7: BESS prohibited from being sited anywhere in the Town. (per the workgroup GIS sheet)."
+        "As one of the hardest-line jurisdictions in the county, Mount Pleasant is mainly a monitor-and-watch town unless the Board revisits the ban."
       ],
       "flags": [
         "Status shown as a permanent ban per the town's Dec 2025 prohibition local law and press release. The Carina tracker (refreshed June 26, 2026) now lists Mount Pleasant's moratorium as LIFTED (type BAN) — consistent with the moratorium having been replaced by the adopted prohibition law, which governs. Bans can be challenged or revised; track any reconsideration, variance pathway, or litigation."
@@ -485,7 +487,9 @@
       "hosting": {
         "raw": "50% Orange, 50% Yellow",
         "tier": "Moderate capacity"
-      }
+      },
+      "moratoriumReason": "Adopted an outright prohibition citing fire-safety and siting concerns rather than a tiered code.",
+      "localLaw": "Town Code §218-20.7: BESS prohibited from being sited anywhere in the Town. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of Somers",
@@ -515,8 +519,7 @@
       ],
       "summary": [
         "After East Point Energy withdrew its 116-megawatt battery facility planned on Miller Road near the Somers/Mahopac border in early 2025, the Town Board amended its code to ban battery farms of that size, propelled by an active resident movement spanning Somers and Mahopac.",
-        "Somers is included as a relevant Westchester jurisdiction; confirm the exact size thresholds and whether smaller BESS remain permitted.",
-        "Local law: 2025 §170-80 (Solar Energy) bans incorporation of BESS. (per the workgroup GIS sheet)."
+        "Somers is included as a relevant Westchester jurisdiction; confirm the exact size thresholds and whether smaller BESS remain permitted."
       ],
       "flags": [
         "The size threshold and the amended code section should be confirmed from the Town of Somers code/minutes; this entry is based on news reporting, not the full local law."
@@ -546,7 +549,9 @@
       "hosting": {
         "raw": "NYSEG",
         "tier": "NYSEG territory (not on the ConEd map)"
-      }
+      },
+      "moratoriumReason": "The solar-energy local law bans incorporation of BESS.",
+      "localLaw": "2025 §170-80 (Solar Energy) bans incorporation of BESS. (per the workgroup GIS sheet)."
     },
     {
       "name": "Village/Town of Mount Kisco",
@@ -576,8 +581,7 @@
       ],
       "summary": [
         "Mount Kisco enacted a six-month moratorium in 2024 (with two three-month extensions) after a large-scale BESS was proposed near the Diamond Properties soccer field at 333 North Bedford Road. In August 2025 the Village Board effectively banned new BESS by declining to treat them as a 'public utility' under the village code.",
-        "Notably, several BESS facilities already operate in the village, so the ban applies to new development.",
-        "Local law: BESS of any size is not an allowed use in any district in the Village. (per the workgroup GIS sheet)."
+        "Notably, several BESS facilities already operate in the village, so the ban applies to new development."
       ],
       "flags": [
         "The ban was implemented via a zoning interpretation (BESS not a 'public utility') rather than a standalone ban law; confirm the exact mechanism and any challenge. The Carina tracker (refreshed June 14, 2026) lists Mount Kisco's earlier moratorium as EXPIRED — consistent with the Village replacing the moratorium with the Aug 2025 effective ban."
@@ -626,7 +630,9 @@
       "hosting": {
         "raw": "100% Red",
         "tier": "Low capacity"
-      }
+      },
+      "moratoriumReason": "Village bars BESS of any size in all districts, citing safety concerns and firefighting readiness.",
+      "localLaw": "BESS of any size is not an allowed use in any district in the Village. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of Greenburgh",
@@ -656,8 +662,7 @@
       ],
       "summary": [
         "Unlike the moratorium towns, Greenburgh already has a BESS law and is now revising it as part of a broader package of land-use code amendments. The Town Board referred the changes to the Planning Board, which will hear staff presentations and discuss them over several months.",
-        "Because the rules are being actively reworked, the workgroup can engage on the substance of the amendments at Town Board and Planning Board meetings.",
-        "Local law: LL 5-2021 (Ch 285 Zoning): Tier 1 ≤80 kWh, Tier 2 ≤6,000 kWh, Tier 3 ≤80 MWh. Amendments currently in progress. (per the workgroup GIS sheet)."
+        "Because the rules are being actively reworked, the workgroup can engage on the substance of the amendments at Town Board and Planning Board meetings."
       ],
       "flags": [
         "The specifics of the existing BESS law and the proposed amendments should be reviewed directly; this town was added as a relevant non-moratorium jurisdiction. Confirm the Town Board roster/contacts."
@@ -716,7 +721,8 @@
       "hosting": {
         "raw": "75% Yellow, 25% Orange",
         "tier": "Moderate capacity"
-      }
+      },
+      "localLaw": "LL 5-2021 (Ch 285 Zoning): Tier 1 ≤80 kWh, Tier 2 ≤6,000 kWh, Tier 3 ≤80 MWh. Amendments currently in progress. (per the workgroup GIS sheet)."
     },
     {
       "name": "Village of Briarcliff Manor",
@@ -732,9 +738,7 @@
           "75% Red, 25% Yellow — Low capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Adopted June 2025 (Ch 178 Art II): Tier 1 to 600 kWh; prohibits Tier 2 > 600 kWh. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [
@@ -773,7 +777,8 @@
       "hosting": {
         "raw": "75% Red, 25% Yellow",
         "tier": "Low capacity"
-      }
+      },
+      "localLaw": "Adopted June 2025 (Ch 178 Art II): Tier 1 to 600 kWh; prohibits Tier 2 > 600 kWh. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Croton-on-Hudson",
@@ -789,9 +794,7 @@
           "100% Red — Low capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Adopted May 2024 (Ch 230 Definitions): Tier 1 to 200 kWh; Tier 2 over 200 kWh. Already permitting real projects (e.g., a 280 kWh system at Croton Auto Park). (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -807,7 +810,8 @@
       "hosting": {
         "raw": "100% Red",
         "tier": "Low capacity"
-      }
+      },
+      "localLaw": "Adopted May 2024 (Ch 230 Definitions): Tier 1 to 200 kWh; Tier 2 over 200 kWh. Already permitting real projects (e.g., a 280 kWh system at Croton Auto Park). (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Larchmont",
@@ -823,9 +827,7 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "LL 1-2026 (§100-6): Tier 1 to 600 kWh permitting; Tier 2 over 600 kWh. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [
@@ -868,7 +870,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "LL 1-2026 (§100-6): Tier 1 to 600 kWh permitting; Tier 2 over 600 kWh. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Port Chester",
@@ -898,8 +901,7 @@
       ],
       "summary": [
         "Port Chester moved from a temporary moratorium to permanent BESS zoning regulations in early 2025 (amending Chapter 345), adopting a SEQRA negative declaration in the process. The trigger was a pending BESS application on North Main Street.",
-        "Because Port Chester now allows BESS under defined standards, it is a useful reference model — and a place to engage on how those standards are applied or amended.",
-        "Local law: §345-1003: Tier 1 < 300 kWh, Tier 2 > 300 kWh (amended 4/26). Adopted permanent regulations after lifting its moratorium. (per the workgroup GIS sheet)."
+        "Because Port Chester now allows BESS under defined standards, it is a useful reference model — and a place to engage on how those standards are applied or amended."
       ],
       "flags": [
         "The Mayor's full name and the specifics of the adopted BESS standards should be confirmed from the adopted local law / Chapter 345."
@@ -941,7 +943,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "§345-1003: Tier 1 < 300 kWh, Tier 2 > 300 kWh (amended 4/26). Adopted permanent regulations after lifting its moratorium. (per the workgroup GIS sheet)."
     },
     {
       "name": "City of Mount Vernon",
@@ -962,8 +965,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the City Council, Planning Board, and Zoning Board of Appeals.",
-        "Local law: Sec 224-A(9): BESS allowed under the solar code. (per the workgroup GIS sheet)."
+        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the City Council, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site.",
@@ -992,7 +994,8 @@
       "hosting": {
         "raw": "100% Red",
         "tier": "Low capacity"
-      }
+      },
+      "localLaw": "Sec 224-A(9): BESS allowed under the solar code. (per the workgroup GIS sheet)."
     },
     {
       "name": "City of Peekskill",
@@ -1022,8 +1025,7 @@
       ],
       "summary": [
         "Peekskill enacted a moratorium on lithium-ion BESS over 80 kW in May 2025 (passed unanimously after a public hearing) and extended it in late 2025 while it studies safety and appropriate standards.",
-        "As a city with a Common Council, Peekskill's process differs from the towns — engagement runs through the Mayor and Council.",
-        "Local law: LL 14-2025: Tier 1 < 80 kWh allowed; the moratorium on Tier 2 > 80 kWh ran until 5/31/2026 and has now lapsed (confirm next step). (per the workgroup GIS sheet)."
+        "As a city with a Common Council, Peekskill's process differs from the towns — engagement runs through the Mayor and Council."
       ],
       "flags": [
         "Confirm the current expiration date and the six Common Council members' names/contacts on the city site.",
@@ -1073,7 +1075,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "LL 14-2025: Tier 1 < 80 kWh allowed; the moratorium on Tier 2 > 80 kWh ran until 5/31/2026 and has now lapsed (confirm next step). (per the workgroup GIS sheet)."
     },
     {
       "name": "City of Rye",
@@ -1094,8 +1097,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the City Council, Planning Board, and Zoning Board of Appeals.",
-        "Local law: LL 2025-02 §98-124.1: Tier 1 < 80 kWh only. (per the workgroup GIS sheet)."
+        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the City Council, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site.",
@@ -1120,7 +1122,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "LL 2025-02 §98-124.1: Tier 1 < 80 kWh only. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town / Village of Harrison",
@@ -1151,8 +1154,7 @@
       ],
       "summary": [
         "Harrison adopted a six-month moratorium (LL 1-2025) effective March 6, 2025. It expired ~6 months later absent a Town Board extension, and the statewide tracker now lists Harrison as EXPIRED — no active pause on BESS applications.",
-        "BESS is now governed by Town Code §235-95, a tiered standard: Tier 1 (≤80 kWh) and Tier 2 (≤600 kWh) are permitted outright, while Tier 3 (>600 kWh, utility-scale) requires a Special Permit Use. This is a reasonably permissive model — engagement now should focus on the Special Permit Use criteria for Tier 3 (siting, fire suppression, decommissioning) rather than asking for tiered standards to be created from scratch.",
-        "Local law: The 2025 moratorium expired; BESS is now allowed via Town Code §235-95: Tier 1 ≤80 kWh and Tier 2 ≤600 kWh permitted, Tier 3 >600 kWh permitted with a Special Permit Use. (per the workgroup GIS sheet)."
+        "BESS is now governed by Town Code §235-95, a tiered standard: Tier 1 (≤80 kWh) and Tier 2 (≤600 kWh) are permitted outright, while Tier 3 (>600 kWh, utility-scale) requires a Special Permit Use. This is a reasonably permissive model — engagement now should focus on the Special Permit Use criteria for Tier 3 (siting, fire suppression, decommissioning) rather than asking for tiered standards to be created from scratch."
       ],
       "flags": [
         "Councilmember emails follow the town's standard format (firstinitiallastname@harrison-ny.gov) from a directory listing; not each confirmed on the official board page. Verify before formal outreach."
@@ -1233,7 +1235,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "The 2025 moratorium expired; BESS is now allowed via Town Code §235-95: Tier 1 ≤80 kWh and Tier 2 ≤600 kWh permitted, Tier 3 >600 kWh permitted with a Special Permit Use. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of Lewisboro",
@@ -1254,8 +1257,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals.",
-        "Local law: 2025 Ch 220 Art XIII (Solar Energy Systems) covers BESS. (per the workgroup GIS sheet)."
+        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the town's official site."
@@ -1279,7 +1281,8 @@
       "hosting": {
         "raw": "NYSEG",
         "tier": "NYSEG territory (not on the ConEd map)"
-      }
+      },
+      "localLaw": "2025 Ch 220 Art XIII (Solar Energy Systems) covers BESS. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of Mamaroneck",
@@ -1300,8 +1303,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. The Town of Mamaroneck (which includes the unincorporated area plus parts of Larchmont/Village governance) does not appear in the statewide tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth.",
-        "Local law: 2025 Chapter 181 (Solar Energy) covers BESS. (per the workgroup GIS sheet)."
+        "Included for completeness. The Town of Mamaroneck (which includes the unincorporated area plus parts of Larchmont/Village governance) does not appear in the statewide tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth."
       ],
       "flags": [
         "Reference entry — not individually researched. Do not confuse with the Village of Mamaroneck, which has an active moratorium. Confirm on the town's official site."
@@ -1329,7 +1331,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "2025 Chapter 181 (Solar Energy) covers BESS. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of North Castle",
@@ -1350,8 +1353,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals.",
-        "Local law: §355-4 definitions: Type 3 to 80 kWh, Type 2 to 600 kWh, Type 1 over 600 kWh. (per the workgroup GIS sheet)."
+        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the town's official site."
@@ -1376,7 +1378,8 @@
       "hosting": {
         "raw": "25% Red, 75% Yellow",
         "tier": "Moderate capacity"
-      }
+      },
+      "localLaw": "§355-4 definitions: Type 3 to 80 kWh, Type 2 to 600 kWh, Type 1 over 600 kWh. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of North Salem",
@@ -1397,8 +1400,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals.",
-        "Local law: §250-13 prohibits BESS except systems dedicated primarily to the property where located (on-site only). (per the workgroup GIS sheet)."
+        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the town's official site.",
@@ -1423,7 +1425,8 @@
       "hosting": {
         "raw": "NYSEG",
         "tier": "NYSEG territory (not on the ConEd map)"
-      }
+      },
+      "localLaw": "§250-13 prohibits BESS except systems dedicated primarily to the property where located (on-site only). (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of Ossining",
@@ -1444,8 +1447,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals.",
-        "Local law: 2021 §200-31.4: Tier 1 to 600 kWh, Tier 2 over 600 kWh in a Floating Zone. (per the workgroup GIS sheet)."
+        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the town's official site."
@@ -1469,7 +1471,8 @@
       "hosting": {
         "raw": "100% Red",
         "tier": "Low capacity"
-      }
+      },
+      "localLaw": "2021 §200-31.4: Tier 1 to 600 kWh, Tier 2 over 600 kWh in a Floating Zone. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of Pound Ridge",
@@ -1500,8 +1503,7 @@
       ],
       "summary": [
         "Pound Ridge's moratorium covered ALL battery storage regardless of size (only ~10 NY jurisdictions go this far). The Board passed the original six-month moratorium unanimously after a public hearing, then noticed a 2nd-extension hearing for March 24, 2026.",
-        "The workgroup GIS sheet (updated 2026-06-18) records the moratorium as active through 9/24/26, treating this as the authoritative source. Carina Energy's June 2026 update shows Pound Ridge as LIFTED — likely aggregator lag — and the sheet's 'on-site use only' code description reflects the baseline rule that will govern once the moratorium expires. Confirm with the Town Clerk what the March 24, 2026 extension hearing formally produced (another extension vs. permanent on-site rule).",
-        "Local law: BESS only allowed when “providing energy primarily for the property on which they are located” — effectively bars utility-scale. (per the workgroup GIS sheet)."
+        "The workgroup GIS sheet (updated 2026-06-18) records the moratorium as active through 9/24/26, treating this as the authoritative source. Carina Energy's June 2026 update shows Pound Ridge as LIFTED — likely aggregator lag — and the sheet's 'on-site use only' code description reflects the baseline rule that will govern once the moratorium expires. Confirm with the Town Clerk what the March 24, 2026 extension hearing formally produced (another extension vs. permanent on-site rule)."
       ],
       "flags": [
         "Confirm directly with the Town Clerk what the March 24, 2026 hearing actually produced — whether it formally adopted the 'on-site use only' permanent rule, let the moratorium lapse without replacement, or something else. Carina's 'LIFTED' label and the workgroup's 'on-site use only' description point the same direction but neither is a primary-source confirmation.",
@@ -1592,7 +1594,9 @@
       "hosting": {
         "raw": "NYSEG",
         "tier": "NYSEG territory (not on the ConEd map)"
-      }
+      },
+      "moratoriumReason": "Moratorium runs to 9/24/26 while the Town weighs rules; outside it, only behind-the-meter (on-site) systems are allowed.",
+      "localLaw": "BESS only allowed when “providing energy primarily for the property on which they are located” — effectively bars utility-scale. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of Yorktown",
@@ -1622,8 +1626,7 @@
       ],
       "summary": [
         "Yorktown enacted a BESS moratorium following an Oct 1, 2024 public hearing; it is now listed EXPIRED. The Town Board has also formally opposed S5506/A8378, signaling it wants to keep BESS siting under local control.",
-        "Confirm whether permanent regulations are in progress and engage on standards as well as the town's state-preemption advocacy.",
-        "Local law: 2025 §300-81.5: Tier 1 to 40/80 kWh, Tier 2 over 80 kWh. The Town also formally opposed state ORES preemption (S5506/A8378). (per the workgroup GIS sheet)."
+        "Confirm whether permanent regulations are in progress and engage on standards as well as the town's state-preemption advocacy."
       ],
       "flags": [
         "Exact moratorium dates and any permanent-ordinance status should be confirmed via the Town Clerk / eCode360."
@@ -1678,7 +1681,8 @@
       "hosting": {
         "raw": "90% Yellow, 10% Red",
         "tier": "Moderate capacity"
-      }
+      },
+      "localLaw": "2025 §300-81.5: Tier 1 to 40/80 kWh, Tier 2 over 80 kWh. The Town also formally opposed state ORES preemption (S5506/A8378). (per the workgroup GIS sheet)."
     },
     {
       "name": "Village of Elmsford",
@@ -1694,9 +1698,7 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "2022 (Ch 335-23-J(4)): special-permit use, Tier 1 to 600 kWh, Tier 2 over 600 kWh. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -1706,7 +1708,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "2022 (Ch 335-23-J(4)): special-permit use, Tier 1 to 600 kWh, Tier 2 over 600 kWh. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Hastings-on-Hudson",
@@ -1722,9 +1725,7 @@
           "100% Orange — Low capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Ch 160 Green Building Code; no BESS-specific provisions, so storage is permitted by default. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -1734,7 +1735,8 @@
       "hosting": {
         "raw": "100% Orange",
         "tier": "Low capacity"
-      }
+      },
+      "localLaw": "Ch 160 Green Building Code; no BESS-specific provisions, so storage is permitted by default. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Irvington",
@@ -1750,9 +1752,7 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Ch 224 Attachment 3, Solar Energy Equipment Guidelines (2018). (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -1762,7 +1762,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "Ch 224 Attachment 3, Solar Energy Equipment Guidelines (2018). (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Mamaroneck",
@@ -1792,8 +1793,7 @@
       ],
       "summary": [
         "The Village of Mamaroneck extended its BESS moratorium repeatedly through 2025 (Local Laws 7-2025, 11-2025, and 14-2025, amending Chapter 342, Zoning) while preparing permanent regulations, then held an April 27, 2026 Board of Trustees hearing on a proposed local law specifically addressing the moratorium.",
-        "Carina Energy's June 2026 statewide update lists Mamaroneck Village's moratorium as LIFTED — consistent with the Village having concluded its drafting period and landed on a permanent Tier 1-only BESS framework rather than extending the pause again. There is now an open window to push for a defined Tier 2 pathway before the permanent code settles further.",
-        "Local law: LL 7-2026 (confirmed in workgroup GIS sheet updated 6/18/26): Tier 1 ≤40/80 kWh; >80 kWh prohibited. The moratorium chain (LL 7/11/14-2025) concluded into this permanent Tier-1-only framework after the April 27, 2026 Board of Trustees hearing. (Verified in the workgroup GIS sheet.)"
+        "Carina Energy's June 2026 statewide update lists Mamaroneck Village's moratorium as LIFTED — consistent with the Village having concluded its drafting period and landed on a permanent Tier 1-only BESS framework rather than extending the pause again. There is now an open window to push for a defined Tier 2 pathway before the permanent code settles further."
       ],
       "flags": [
         "Confirm the current Mayor/Trustee roster + contacts on the Village site.",
@@ -1843,7 +1843,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "LL 7-2026 (confirmed in workgroup GIS sheet updated 6/18/26): Tier 1 ≤40/80 kWh; >80 kWh prohibited. The moratorium chain (LL 7/11/14-2025) concluded into this permanent Tier-1-only framework after the April 27, 2026 Board of Trustees hearing. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Rye Brook",
@@ -1874,8 +1875,7 @@
       ],
       "summary": [
         "Rye Brook has no BESS moratorium or ordinance on record and does not appear in the statewide tracker as of May 2026. NY's 2025 Fire Code and the State BESS Model Law are the baseline.",
-        "Best opportunity to get ahead of the issue: approach the Board of Trustees, Planning Board, and the Village's Sustainability Committee now to encourage a balanced, safety-forward ordinance.",
-        "Local law: BESS allowed, Tier 1 only. No BESS moratorium found in the workgroup data or code. (per the workgroup GIS sheet)."
+        "Best opportunity to get ahead of the issue: approach the Board of Trustees, Planning Board, and the Village's Sustainability Committee now to encourage a balanced, safety-forward ordinance."
       ],
       "flags": [
         "Over-strict: Tier 1 only — no Tier 2 pathway. An engagement target to loosen toward a Croton-style tiered code."
@@ -1946,7 +1946,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "BESS allowed, Tier 1 only. No BESS moratorium found in the workgroup data or code. (per the workgroup GIS sheet)."
     },
     {
       "name": "Village of Sleepy Hollow",
@@ -1962,9 +1963,7 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "2022 (Ch 450 Art XX): development incentives, C-2 district only. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -1974,7 +1973,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "2022 (Ch 450 Art XX): development incentives, C-2 district only. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Tarrytown",
@@ -1990,9 +1990,7 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "2025: BESS over 600 kWh allowed via a Floating Zone in the OB and MU zones. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2002,7 +2000,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "2025: BESS over 600 kWh allowed via a Floating Zone in the OB and MU zones. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "City of New Rochelle",
@@ -2023,8 +2022,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the City Council, Planning Board, and Zoning Board of Appeals.",
-        "Local law: Code is silent on BESS. (per the workgroup GIS sheet)."
+        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the City Council, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site."
@@ -2048,7 +2046,8 @@
       "hosting": {
         "raw": "50% Red, 50% Yellow",
         "tier": "Moderate capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (per the workgroup GIS sheet)."
     },
     {
       "name": "City of White Plains",
@@ -2069,8 +2068,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the Common Council, Planning Board, and Zoning Board of Appeals.",
-        "Local law: Code is silent on BESS. (per the workgroup GIS sheet)."
+        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the Common Council, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site.",
@@ -2095,7 +2093,8 @@
       "hosting": {
         "raw": "25% Orange, 75% Yellow",
         "tier": "Moderate capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (per the workgroup GIS sheet)."
     },
     {
       "name": "City of Yonkers",
@@ -2125,8 +2124,7 @@
       ],
       "summary": [
         "At Mayor Mike Spano's request, the Yonkers City Council adopted a moratorium on lithium-ion battery facilities and extended it in 2025 while a hired consultant studies BESS regulations under SEQRA.",
-        "No BESS facilities currently operate in the city; a proposal at 1100 Saw Mill River Road is under review. Engagement runs through the Mayor and City Council.",
-        "Local law: Workgroup review: code is silent on BESS (Ch 109 addresses EV chargers, not storage). Earlier (2025) reports of a Council moratorium — confirm whether it lapsed or was never codified. (per the workgroup GIS sheet)."
+        "No BESS facilities currently operate in the city; a proposal at 1100 Saw Mill River Road is under review. Engagement runs through the Mayor and City Council."
       ],
       "flags": [
         "Workgroup data marks Yonkers 'code silent on BESS,' which conflicts with 2025 news of a Council moratorium. Confirm whether that moratorium lapsed or was never codified.",
@@ -2181,7 +2179,8 @@
       "hosting": {
         "raw": "25% Yellow, 75% Orange",
         "tier": "Moderate capacity"
-      }
+      },
+      "localLaw": "Workgroup review: code is silent on BESS (Ch 109 addresses EV chargers, not storage). Earlier (2025) reports of a Council moratorium — confirm whether it lapsed or was never codified. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of Eastchester",
@@ -2202,8 +2201,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals.",
-        "Local law: Code is silent on BESS. (per the workgroup GIS sheet)."
+        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the town's official site."
@@ -2227,7 +2225,8 @@
       "hosting": {
         "raw": "75% Yellow, 25% Orange",
         "tier": "Moderate capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of Pelham",
@@ -2248,8 +2247,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated BESS law was identified. Not individually researched in depth.",
-        "Local law: Code is silent on BESS; a draft BESS local law has been referenced — confirm. (per the workgroup GIS sheet)."
+        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated BESS law was identified. Not individually researched in depth."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the town/village official sites."
@@ -2273,7 +2271,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS; a draft BESS local law has been referenced — confirm. (per the workgroup GIS sheet)."
     },
     {
       "name": "Town of Rye",
@@ -2294,8 +2293,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. The Town of Rye is a thin layer over the Villages of Port Chester and Rye Brook (both listed separately) plus the Rye Neck area; no dedicated Town BESS law was identified and it is not in the statewide tracker (May 2026).",
-        "Local law: The Town of Rye has no BESS code of its own; its territory is largely the Villages of Port Chester and Rye Brook (listed separately). (per the workgroup GIS sheet)."
+        "Included for completeness. The Town of Rye is a thin layer over the Villages of Port Chester and Rye Brook (both listed separately) plus the Rye Neck area; no dedicated Town BESS law was identified and it is not in the statewide tracker (May 2026)."
       ],
       "flags": [
         "Reference entry — not individually researched. For BESS regulation, see the Port Chester and Rye Brook entries, which hold the relevant land-use authority."
@@ -2318,7 +2316,8 @@
       "hosting": {
         "raw": "NYSEG/see Port Chester & Rye Brook",
         "tier": "NYSEG territory (not on the ConEd map)"
-      }
+      },
+      "localLaw": "The Town of Rye has no BESS code of its own; its territory is largely the Villages of Port Chester and Rye Brook (listed separately). (per the workgroup GIS sheet)."
     },
     {
       "name": "Town/Village of Scarsdale",
@@ -2339,8 +2338,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated BESS law was identified. Not individually researched in depth — land-use authority rests with the Village Board of Trustees, Planning Board, and Board of Appeals.",
-        "Local law: Code is silent on BESS. (per the workgroup GIS sheet)."
+        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated BESS law was identified. Not individually researched in depth — land-use authority rests with the Village Board of Trustees, Planning Board, and Board of Appeals."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the village's official site."
@@ -2364,7 +2362,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (per the workgroup GIS sheet)."
     },
     {
       "name": "Village of Ardsley",
@@ -2380,9 +2379,7 @@
           "50% Orange, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2392,7 +2389,8 @@
       "hosting": {
         "raw": "50% Orange, 50% Yellow",
         "tier": "Moderate capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Bronxville",
@@ -2408,9 +2406,7 @@
           "50% Red, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2420,7 +2416,8 @@
       "hosting": {
         "raw": "50% Red, 50% Yellow",
         "tier": "Moderate capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Buchanan",
@@ -2436,9 +2433,7 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2448,7 +2443,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Dobbs Ferry",
@@ -2464,9 +2460,7 @@
           "50% Orange, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2476,7 +2470,8 @@
       "hosting": {
         "raw": "50% Orange, 50% Yellow",
         "tier": "Moderate capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Pelham",
@@ -2492,9 +2487,7 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2504,7 +2497,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Pelham Manor",
@@ -2520,9 +2514,7 @@
           "100% Red — Low capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2532,7 +2524,8 @@
       "hosting": {
         "raw": "100% Red",
         "tier": "Low capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Pleasantville",
@@ -2548,9 +2541,7 @@
           "50% Orange, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2560,7 +2551,8 @@
       "hosting": {
         "raw": "50% Orange, 50% Yellow",
         "tier": "Moderate capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Tuckahoe",
@@ -2576,9 +2568,7 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [
-        "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
-      ],
+      "summary": [],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2588,7 +2578,8 @@
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
-      }
+      },
+      "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)"
     }
   ],
   "steps": [
