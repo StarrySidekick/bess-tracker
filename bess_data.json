@@ -2224,7 +2224,8 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the City Council, Planning Board, and Zoning Board of Appeals."
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found.",
+        "City has significant commercial/industrial parcels, so it is effectively permissive-by-default through site-plan review."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site."
@@ -2270,7 +2271,8 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the Common Council, Planning Board, and Zoning Board of Appeals."
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found.",
+        "County seat with commercial/industrial zones; a BESS would go through Common Council / Planning site-plan review."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site.",
@@ -2403,7 +2405,7 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals."
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the town's official site."
@@ -2449,7 +2451,8 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated BESS law was identified. Not individually researched in depth."
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found.",
+        "A draft BESS local law has been referenced (per the workgroup sheet) but not confirmed publicly — watch for adoption."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the town/village official sites."
@@ -2495,7 +2498,8 @@
         ]
       ],
       "summary": [
-        "Included for completeness. The Town of Rye is a thin layer over the Villages of Port Chester and Rye Brook (both listed separately) plus the Rye Neck area; no dedicated Town BESS law was identified and it is not in the statewide tracker (May 2026)."
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found.",
+        "Thin layer over the Villages of Port Chester and Rye Brook (listed separately), which hold the relevant land-use authority."
       ],
       "flags": [
         "Reference entry — not individually researched. For BESS regulation, see the Port Chester and Rye Brook entries, which hold the relevant land-use authority."
@@ -2540,7 +2544,8 @@
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated BESS law was identified. Not individually researched in depth — land-use authority rests with the Village Board of Trustees, Planning Board, and Board of Appeals."
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found.",
+        "Coterminous town/village; largely residential, so BESS interest is low; would be discretionary site-plan review."
       ],
       "flags": [
         "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the village's official site."
@@ -2581,7 +2586,9 @@
           "50% Orange, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [],
+      "summary": [
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found."
+      ],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2608,7 +2615,9 @@
           "50% Red, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [],
+      "summary": [
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found."
+      ],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2635,7 +2644,10 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [],
+      "summary": [
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found.",
+        "Home to the Indian Point site; its industrial/energy base makes it a plausible, likely-favorable host despite having no specific code."
+      ],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2662,7 +2674,9 @@
           "50% Orange, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [],
+      "summary": [
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found."
+      ],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2689,7 +2703,10 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [],
+      "summary": [
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found.",
+        "A draft BESS local law has been referenced but not confirmed publicly — watch for adoption."
+      ],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2716,7 +2733,9 @@
           "100% Red — Low capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [],
+      "summary": [
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found."
+      ],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2743,7 +2762,9 @@
           "50% Orange, 50% Yellow — Moderate capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [],
+      "summary": [
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found."
+      ],
       "committees": [],
       "meetings": [],
       "officials": [],
@@ -2770,7 +2791,9 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ]
       ],
-      "summary": [],
+      "summary": [
+        "No BESS-specific code. A proposal would default to general zoning — site-plan and/or special-use-permit review by the Planning and Zoning Boards: no kWh tier caps, but no defined pathway either. No moratorium, ban, or hostile provision found."
+      ],
       "committees": [],
       "meetings": [],
       "officials": [],
