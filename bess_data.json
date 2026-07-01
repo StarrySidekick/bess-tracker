@@ -991,8 +991,7 @@
         "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the City Council, Planning Board, and Zoning Board of Appeals."
       ],
       "flags": [
-        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site.",
-        "Big-city context — permits BESS through normal site-plan/permitting rather than a special code; deprioritized for code advocacy."
+        "Deprioritized per the team as a big city; BESS is allowed under the city's solar code (Sec. 224-A-9)."
       ],
       "committees": [
         "City Council",
@@ -2275,8 +2274,7 @@
         "County seat with commercial/industrial zones; a BESS would go through Common Council / Planning site-plan review."
       ],
       "flags": [
-        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site.",
-        "Big-city context — permits BESS through normal site-plan/permitting rather than a special code; deprioritized for code advocacy."
+        "Deprioritized per the team as a big city; code is silent, so a BESS would default to site-plan / special-use review."
       ],
       "committees": [
         "Common Council",
@@ -2327,14 +2325,10 @@
         ]
       ],
       "summary": [
-        "At Mayor Mike Spano's request, the Yonkers City Council adopted a moratorium on lithium-ion battery facilities and extended it in 2025 while a hired consultant studies BESS regulations under SEQRA.",
-        "No BESS facilities currently operate in the city; a proposal at 1100 Saw Mill River Road is under review. Engagement runs through the Mayor and City Council."
+        "Yonkers adopted a 180-day BESS moratorium on July 16, 2024 and extended it another 180 days (Feb 2025); that moratorium has since lapsed with no permanent code yet adopted.",
+        "The City hired a consultant to draft BESS regulations under SEQRA, so Yonkers is currently code-silent but actively developing an ordinance — a strong engagement window. As the county's largest city, its potential impact is high."
       ],
-      "flags": [
-        "Workgroup data marks Yonkers 'code silent on BESS,' which conflicts with 2025 news of a Council moratorium. Confirm whether that moratorium lapsed or was never codified.",
-        "Carina Energy's June 2026 statewide update lists Yonkers as an ACTIVE moratorium alongside Bedford, Cortlandt, New Castle, and Peekskill — a further conflict with the 'silent' classification here. Given the contradictory signals, status is left as-is pending direct confirmation from the City Council/Mayor's office.",
-        "Big-city context — permits BESS through normal site-plan/permitting rather than a special code; deprioritized for code advocacy."
-      ],
+      "flags": [],
       "committees": [
         "<b>City Council</b> — Council President + council members; the legislative body.",
         "<b>Planning Board / Zoning Board of Appeals</b> — permitting.",
@@ -2383,8 +2377,7 @@
       "hosting": {
         "raw": "25% Yellow, 75% Orange",
         "tier": "Moderate capacity"
-      },
-      "localLaw": "Workgroup review: code is silent on BESS (Ch 109 addresses EV chargers, not storage). Earlier (2025) reports of a Council moratorium — confirm whether it lapsed or was never codified. (per the workgroup GIS sheet)."
+      }
     },
     {
       "name": "Town of Eastchester",
