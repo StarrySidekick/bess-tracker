@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30",
+  "lastUpdated": "2026-07-01",
   "statusMeta": {
     "moratorium": {
       "label": "Active moratorium",
@@ -1731,11 +1731,11 @@
     },
     {
       "name": "Town of Yorktown",
-      "status": "healthy",
-      "statusLabel": "BESS ALLOWED",
-      "scope": "Allowed — Tier 1 (≤40/80 kWh); Tier 2 >80 kWh",
-      "window": "HEALTHY",
-      "windowClass": "p-high",
+      "status": "overstrict",
+      "statusLabel": "RESTRICTIVE",
+      "scope": "Tier 1 (≤40/80 kWh) allowed; Tier 2 (>80 kWh) prohibited (LL 10-2025)",
+      "window": "TOO STRICT",
+      "windowClass": "p-strict",
       "subtitle": "Northern Westchester — Yorktown Heights, Jefferson Valley",
       "snapshot": [
         [
@@ -1744,23 +1744,24 @@
         ],
         [
           "Governing law",
-          "Public hearing held Oct 1, 2024 on a BESS moratorium; the moratorium is listed EXPIRED on the statewide tracker."
+          "LL 10-2025 (§300-81.5), adopted 2025: permits Tier 1 (≤40/80 kWh) but prohibits new Tier 2 (>80 kWh) systems townwide."
         ],
         [
           "Notable position",
-          "The Town Board passed a resolution opposing state bills S5506 / A8378 that would let ORES preempt local BESS siting."
+          "The Town Board also passed a resolution opposing state bills S5506 / A8378 that would let ORES preempt local BESS siting."
         ],
         [
           "Engagement window",
-          "MEDIUM — no active pause; watch for permanent regulations and the town's state-preemption stance."
+          "TOO STRICT — Tier 1 only; advocate adding a Tier 2 pathway with siting/safety standards."
         ]
       ],
       "summary": [
-        "Yorktown enacted a BESS moratorium following an Oct 1, 2024 public hearing; it is now listed EXPIRED. The Town Board has also formally opposed S5506/A8378, signaling it wants to keep BESS siting under local control.",
-        "Confirm whether permanent regulations are in progress and engage on standards as well as the town's state-preemption advocacy."
+        "Yorktown adopted a permanent BESS code (LL 10-2025, §300-81.5) after its 2024 moratorium: it allows Tier 1 systems (≤40/80 kWh) but prohibits new Tier 2 (>80 kWh) systems townwide — a restrictive, effectively Tier-1-only framework (verified in the workgroup GIS sheet and in press coverage of the Town Board’s May 20 vote).",
+        "The Town Board has also formally opposed S5506/A8378, signaling it wants to keep BESS siting under local control. Engagement target: add a Tier 2 pathway with reasonable siting and fire-safety standards rather than an outright prohibition."
       ],
       "flags": [
-        "Exact moratorium dates and any permanent-ordinance status should be confirmed via the Town Clerk / eCode360."
+        "RECLASSIFIED 7/1/26 from “BESS Allowed” to “Restrictive”: the workgroup GIS sheet classifies Yorktown as “Tier 1 only,” and press coverage confirms LL 10-2025 bans new Tier 2 systems — the prior “Tier 2 >80 kWh allowed” reading was incorrect.",
+        "Confirm exact Tier 1 thresholds and any special-permit pathway for Tier 2 via the Town Clerk / eCode360."
       ],
       "committees": [
         "<b>Town Board</b> — the legislative body; passed the moratorium and the anti-preemption resolution.",
@@ -1813,7 +1814,7 @@
         "raw": "90% Yellow, 10% Red",
         "tier": "Moderate capacity"
       },
-      "localLaw": "2025 §300-81.5: Tier 1 to 40/80 kWh, Tier 2 over 80 kWh. The Town also formally opposed state ORES preemption (S5506/A8378). (per the workgroup GIS sheet)."
+      "localLaw": "LL 10-2025 (§300-81.5): Tier 1 ≤40/80 kWh allowed; new Tier 2 systems >80 kWh prohibited. The Town also formally opposed state ORES preemption (S5506/A8378). (per the workgroup GIS sheet)."
     },
     {
       "name": "Village of Elmsford",
@@ -2877,6 +2878,14 @@
     ]
   ],
   "changelog": [
+    {
+      "date": "2026-07-01",
+      "items": [
+        "Yorktown RECLASSIFIED (major): moved from “BESS Allowed” to “Restrictive BESS Code.” The workgroup GIS sheet (re-read 7/1/26) classifies Yorktown as “BESS limited to Tier 1 only,” and press coverage of the Town Board’s May 20 vote confirms LL 10-2025 (§300-81.5) prohibits new Tier 2 (>80 kWh) systems. Updated status, scope, snapshot, summary, flags, and localLaw.",
+        "Cortlandt deadline re-verified: LL 7-2025 extends the ALL-BESS moratorium through Dec 31, 2026 (confirmed via the Town’s legal notices / LL text). The workgroup sheet still notes “expires 07/31/26,” treated as a date-entry error; dashboard keeps 12/31/26.",
+        "Re-read the workgroup “ArcGIS data BESS 2026” GIS sheet (rows last updated 6/18/26); reconciled all municipalities — no other status changes and no new municipalities. NY S5506/A8378 unchanged, still in the Energy & Telecommunications Committee."
+      ]
+    },
     {
       "date": "2026-06-30",
       "items": [
