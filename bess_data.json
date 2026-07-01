@@ -797,7 +797,30 @@
       "summary": [],
       "committees": [],
       "meetings": [],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Mayor",
+          "name": "Brian Pugh",
+          "email": "bpugh@crotononhudson-ny.gov",
+          "phone": "(914) 374-3960"
+        },
+        {
+          "role": "Trustees",
+          "name": "Nora Moriarty Nicholson, Stacey Nachtaler, Len Simon (Deputy Mayor)",
+          "phone": "(914) 271-4848"
+        },
+        {
+          "role": "Village Clerk",
+          "name": "Paula DiSanto",
+          "email": "Pdisanto@crotononhudson-ny.gov",
+          "phone": "(914) 271-4848"
+        },
+        {
+          "role": "Village Hall",
+          "name": "1 Van Wyck Street, Croton-on-Hudson, NY 10520",
+          "phone": "(914) 271-4781"
+        }
+      ],
       "links": [
         [
           "Croton-on-Hudson BESS / Trustees doc (PDF)",
@@ -979,7 +1002,24 @@
       "meetings": [
         "Confirm the City Council meeting schedule and agendas on the city's official website."
       ],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Mayor",
+          "name": "Shawyn Patterson-Howard",
+          "phone": "(914) 665-2360"
+        },
+        {
+          "role": "City Clerk",
+          "name": "Nicole Bonilla",
+          "email": "cityclerk@mountvernonny.gov",
+          "phone": "(914) 665-2348"
+        },
+        {
+          "role": "City Hall",
+          "name": "1 Roosevelt Square, Mount Vernon, NY 10550",
+          "phone": "(914) 665-2351"
+        }
+      ],
       "links": [
         [
           "Mount Vernon code",
@@ -1111,7 +1151,19 @@
       "meetings": [
         "Confirm the City Council meeting schedule and agendas on the city's official website."
       ],
-      "officials": [],
+      "officials": [
+        {
+          "role": "City Clerk",
+          "name": "Noga Ruttenberg",
+          "email": "cityclerk@ryeny.gov",
+          "phone": "(914) 967-7371"
+        },
+        {
+          "role": "City Hall",
+          "name": "1051 Boston Post Road, Rye, NY 10580",
+          "phone": "(914) 967-5400"
+        }
+      ],
       "links": [
         [
           "Statewide moratorium tracker (status source)",
@@ -1270,7 +1322,24 @@
       "meetings": [
         "Confirm the Town Board meeting schedule and agendas on the town's official website."
       ],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Town Supervisor",
+          "name": "Tony Gonçalves",
+          "phone": "(914) 763-3151"
+        },
+        {
+          "role": "Town Clerk",
+          "name": "Janet Donohue",
+          "email": "townclerk@lewisborogov.com",
+          "phone": "(914) 763-3511"
+        },
+        {
+          "role": "Town House",
+          "name": "11 Main Street, South Salem, NY 10590",
+          "phone": "(914) 763-3511"
+        }
+      ],
       "links": [
         [
           "Statewide moratorium tracker (status source)",
@@ -1316,7 +1385,23 @@
       "meetings": [
         "Confirm the Town Board meeting schedule and agendas on the town's official website."
       ],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Town Supervisor",
+          "name": "Jaine Elkind Eney",
+          "phone": "(914) 381-7805"
+        },
+        {
+          "role": "Town Clerk",
+          "name": "Allison May",
+          "phone": "(914) 381-7870"
+        },
+        {
+          "role": "Town Center",
+          "name": "740 W. Boston Post Rd, Mamaroneck, NY 10543",
+          "phone": "(914) 381-7870"
+        }
+      ],
       "links": [
         [
           "Mamaroneck Town code",
@@ -1366,7 +1451,24 @@
       "meetings": [
         "Confirm the Town Board meeting schedule and agendas on the town's official website."
       ],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Town Supervisor",
+          "name": "Joseph Schiliro",
+          "phone": "(914) 273-3001"
+        },
+        {
+          "role": "Town Clerk",
+          "name": "Alison Simon",
+          "email": "asimon@northcastleny.com",
+          "phone": "(914) 273-3321 x42"
+        },
+        {
+          "role": "Town Hall",
+          "name": "15 Bedford Road, Armonk, NY 10504",
+          "phone": "(914) 273-3001"
+        }
+      ],
       "links": [
         [
           "Statewide moratorium tracker (status source)",
@@ -1414,7 +1516,25 @@
       "meetings": [
         "Confirm the Town Board meeting schedule and agendas on the town's official website."
       ],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Town Supervisor",
+          "name": "Warren J. Lucas",
+          "email": "wlucas@northsalemny.org",
+          "phone": "(914) 669-5110"
+        },
+        {
+          "role": "Town Clerk",
+          "name": "Patti Butler",
+          "email": "pbutler@northsalemny.org",
+          "phone": "(914) 669-5577"
+        },
+        {
+          "role": "Town Hall",
+          "name": "266 Titicus Road, North Salem, NY 10560",
+          "phone": "(914) 669-5110"
+        }
+      ],
       "links": [
         [
           "Statewide moratorium tracker (status source)",
@@ -1460,7 +1580,19 @@
       "meetings": [
         "Confirm the Town Board meeting schedule and agendas on the town's official website."
       ],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Town Supervisor",
+          "name": "Elizabeth R. Feldman",
+          "email": "feldman@townofossining.com",
+          "phone": "(914) 762-6001"
+        },
+        {
+          "role": "Town Hall",
+          "name": "16 Croton Avenue, Ossining, NY 10562",
+          "phone": "(914) 762-6001"
+        }
+      ],
       "links": [
         [
           "Statewide moratorium tracker (status source)",
@@ -1701,7 +1833,23 @@
       "summary": [],
       "committees": [],
       "meetings": [],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Mayor",
+          "name": "Robert Williams",
+          "phone": "(914) 592-6555"
+        },
+        {
+          "role": "Deputy Village Clerk",
+          "name": "Shaun Hughes",
+          "phone": "(914) 592-6555"
+        },
+        {
+          "role": "Village Hall",
+          "name": "15 S. Stone Avenue, Elmsford, NY 10523",
+          "phone": "(914) 592-6555"
+        }
+      ],
       "links": [],
       "flags": [],
       "dr": false,
@@ -1728,7 +1876,19 @@
       "summary": [],
       "committees": [],
       "meetings": [],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Village Clerk",
+          "name": "Anthony Costantini",
+          "email": "acostantini@hohny.gov",
+          "phone": "(914) 478-3400 x4"
+        },
+        {
+          "role": "Village Hall",
+          "name": "7 Maple Avenue, Hastings-on-Hudson, NY 10706",
+          "phone": "(914) 478-3400"
+        }
+      ],
       "links": [],
       "flags": [],
       "dr": false,
@@ -1755,7 +1915,19 @@
       "summary": [],
       "committees": [],
       "meetings": [],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Village Board / Clerk-Treasurer",
+          "name": "Clerk-Treasurer's Office",
+          "email": "office@irvingtonny.gov",
+          "phone": "(914) 231-3020"
+        },
+        {
+          "role": "Village Hall",
+          "name": "85 Main Street, Irvington, NY 10533",
+          "phone": "(914) 591-7070"
+        }
+      ],
       "links": [],
       "flags": [],
       "dr": false,
@@ -1966,7 +2138,19 @@
       "summary": [],
       "committees": [],
       "meetings": [],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Village Clerk",
+          "name": "Paula A. McCarthy",
+          "email": "pmccarthy@villageofsleepyhollow.org",
+          "phone": "(914) 366-5106"
+        },
+        {
+          "role": "Village Hall",
+          "name": "28 Beekman Avenue, Sleepy Hollow, NY 10591",
+          "phone": "(914) 366-5100"
+        }
+      ],
       "links": [],
       "flags": [],
       "dr": false,
@@ -1993,7 +2177,25 @@
       "summary": [],
       "committees": [],
       "meetings": [],
-      "officials": [],
+      "officials": [
+        {
+          "role": "Mayor",
+          "name": "Karen Brown",
+          "email": "kbrown@tarrytownny.gov",
+          "phone": "(914) 631-1785"
+        },
+        {
+          "role": "Village Clerk",
+          "name": "Krissy Gilligan",
+          "email": "kgilligan@tarrytownny.gov",
+          "phone": "(914) 631-1652"
+        },
+        {
+          "role": "Village Hall",
+          "name": "One Depot Plaza, Tarrytown, NY 10591",
+          "phone": "(914) 631-1785"
+        }
+      ],
       "links": [],
       "flags": [],
       "dr": false,
