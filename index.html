@@ -202,13 +202,12 @@ function renderCards(){
     return `<div class="card ${t.status}" data-town="${i}">
       <div class="chead" onclick="toggle(${i})">
         <h2>${t.name}</h2>
-        <span class="badge b-${t.status}">${t.statusLabel}</span>${tag}
+        ${tag}<span class="badge b-${t.status}">${t.statusLabel}</span>
         <span class="toggle" id="tg${i}">＋ details</span>
       </div>
       <div class="cbody">
         ${sec("Governing Law", govLaw)}
         ${sec("Moratorium Reasoning", morReason)}
-        ${sec("Priority Level", prio)}
         ${sec("General Info", gi)}
         ${sec("Relevant Committees", committees)}
         ${sec("Meetings", meetings)}
