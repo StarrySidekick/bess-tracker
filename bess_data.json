@@ -888,7 +888,7 @@
       "name": "Village of Larchmont",
       "status": "overstrict",
       "statusLabel": "RESTRICTIVE",
-      "scope": "Restrictive — Tier 1 ≤600 kWh; Tier 2 (>600 kWh) prohibited",
+      "scope": "Restrictive — Tier 1 (≤600 kWh) permitted; Tier 2 (>600 kWh) prohibited",
       "window": "TOO STRICT",
       "windowClass": "p-strict",
       "subtitle": "Southeastern Westchester — Long Island Sound",
@@ -896,11 +896,32 @@
         [
           "Grid hosting capacity",
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
+        [
+          "Governing law",
+          "2026 BESS local law (recorded as LL 2-2026 in the workgroup sheet), adding permitting requirements for Tier 1 systems (≤600 kWh) and prohibiting Tier 2 systems (>600 kWh). Codified in the Village Code’s Battery Energy Storage article."
+        ],
+        [
+          "How restrictive",
+          "Only small Tier 1 systems are allowed; there is no special-use pathway for larger Tier 2 storage."
+        ],
+        [
+          "Engagement window",
+          "TOO STRICT — High grid capacity; advocate adding a Tier 2 pathway with siting/safety standards."
         ]
       ],
-      "summary": [],
-      "committees": [],
-      "meetings": [],
+      "summary": [
+        "Larchmont adopted a battery-storage local law in 2026 (recorded as LL 2-2026 in the workgroup GIS sheet) that sets permitting requirements for Tier 1 systems (≤600 kWh) but prohibits Tier 2 systems (>600 kWh) — a restrictive, Tier-1-only framework.",
+        "With High grid hosting capacity, Larchmont is a strong candidate to loosen: the ask is to add a Tier 2 special-use pathway with reasonable siting and fire-safety standards rather than an outright prohibition."
+      ],
+      "committees": [
+        "<b>Board of Trustees</b> — adopted the BESS law and would amend it.",
+        "<b>Planning Board & Zoning Board of Appeals</b> — site plans / variances.",
+        "<b>Sustainability / environmental committees</b> — potential allies (confirm current names)."
+      ],
+      "meetings": [
+        "<b>Schedule:</b> Board of Trustees meets monthly at Village Hall, 120 Larchmont Avenue (2026 agenda packets fall on late-month Mondays, e.g., Jan 26, Feb 23, Mar 23). Agendas & minutes are posted on the village site."
+      ],
       "officials": [
         {
           "role": "Mayor",
@@ -930,19 +951,28 @@
           "https://www.larchmontny.gov/government/decision_making_boards/board_of_trustees/index.php"
         ],
         [
-          "Larchmont LL 1-2026 (PDF)",
+          "BESS article (eCode360)",
+          "https://ecode360.com/37655784"
+        ],
+        [
+          "Larchmont BESS local law (PDF)",
           "https://ecode360.com/LA0851/laws/LF2719891.pdf"
+        ],
+        [
+          "Zoning & Construction Laws",
+          "https://www.larchmontny.gov/departments/building/laws.php"
         ]
       ],
       "flags": [
-        "Over-strict: LL 2-2026 prohibits Tier 2 (>600 kWh). An engagement target to loosen toward a Croton-style tiered code."
+        "Restrictive: prohibits Tier 2 (>600 kWh) despite High grid capacity. Engagement target to add a Tier 2 pathway.",
+        "Local-law number: the workgroup sheet records this as LL 2-2026; an earlier dashboard note said LL 1-2026. Confirm the exact adopted law number/date with the Village Clerk / eCode360."
       ],
       "dr": false,
       "hosting": {
         "raw": "100% Yellow",
         "tier": "High capacity"
       },
-      "localLaw": "LL 1-2026 (§100-6): Tier 1 to 600 kWh permitting; Tier 2 over 600 kWh. (Verified in the workgroup GIS sheet.)"
+      "localLaw": "2026 BESS local law (LL 2-2026 per the workgroup GIS sheet): Tier 1 ≤600 kWh permitted; Tier 2 >600 kWh prohibited. (Village Code Battery Energy Storage article; confirm exact LL number.)"
     },
     {
       "name": "Village of Port Chester",
@@ -1169,7 +1199,7 @@
       "name": "City of Rye",
       "status": "overstrict",
       "statusLabel": "RESTRICTIVE",
-      "scope": "Allowed — Tier 1 (<80 kWh) only",
+      "scope": "Restrictive — Tier 1 (<80 kWh) only; no pathway for larger systems",
       "window": "TOO STRICT",
       "windowClass": "p-strict",
       "subtitle": "Southeastern Westchester — Long Island Sound city (distinct from Town of Rye)",
@@ -1179,26 +1209,41 @@
           "100% Yellow — High capacity (ConEd/NYSEG hosting-capacity map)"
         ],
         [
-          "Status",
-          "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker."
+          "Governing law",
+          "Local Law 2025-02 (City Code §98-124.1): permits only Tier 1 battery energy storage systems under 80 kWh; no special-use or site-plan pathway for larger (Tier 2) systems."
+        ],
+        [
+          "Leadership",
+          "A new Mayor (Josh Nathan) and City Council took office January 2026 — fresh relationships to build on BESS policy."
+        ],
+        [
+          "Engagement window",
+          "TOO STRICT — advocate adding a Tier 2 pathway with siting/safety standards; High grid capacity makes this a worthwhile target."
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated city BESS law was identified. Not individually researched in depth — land-use authority rests with the City Council, Planning Board, and Zoning Board of Appeals."
+        "The City of Rye adopted Local Law 2025-02, adding City Code §98-124.1, which permits only small Tier 1 battery storage systems (under 80 kWh) and provides no pathway for larger Tier 2 systems — an effectively Tier-1-only, restrictive code (verified in the workgroup GIS sheet).",
+        "Because Rye is a city, land-use authority runs through the City Council (with the Planning Commission and Zoning Board of Appeals). A new Mayor, Josh Nathan, and Council were inaugurated in January 2026, so there is an opening to build relationships and advocate a workable Tier 2 standard."
       ],
       "flags": [
-        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the city's official site.",
-        "Over-strict: Tier 1 (<80 kWh) only — no pathway for larger systems. An engagement target to loosen toward a Croton-style tiered code."
+        "Restrictive: Tier 1 (<80 kWh) only — no pathway for larger systems, despite High grid capacity. A strong target to loosen toward a Croton-style tiered code.",
+        "New Mayor/Council since Jan 2026 — confirm the full current Council roster and contacts on ryeny.gov before outreach."
       ],
       "committees": [
-        "City Council",
-        "Planning Commission",
-        "Zoning Board of Appeals"
+        "<b>City Council</b> — the legislative body for any BESS law.",
+        "<b>Planning Commission</b> — site-plan review.",
+        "<b>Zoning Board of Appeals</b> — variances.",
+        "<b>Conservation Commission / Advisory Council</b> — potential ally."
       ],
       "meetings": [
-        "Confirm the City Council meeting schedule and agendas on the city's official website."
+        "<b>Schedule:</b> City Council meets at City Hall, 1051 Boston Post Road (evening meetings, generally on Wednesdays roughly monthly — e.g., 2026 dates include June 10, July 15, and Sept 16). Agendas and minutes are posted at ryeny.gov."
       ],
       "officials": [
+        {
+          "role": "Mayor",
+          "name": "Josh Nathan (inaugurated Jan 2026)",
+          "phone": "(914) 967-5400"
+        },
         {
           "role": "City Clerk",
           "name": "Noga Ruttenberg",
@@ -1213,8 +1258,16 @@
       ],
       "links": [
         [
-          "Statewide moratorium tracker (status source)",
-          "https://carina.energy/bess-moratoriums/new-york/"
+          "City Council",
+          "https://www.ryeny.gov/government/city-council"
+        ],
+        [
+          "Agendas",
+          "https://www.ryeny.gov/government/city-council/agendas"
+        ],
+        [
+          "Mayor",
+          "https://www.ryeny.gov/government/mayor"
         ]
       ],
       "dr": false,
@@ -1222,7 +1275,7 @@
         "raw": "100% Yellow",
         "tier": "High capacity"
       },
-      "localLaw": "LL 2025-02 §98-124.1: Tier 1 < 80 kWh only. (per the workgroup GIS sheet)."
+      "localLaw": "Local Law 2025-02, City Code §98-124.1: only Tier 1 BESS (<80 kWh) permitted; no Tier 2 pathway. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Town / Village of Harrison",
@@ -1534,34 +1587,42 @@
       "name": "Town of North Salem",
       "status": "overstrict",
       "statusLabel": "RESTRICTIVE",
-      "scope": "Allowed — on-site use only (§250-13)",
+      "scope": "Restrictive — on-site use only; utility-scale/standalone BESS prohibited (§250-13)",
       "window": "TOO STRICT",
       "windowClass": "p-strict",
       "subtitle": "Northeastern Westchester — rural; Croton Falls, Purdys, Salem Center",
       "snapshot": [
         [
           "Grid hosting capacity",
-          "NYSEG — NYSEG territory (not on the ConEd map) (ConEd/NYSEG hosting-capacity map)"
+          "NYSEG territory — see hosting-capacity map"
         ],
         [
-          "Status",
-          "No BESS moratorium, ban, or dedicated BESS law identified as of the May 2026 statewide tracker. Rural land may attract utility-scale interest — worth watching."
+          "Governing law",
+          "Zoning Code §250-13 (Prohibited Uses) bars battery energy storage systems except those dedicated to providing energy primarily for the property on which they are located (on-site / behind-the-meter only). The Town Board also amended its definition of \"public utility\" to exclude BESS."
+        ],
+        [
+          "Intent",
+          "The amendment was designed to keep out large-scale, utility-scale BESS while still allowing small on-site systems that serve their own property."
+        ],
+        [
+          "Engagement window",
+          "TOO STRICT — advocate a path for appropriately-sited Tier 2 storage rather than a blanket on-site-only rule."
         ]
       ],
       "summary": [
-        "Included for completeness. Does not appear in the statewide BESS moratorium tracker (May 2026); no dedicated town BESS law was identified. Not individually researched in depth — land-use authority rests with the Town Board, Planning Board, and Zoning Board of Appeals."
+        "North Salem amended its zoning code to prohibit battery energy storage systems except those dedicated primarily to the property where they are located — an on-site / behind-the-meter-only rule (§250-13). The Town Board also redefined \"public utility\" to specifically exclude BESS, which prevents utility-scale storage from being sited in the Town.",
+        "The result allows small, self-serving systems but bars standalone and utility-scale storage. The engagement angle is to open a reasonable, well-sited Tier 2 pathway rather than an outright prohibition."
       ],
       "flags": [
-        "Reference entry — not individually researched. Confirm current BESS status, meeting schedule, and officials on the town's official site.",
-        "Over-strict: On-site use only — bars standalone/utility-scale storage. An engagement target to loosen toward a Croton-style tiered code."
+        "Restrictive: on-site use only — bars standalone/utility-scale storage via a \"public utility\" exclusion. Engagement target to allow appropriately-sited Tier 2."
       ],
       "committees": [
-        "Town Board",
-        "Planning Board",
-        "Zoning Board of Appeals"
+        "<b>Town Board</b> — adopted the zoning amendment; leads any change.",
+        "<b>Planning Board & Zoning Board of Appeals</b> — permitting.",
+        "<b>Conservation Advisory Council</b> — potential ally."
       ],
       "meetings": [
-        "Confirm the Town Board meeting schedule and agendas on the town's official website."
+        "<b>Schedule:</b> Town Board meets at the Town Meeting Hall, 66 June Road (agendas/minutes posted on the town site; confirm the current 2026 meeting calendar). Town offices: 266 Titicus Road."
       ],
       "officials": [
         {
@@ -1584,8 +1645,16 @@
       ],
       "links": [
         [
-          "Statewide moratorium tracker (status source)",
-          "https://carina.energy/bess-moratoriums/new-york/"
+          "Town Board",
+          "https://www.northsalemny.gov/1306/Town-Board"
+        ],
+        [
+          "Zoning Code Ch. 250 (eCode360)",
+          "https://ecode360.com/8330064"
+        ],
+        [
+          "News — North Salem amends BESS zoning code",
+          "https://news.halstonmedia.com/north-salem-news/north-salem-news/stories/north-salem-amends-battery-energy-zoning-code,26932"
         ]
       ],
       "dr": false,
@@ -1593,7 +1662,7 @@
         "raw": "NYSEG",
         "tier": "NYSEG territory (not on the ConEd map)"
       },
-      "localLaw": "§250-13 prohibits BESS except systems dedicated primarily to the property where located (on-site only). (per the workgroup GIS sheet)."
+      "localLaw": "Zoning §250-13: BESS prohibited except systems dedicated primarily to the property where located (on-site only); \"public utility\" redefined to exclude BESS. (Verified in the workgroup GIS sheet; confirmed in Town Board coverage.)"
     },
     {
       "name": "Town of Ossining",
@@ -2071,7 +2140,7 @@
       "status": "overstrict",
       "statusLabel": "RESTRICTIVE",
       "original": true,
-      "scope": "Allowed — Tier 1 only (no BESS moratorium on record)",
+      "scope": "Restrictive — Tier 1 (≤80 kWh) only (LL 2-2025); no Tier 2 pathway",
       "window": "TOO STRICT",
       "windowClass": "p-strict",
       "subtitle": "Southeastern Westchester — the clearest “get ahead of it” opportunity",
@@ -2082,23 +2151,23 @@
         ],
         [
           "Governing law",
-          "No BESS moratorium or dedicated local law identified; not in the statewide tracker as of May 2026. NY's 2025 Fire Code applies as a baseline."
+          "Local Law 2-2025 (2025), Village Code §98-124.1: permits only Tier 1 systems (≤80 kWh); no Tier 2 pathway."
         ],
         [
-          "Why it matters",
-          "No reactive ban yet — engaging early lets the workgroup help craft a sensible framework before a project triggers a hasty moratorium."
+          "Correction",
+          "Earlier dashboard text said Rye Brook had \"no BESS ordinance on record\" — that was outdated. The Village adopted a Tier-1-only law (LL 2-2025)."
         ],
         [
           "Engagement window",
-          "OPEN — proactive engagement recommended."
+          "TOO STRICT — High grid capacity; advocate a Tier 2 pathway with siting/safety standards."
         ]
       ],
       "summary": [
-        "Rye Brook has no BESS moratorium or ordinance on record and does not appear in the statewide tracker as of May 2026. NY's 2025 Fire Code and the State BESS Model Law are the baseline.",
-        "Best opportunity to get ahead of the issue: approach the Board of Trustees, Planning Board, and the Village's Sustainability Committee now to encourage a balanced, safety-forward ordinance."
+        "Rye Brook adopted Local Law 2-2025 (Village Code §98-124.1) in 2025, which permits only Tier 1 battery storage systems (≤80 kWh) and provides no pathway for larger Tier 2 systems — a restrictive, Tier-1-only code (verified in the workgroup GIS sheet). This corrects an earlier entry that described the Village as having no BESS ordinance.",
+        "With High grid hosting capacity, Rye Brook is a strong target to loosen: approach the Board of Trustees and Sustainability Committee to add a balanced Tier 2 special-use pathway."
       ],
       "flags": [
-        "Over-strict: Tier 1 only — no Tier 2 pathway. An engagement target to loosen toward a Croton-style tiered code."
+        "Restrictive: Tier 1 (≤80 kWh) only under LL 2-2025 — no Tier 2 pathway, despite High grid capacity. Engagement target to add a Tier 2 pathway."
       ],
       "committees": [
         "<b>Board of Trustees</b> — the legislative body; any BESS law starts here.",
@@ -2167,7 +2236,7 @@
         "raw": "100% Yellow",
         "tier": "High capacity"
       },
-      "localLaw": "BESS allowed, Tier 1 only. No BESS moratorium found in the workgroup data or code. (per the workgroup GIS sheet)."
+      "localLaw": "Local Law 2-2025, Village Code §98-124.1: only Tier 1 BESS (≤80 kWh) permitted; no Tier 2 pathway. (Verified in the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Sleepy Hollow",
