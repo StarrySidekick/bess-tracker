@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01",
+  "lastUpdated": "2026-07-02",
   "statusMeta": {
     "moratorium": {
       "label": "Active moratorium",
@@ -18,7 +18,7 @@
       "color": "#c2680a"
     },
     "silent": {
-      "label": "No BESS code",
+      "label": "Silent Code",
       "color": "#777777"
     }
   },
@@ -557,7 +557,7 @@
       "name": "Village/Town of Mount Kisco",
       "status": "ban",
       "statusLabel": "BAN",
-      "scope": "Ban — all BESS prohibited, any size (≈Aug 2026)",
+      "scope": "Ban — all BESS prohibited in every district, any size (LL 1-2025, adopted 2025)",
       "window": "LOW",
       "windowClass": "p-low",
       "subtitle": "Northern Westchester",
@@ -568,23 +568,24 @@
         ],
         [
           "Governing law",
-          "Aug 2025: Village Board voted unanimously not to classify BESS as a 'public utility,' effectively prohibiting new BESS village-wide — after twice extending a 2024 moratorium."
+          "Local Law 1-2025 (filed with NYS): redefines \"public utility\" to exclude BESS and prohibits Battery Energy Storage Systems in every district village-wide. Adopted 2025 after a public hearing (set for July 14, 2025), replacing the 2024 moratorium, which lapsed on adoption."
         ],
         [
           "Why a ban",
           "Mayor Cindrich said the Board wanted to protect the village until the technology improves and firefighters are better equipped for lithium-ion fires."
         ],
         [
-          "Note",
-          "Mount Kisco already hosts three large-scale BESS facilities (Oakwood Cemetery/former landfill, courthouse/police roof) plus smaller units."
+          "Existing systems",
+          "The three large-scale BESS already operating (Oakwood Cemetery/former landfill; courthouse/police roof, ~522–1,026 kWh) are grandfathered; the ban applies to new development."
         ]
       ],
       "summary": [
-        "Mount Kisco enacted a six-month moratorium in 2024 (with two three-month extensions) after a large-scale BESS was proposed near the Diamond Properties soccer field at 333 North Bedford Road. In August 2025 the Village Board effectively banned new BESS by declining to treat them as a 'public utility' under the village code.",
-        "Notably, several BESS facilities already operate in the village, so the ban applies to new development."
+        "Mount Kisco enacted a six-month moratorium in 2024 (with two extensions) after a large-scale BESS was proposed near the Diamond Properties complex at 333 North Bedford Road. In 2025 the Village Board adopted Local Law 1-2025, which redefines \"public utility\" to exclude BESS and prohibits new Battery Energy Storage Systems in every district; the moratorium lapsed upon its adoption.",
+        "Several BESS facilities already operate in the village and are grandfathered, so the ban applies to new development. Documented via the NYS filing receipt for LL 1-2025 (workgroup, Don Emerson, 7/2/26)."
       ],
       "flags": [
-        "The ban was implemented via a zoning interpretation (BESS not a 'public utility') rather than a standalone ban law; confirm the exact mechanism and any challenge. The Carina tracker (refreshed June 14, 2026) lists Mount Kisco's earlier moratorium as EXPIRED — consistent with the Village replacing the moratorium with the Aug 2025 effective ban."
+        "Ban is a filed, standalone local law (LL 1-2025), not merely an informal zoning interpretation — it works by declaring BESS are not a \"public utility\" and prohibiting them village-wide. Confirm the exact adoption/filing date (mid-2025; public hearing was July 14, 2025).",
+        "The Carina tracker (refreshed June 14, 2026) lists Mount Kisco's earlier moratorium as EXPIRED — consistent with the Village replacing it with the LL 1-2025 ban."
       ],
       "committees": [
         "<b>Village Board of Trustees</b> — adopted the effective ban.",
@@ -624,6 +625,10 @@
         [
           "The Examiner — Mount Kisco BESS moratorium",
           "https://www.theexaminernews.com/mount-kisco-enacts-moratorium-on-battery-energy-storage-systems/"
+        ],
+        [
+          "Mount Kisco BESS prohibition law (eCode360)",
+          "https://ecode360.com/MO0865/laws/LF2153752.pdf"
         ]
       ],
       "dr": false,
@@ -632,7 +637,7 @@
         "tier": "Low capacity"
       },
       "moratoriumReason": "Village bars BESS of any size in all districts, citing safety concerns and firefighting readiness.",
-      "localLaw": "BESS of any size is not an allowed use in any district in the Village. (per the workgroup GIS sheet)."
+      "localLaw": "Local Law 1-2025: BESS are excluded from \"public utility\" and are not an allowed use in any district in the Village (all sizes prohibited); existing systems grandfathered. (Verified in the workgroup GIS sheet; NYS filing receipt provided by the workgroup 7/2/26.)"
     },
     {
       "name": "Town of Greenburgh",
@@ -2705,7 +2710,9 @@
       "meetings": [],
       "officials": [],
       "links": [],
-      "flags": [],
+      "flags": [
+        "Watch: a draft BESS local law has been referenced by the workgroup (per the GIS sheet and the 6/29/26 meeting) but is not yet publicly confirmed or adopted — monitor for a public hearing / adoption that would move Pelham off \"silent.\""
+      ],
       "dr": false,
       "hosting": {
         "raw": "100% Yellow",
@@ -2878,6 +2885,15 @@
     ]
   ],
   "changelog": [
+    {
+      "date": "2026-07-02",
+      "items": [
+        "Mount Kisco: corrected the ban mechanism — it was adopted as filed Local Law 1-2025 (redefines \"public utility\" to exclude BESS and prohibits BESS in every district), not an informal zoning interpretation. Moratorium lapsed on adoption; existing systems grandfathered. Source: NYS filing receipt provided by the workgroup (Don Emerson, 7/2/26) and press coverage of the July 14, 2025 public hearing. Fixed a scope-line date typo (was \"≈Aug 2026\").",
+        "Category label \"No BESS code\" renamed to \"Silent Code\" per team request.",
+        "Village of Pelham: added a watch-flag noting a draft BESS local law referenced by the workgroup (6/29/26 meeting) but not yet publicly confirmed/adopted.",
+        "Confirmed Pound Ridge remains correctly excluded from the Priority list (behind-the-meter, limited transmission/grid-arbitrage value) per workgroup guidance and the 6/29/26 meeting."
+      ]
+    },
     {
       "date": "2026-07-01",
       "items": [
