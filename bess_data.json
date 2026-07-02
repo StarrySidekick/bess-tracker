@@ -145,7 +145,21 @@
       },
       "moratoriumReason": "Large-scale systems are paused (to 8/17/26) while the Town studies utility-scale siting; Tier 1 (<80 kWh) is already allowed.",
       "localLaw": "LL 1 of 2026: Tier 1 < 80 kWh allowed; Tier 2 > 80 kWh under a large-scale moratorium until 8/17/2026. (per the workgroup GIS sheet).",
-      "meterAccess": "btm"
+      "meterAccess": "btm",
+      "tierSpec": [
+        {
+          "upToKwh": 80,
+          "status": "allowed",
+          "label": "Tier 1 ≤80 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "paused",
+          "label": "Tier 2 >80 kWh — paused to 8/17/26",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "Town of Cortlandt (Cortlandt Manor)",
@@ -246,7 +260,14 @@
       },
       "moratoriumReason": "The Town Board paused all BESS to study fire-safety and siting standards before adopting permanent zoning; the moratorium runs through July 31, 2026 (LL 7-2025), and the default code otherwise prohibits Tier 3 (utility-scale).",
       "localLaw": "LL 7-2025 extends the moratorium on all BESS through 7/31/2026 (per the certified law text adopted 12/9/25; the hearing notice's “through the end of 2026” wording does not match the adopted text). The default code prohibits Tier 3 (utility-scale) systems.",
-      "meterAccess": "none"
+      "meterAccess": "none",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "paused",
+          "label": "All sizes paused to 7/31/26 (LL 7-2025)"
+        }
+      ]
     },
     {
       "name": "Town of New Castle (Chappaqua / Millwood)",
@@ -361,7 +382,14 @@
       },
       "moratoriumReason": "A moratorium chain (LL 1-2025, ext. LL 7-2025) paused BESS while the Town drafts tiered rules. Carina (June 2026) lists it ACTIVE through ~Aug 2026; the workgroup sheet implies the chain ran only through 5/31/26 — the exact current status is unconfirmed (possible legal gap). The proposed permanent law (Tier 1 only) is not yet adopted.",
       "localLaw": "Moratorium (LL 1-2025, extended by LL 7-2025): Carina's June 2026 tracker lists it ACTIVE through ~Aug 2026, while the workgroup sheet implies it lapsed ~5/31/26 — unresolved; verify with the Town Clerk. Proposed permanent law — per County referral NWC-25-007 (10/28/25) — permits only Tier 1 (≤80 kWh) and prohibits Tier 2 & Tier 3 town-wide; County Planning Board objected. Adoption by the Town Board not yet confirmed.",
-      "meterAccess": "none"
+      "meterAccess": "none",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "paused",
+          "label": "All sizes — status unresolved (see flags); proposed law would allow Tier 1 (≤80 kWh) only"
+        }
+      ]
     },
     {
       "name": "Village of Ossining",
@@ -432,7 +460,14 @@
       },
       "moratoriumReason": "Eight-month moratorium (from 4/22/26) to study BESS before setting permanent tiered rules.",
       "localLaw": "Local Law 4-2026: moratorium on all BESS, an 8-month term effective ~4/22/2026 — implying an expiration around late December 2026 (computed estimate, not independently confirmed). (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "none"
+      "meterAccess": "none",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "paused",
+          "label": "All sizes paused to ~12/22/26 (LL 4-2026)"
+        }
+      ]
     },
     {
       "name": "Town of Mount Pleasant",
@@ -520,7 +555,14 @@
       },
       "moratoriumReason": "Adopted an outright prohibition citing fire-safety and siting concerns rather than a tiered code.",
       "localLaw": "Town Code §218-20.7: BESS prohibited from being sited anywhere in the Town. (per the workgroup GIS sheet).",
-      "meterAccess": "none"
+      "meterAccess": "none",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "banned",
+          "label": "All BESS prohibited townwide (§218-20.7)"
+        }
+      ]
     },
     {
       "name": "Town of Somers",
@@ -583,7 +625,14 @@
       },
       "moratoriumReason": "The solar-energy local law bans incorporation of BESS.",
       "localLaw": "2025 §170-80 (Solar Energy) bans incorporation of BESS. (per the workgroup GIS sheet).",
-      "meterAccess": "none"
+      "meterAccess": "none",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "banned",
+          "label": "BESS barred via solar code §170-80 — confirm thresholds"
+        }
+      ]
     },
     {
       "name": "Village/Town of Mount Kisco",
@@ -674,7 +723,14 @@
       },
       "moratoriumReason": "Village bars BESS of any size in all districts, citing safety concerns and firefighting readiness.",
       "localLaw": "Local Law 1-2025: BESS are excluded from \"public utility\" and are not an allowed use in any district in the Village (all sizes prohibited); existing systems grandfathered. (Verified in the workgroup GIS sheet; NYS filing receipt provided by the workgroup 7/2/26.)",
-      "meterAccess": "none"
+      "meterAccess": "none",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "banned",
+          "label": "All sizes prohibited in every district (LL 1-2025)"
+        }
+      ]
     },
     {
       "name": "Town of Greenburgh",
@@ -761,7 +817,27 @@
         "tier": "Moderate capacity"
       },
       "localLaw": "LL 5-2021 (Ch 285 Zoning): Tier 1 ≤80 kWh, Tier 2 ≤6,000 kWh, Tier 3 ≤80 MWh. Amendments currently in progress. (per the workgroup GIS sheet).",
-      "meterAccess": "ftm"
+      "meterAccess": "ftm",
+      "tierSpec": [
+        {
+          "upToKwh": 80,
+          "status": "allowed",
+          "label": "Tier 1 ≤80 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": 6000,
+          "status": "allowed",
+          "label": "Tier 2 ≤6,000 kWh — allowed",
+          "tier": "T2"
+        },
+        {
+          "upToKwh": 80000,
+          "status": "allowed",
+          "label": "Tier 3 ≤80 MWh — allowed",
+          "tier": "T3"
+        }
+      ]
     },
     {
       "name": "Village of Briarcliff Manor",
@@ -866,7 +942,21 @@
         "tier": "Low capacity"
       },
       "localLaw": "Village Code Ch. 178, Art. II (§178-9): Tier 1 ≤600 kWh by-right (all districts); Tier 2 >600 kWh allowed by special-use permit + site plan under restrictive siting. NOTE: workgroup sheet records this as \"prohibits Tier 2\" — conflict to reconcile (see flags).",
-      "meterAccess": "ftm"
+      "meterAccess": "ftm",
+      "tierSpec": [
+        {
+          "upToKwh": 600,
+          "status": "allowed",
+          "label": "Tier 1 ≤600 kWh — by-right",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "permit",
+          "label": "Tier 2 >600 kWh — special-use permit, restrictive siting",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "Village of Croton-on-Hudson",
@@ -931,7 +1021,21 @@
         "tier": "Low capacity"
       },
       "localLaw": "Adopted May 2024 (Ch 230 Definitions): Tier 1 to 200 kWh; Tier 2 over 200 kWh. Already permitting real projects (e.g., a 280 kWh system at Croton Auto Park). (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "ftm"
+      "meterAccess": "ftm",
+      "tierSpec": [
+        {
+          "upToKwh": 200,
+          "status": "allowed",
+          "label": "Tier 1 ≤200 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "allowed",
+          "label": "Tier 2 >200 kWh — allowed",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "Village of Larchmont",
@@ -1023,7 +1127,21 @@
         "tier": "High capacity"
       },
       "localLaw": "2026 BESS local law (LL 2-2026 per the workgroup GIS sheet): Tier 1 ≤600 kWh permitted; Tier 2 >600 kWh prohibited. (Village Code Battery Energy Storage article; confirm exact LL number.)",
-      "meterAccess": "btm"
+      "meterAccess": "btm",
+      "tierSpec": [
+        {
+          "upToKwh": 600,
+          "status": "allowed",
+          "label": "Tier 1 ≤600 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "banned",
+          "label": "Tier 2 >600 kWh — prohibited (LL 2-2026)",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "Village of Port Chester",
@@ -1097,7 +1215,21 @@
         "tier": "High capacity"
       },
       "localLaw": "§345-1003: Tier 1 < 300 kWh, Tier 2 > 300 kWh (amended April 2026). Adopted permanent regulations after lifting its moratorium. (per the workgroup GIS sheet).",
-      "meterAccess": "ftm"
+      "meterAccess": "ftm",
+      "tierSpec": [
+        {
+          "upToKwh": 300,
+          "status": "allowed",
+          "label": "Tier 1 <300 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "allowed",
+          "label": "Tier 2 >300 kWh — allowed (§345-1003)",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "City of Mount Vernon",
@@ -1165,7 +1297,14 @@
         "tier": "Low capacity"
       },
       "localLaw": "Sec 224-A(9): BESS allowed under the solar code. (per the workgroup GIS sheet).",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "Allowed via solar code (Sec 224-A(9)) — scale undefined"
+        }
+      ]
     },
     {
       "name": "City of Peekskill",
@@ -1247,7 +1386,21 @@
         "tier": "High capacity"
       },
       "localLaw": "LL 14-2025: Tier 1 < 80 kWh allowed; the moratorium on Tier 2 > 80 kWh ran until 5/31/2026 and has now lapsed (confirm next step). (per the workgroup GIS sheet).",
-      "meterAccess": "btm"
+      "meterAccess": "btm",
+      "tierSpec": [
+        {
+          "upToKwh": 80,
+          "status": "allowed",
+          "label": "Tier 1 <80 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "paused",
+          "label": "Tier 2 >80 kWh — moratorium status unresolved (see flags)",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "City of Rye",
@@ -1330,7 +1483,21 @@
         "tier": "High capacity"
       },
       "localLaw": "Local Law 2025-02, City Code §98-124.1: only Tier 1 BESS (<80 kWh) permitted; no Tier 2 pathway. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "btm"
+      "meterAccess": "btm",
+      "tierSpec": [
+        {
+          "upToKwh": 80,
+          "status": "allowed",
+          "label": "Tier 1 <80 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "banned",
+          "label": "No pathway >80 kWh (LL 2025-02)",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "Town / Village of Harrison",
@@ -1444,7 +1611,27 @@
         "tier": "High capacity"
       },
       "localLaw": "The 2025 moratorium expired; BESS is now allowed via Town Code §235-95: Tier 1 ≤80 kWh and Tier 2 ≤600 kWh permitted, Tier 3 >600 kWh permitted with a Special Permit Use. (per the workgroup GIS sheet).",
-      "meterAccess": "ftm"
+      "meterAccess": "ftm",
+      "tierSpec": [
+        {
+          "upToKwh": 80,
+          "status": "allowed",
+          "label": "Tier 1 ≤80 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": 600,
+          "status": "allowed",
+          "label": "Tier 2 ≤600 kWh — allowed",
+          "tier": "T2"
+        },
+        {
+          "upToKwh": null,
+          "status": "permit",
+          "label": "Tier 3 >600 kWh — Special Permit Use (§235-95)",
+          "tier": "T3"
+        }
+      ]
     },
     {
       "name": "Town of Lewisboro",
@@ -1508,7 +1695,14 @@
         "tier": "NYSEG territory (not on the ConEd map)"
       },
       "localLaw": "2025 Ch 220 Art XIII (Solar Energy Systems) covers BESS. (per the workgroup GIS sheet).",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "Covered by solar code (Ch 220 Art XIII) — thresholds unconfirmed"
+        }
+      ]
     },
     {
       "name": "Town of Mamaroneck",
@@ -1575,7 +1769,14 @@
         "tier": "High capacity"
       },
       "localLaw": "2025 Chapter 181 (Solar Energy) covers BESS. (per the workgroup GIS sheet).",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "Covered by solar code (Ch 181) — thresholds unconfirmed"
+        }
+      ]
     },
     {
       "name": "Town of North Castle",
@@ -1666,7 +1867,24 @@
         "tier": "Moderate capacity"
       },
       "localLaw": "Local Law 4 of 2024 (adopted 8/14/24): excludes BESS from \"public utility\" (§355-4) and prohibits Type 1 (>600 kWh) & Type 2 (80–600 kWh) BESS in residential and IND-A zones and all BESS in the CB-A/GB business zones (§§355-21/22/23). Type 3 (≤80 kWh) unaddressed. Confirmed by the adopted local law and County Referral NOC 24-008.",
-      "meterAccess": "btm"
+      "meterAccess": "btm",
+      "tierSpec": [
+        {
+          "upToKwh": 80,
+          "status": "undefined",
+          "label": "≤80 kWh residential (their “Type 3”) — neither permitted nor prohibited"
+        },
+        {
+          "upToKwh": 600,
+          "status": "banned",
+          "label": "80–600 kWh commercial (“Type 2”) — prohibited"
+        },
+        {
+          "upToKwh": null,
+          "status": "banned",
+          "label": ">600 kWh utility (“Type 1”) — prohibited"
+        }
+      ]
     },
     {
       "name": "Town of North Salem",
@@ -1748,7 +1966,14 @@
         "tier": "NYSEG territory (not on the ConEd map)"
       },
       "localLaw": "Zoning §250-13: BESS prohibited except systems dedicated primarily to the property where located (on-site only); \"public utility\" redefined to exclude BESS. (Verified in the workgroup GIS sheet; confirmed in Town Board coverage.)",
-      "meterAccess": "btm"
+      "meterAccess": "btm",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "onsite",
+          "label": "On-site (behind-the-meter) use only, any size (§250-13)"
+        }
+      ]
     },
     {
       "name": "Town of Ossining",
@@ -1807,7 +2032,21 @@
         "tier": "Low capacity"
       },
       "localLaw": "2021 §200-31.4: Tier 1 to 600 kWh, Tier 2 over 600 kWh in a Floating Zone. (per the workgroup GIS sheet).",
-      "meterAccess": "ftm"
+      "meterAccess": "ftm",
+      "tierSpec": [
+        {
+          "upToKwh": 600,
+          "status": "allowed",
+          "label": "Tier 1 ≤600 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "permit",
+          "label": "Tier 2 >600 kWh — Floating Zone",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "Town of Pound Ridge",
@@ -1932,7 +2171,14 @@
       },
       "moratoriumReason": "Moratorium runs to 9/24/26 while the Town weighs rules; outside it, only behind-the-meter (on-site) systems are allowed.",
       "localLaw": "BESS only allowed when “providing energy primarily for the property on which they are located” — effectively bars utility-scale. (per the workgroup GIS sheet).",
-      "meterAccess": "none"
+      "meterAccess": "none",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "paused",
+          "label": "All sizes paused to 9/24/26; baseline rule is on-site only"
+        }
+      ]
     },
     {
       "name": "Town of Yorktown",
@@ -2020,7 +2266,21 @@
         "tier": "Moderate capacity"
       },
       "localLaw": "LL 10-2025 (§300-81.5): Tier 1 ≤40/80 kWh allowed; new Tier 2 systems >80 kWh prohibited. The Town also formally opposed state ORES preemption (S5506/A8378). (per the workgroup GIS sheet).",
-      "meterAccess": "btm"
+      "meterAccess": "btm",
+      "tierSpec": [
+        {
+          "upToKwh": 80,
+          "status": "allowed",
+          "label": "Tier 1 ≤40/80 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "banned",
+          "label": "Tier 2 >80 kWh — prohibited (LL 10-2025)",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "Village of Elmsford",
@@ -2064,7 +2324,21 @@
         "tier": "High capacity"
       },
       "localLaw": "2022 (Ch 335-23-J(4)): special-permit use, Tier 1 to 600 kWh, Tier 2 over 600 kWh. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "ftm"
+      "meterAccess": "ftm",
+      "tierSpec": [
+        {
+          "upToKwh": 600,
+          "status": "permit",
+          "label": "Tier 1 ≤600 kWh — special permit",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "permit",
+          "label": "Tier 2 >600 kWh — special permit",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "Village of Hastings-on-Hudson",
@@ -2104,7 +2378,14 @@
         "tier": "Low capacity"
       },
       "localLaw": "Ch 160 Green Building Code; no BESS-specific provisions, so storage is permitted by default. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS-specific provisions (green building code) — permitted by default"
+        }
+      ]
     },
     {
       "name": "Village of Irvington",
@@ -2144,7 +2425,14 @@
         "tier": "High capacity"
       },
       "localLaw": "Ch 224 Attachment 3, Solar Energy Equipment Guidelines (2018). (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "Covered by solar guidelines (Ch 224) — thresholds unconfirmed"
+        }
+      ]
     },
     {
       "name": "Village of Mamaroneck",
@@ -2226,7 +2514,21 @@
         "tier": "High capacity"
       },
       "localLaw": "LL 7-2026 (confirmed in workgroup GIS sheet updated 6/18/26): Tier 1 ≤40/80 kWh; >80 kWh prohibited. The moratorium chain (LL 7/11/14-2025) concluded into this permanent Tier-1-only framework after the April 27, 2026 Board of Trustees hearing. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "btm"
+      "meterAccess": "btm",
+      "tierSpec": [
+        {
+          "upToKwh": 80,
+          "status": "allowed",
+          "label": "Tier 1 ≤40/80 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "banned",
+          "label": ">80 kWh — prohibited (LL 7-2026)",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "Village of Rye Brook",
@@ -2330,7 +2632,21 @@
         "tier": "High capacity"
       },
       "localLaw": "Local Law 2-2025, Village Code §98-124.1: only Tier 1 BESS (≤80 kWh) permitted; no Tier 2 pathway. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "btm"
+      "meterAccess": "btm",
+      "tierSpec": [
+        {
+          "upToKwh": 80,
+          "status": "allowed",
+          "label": "Tier 1 ≤80 kWh — allowed",
+          "tier": "T1"
+        },
+        {
+          "upToKwh": null,
+          "status": "banned",
+          "label": "No pathway >80 kWh (LL 2-2025)",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "Village of Sleepy Hollow",
@@ -2370,7 +2686,14 @@
         "tier": "High capacity"
       },
       "localLaw": "2022 (Ch 450 Art XX): development incentives, C-2 district only. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "ftm"
+      "meterAccess": "ftm",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "permit",
+          "label": "Allowed in C-2 commercial districts only (Ch 450 Art XX)"
+        }
+      ]
     },
     {
       "name": "Village of Tarrytown",
@@ -2416,7 +2739,20 @@
         "tier": "High capacity"
       },
       "localLaw": "2025: BESS over 600 kWh allowed via a Floating Zone in the OB and MU zones. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "ftm"
+      "meterAccess": "ftm",
+      "tierSpec": [
+        {
+          "upToKwh": 600,
+          "status": "undefined",
+          "label": "≤600 kWh — not specifically addressed"
+        },
+        {
+          "upToKwh": null,
+          "status": "permit",
+          "label": ">600 kWh — Floating Zone (OB & MU districts)",
+          "tier": "T2"
+        }
+      ]
     },
     {
       "name": "City of New Rochelle",
@@ -2464,7 +2800,14 @@
         "tier": "Moderate capacity"
       },
       "localLaw": "Code is silent on BESS. (per the workgroup GIS sheet).",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "City of White Plains",
@@ -2512,7 +2855,14 @@
         "tier": "Moderate capacity"
       },
       "localLaw": "Code is silent on BESS. (per the workgroup GIS sheet).",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "City of Yonkers",
@@ -2597,7 +2947,14 @@
         "raw": "25% Yellow, 75% Orange",
         "tier": "Moderate capacity"
       },
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "Code silent; the 2024–25 moratorium exempted ≤600 kWh (see flags)"
+        }
+      ]
     },
     {
       "name": "Town of Eastchester",
@@ -2644,7 +3001,14 @@
         "tier": "Moderate capacity"
       },
       "localLaw": "Code is silent on BESS. (per the workgroup GIS sheet).",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "Town of Pelham",
@@ -2692,7 +3056,14 @@
         "tier": "High capacity"
       },
       "localLaw": "Code is silent on BESS; a draft BESS local law has been referenced — confirm. (per the workgroup GIS sheet).",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "Town of Rye",
@@ -2739,7 +3110,14 @@
         "tier": "NYSEG territory (not on the ConEd map)"
       },
       "localLaw": "The Town of Rye has no BESS code of its own; its territory is largely the Villages of Port Chester and Rye Brook (listed separately). (per the workgroup GIS sheet).",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "Town/Village of Scarsdale",
@@ -2787,7 +3165,14 @@
         "tier": "High capacity"
       },
       "localLaw": "Code is silent on BESS. (per the workgroup GIS sheet).",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "Village of Ardsley",
@@ -2817,7 +3202,14 @@
         "tier": "Moderate capacity"
       },
       "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "Village of Bronxville",
@@ -2847,7 +3239,14 @@
         "tier": "Moderate capacity"
       },
       "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "Village of Buchanan",
@@ -2878,7 +3277,14 @@
         "tier": "High capacity"
       },
       "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "Village of Dobbs Ferry",
@@ -2908,7 +3314,14 @@
         "tier": "Moderate capacity"
       },
       "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "Village of Pelham",
@@ -2941,7 +3354,14 @@
         "tier": "High capacity"
       },
       "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "Village of Pelham Manor",
@@ -2971,7 +3391,14 @@
         "tier": "Low capacity"
       },
       "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "Village of Pleasantville",
@@ -3001,7 +3428,14 @@
         "tier": "Moderate capacity"
       },
       "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     },
     {
       "name": "Village of Tuckahoe",
@@ -3031,7 +3465,14 @@
         "tier": "High capacity"
       },
       "localLaw": "Code is silent on BESS. (Verified in the workgroup GIS sheet.)",
-      "meterAccess": "unknown"
+      "meterAccess": "unknown",
+      "tierSpec": [
+        {
+          "upToKwh": null,
+          "status": "undefined",
+          "label": "No BESS provisions — defaults to general zoning"
+        }
+      ]
     }
   ],
   "steps": [
@@ -3115,6 +3556,12 @@
     ]
   ],
   "changelog": [
+    {
+      "date": "2026-07-02g",
+      "items": [
+        "Added a battery-shaped capacity spectrum to every card's At a Glance: a log-scale bar (1 kWh → 100 MWh) inside a battery outline showing what each capacity range gets — allowed by-right (green), special permit (blue), prohibited (red), paused (amber hatch), on-site/BTM-only (green hatch), or undefined (gray) — with the town's actual kWh thresholds marked and Tier 1/2/3 tags on the segments. Tier thresholds vary by town, so segments encode real capacity ranges rather than tier numbers (North Castle's inverted Type numbering is annotated in its labels). Classifications derive from each entry's localLaw; solar-code and silent-code towns show as undefined."
+      ]
+    },
     {
       "date": "2026-07-02f",
       "items": [
