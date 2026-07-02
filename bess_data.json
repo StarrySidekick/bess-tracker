@@ -733,7 +733,7 @@
       "name": "Village of Briarcliff Manor",
       "status": "overstrict",
       "statusLabel": "RESTRICTIVE",
-      "scope": "Allowed — Tier 1 ≤600 kWh; Tier 2 prohibited",
+      "scope": "Tiered code — Tier 1 (≤600 kWh) by-right; Tier 2 (>600 kWh) allowed only by special-use permit under very restrictive siting",
       "window": "TOO STRICT",
       "windowClass": "p-strict",
       "subtitle": "Northern Westchester",
@@ -741,11 +741,32 @@
         [
           "Grid hosting capacity",
           "75% Red, 25% Yellow — Low capacity (ConEd/NYSEG hosting-capacity map)"
+        ],
+        [
+          "Governing law",
+          "Village Code Chapter 178 (Art. II), §178-9: Tier 1 (≤600 kWh) permitted by-right in all districts (building permit, exempt from site plan); Tier 2 (>600 kWh) permitted only by Board-of-Trustees special-use permit + Planning Board site plan."
+        ],
+        [
+          "How restrictive",
+          "Tier 2 is not banned, but siting rules make it very hard: 5-acre minimum lot in residential zones, 50 ft property-line / 100 ft building setbacks, and 0.1-mile \"avoidance\" zones around schools, healthcare, senior-living, and municipal facilities."
+        ],
+        [
+          "Active review",
+          "A Village BESS Committee (Mayor, Village Manager, Engineer, DPW, Counsel, Fire & Police chiefs, Sustainability Advisory Council) issued Initial Recommendations refining Tier 1 and Tier 2 standards — the code is being actively worked."
         ]
       ],
-      "summary": [],
-      "committees": [],
-      "meetings": [],
+      "summary": [
+        "Briarcliff Manor regulates battery storage under Village Code Chapter 178: small Tier 1 systems (≤600 kWh) are permitted by-right in every district with a building permit, while large Tier 2 systems (>600 kWh) are allowed only through a Board-of-Trustees special-use permit plus Planning Board site-plan review. So the Village has a full tiered framework rather than an outright Tier 2 ban.",
+        "In practice the Tier 2 pathway is heavily constrained — a 5-acre minimum site in residential zones, large setbacks, and 0.1-mile avoidance buffers around schools, healthcare, senior housing, and municipal buildings — which, combined with low grid hosting capacity, makes utility-scale storage difficult to site. A standing Village BESS Committee has issued initial recommendations and continues to refine the rules, so there is an open, substantive process to engage."
+      ],
+      "committees": [
+        "<b>Board of Trustees</b> — issues Tier 2 special-use permits and adopts any code amendments.",
+        "<b>BESS Committee</b> — Mayor, Village Manager, Village Engineer, DPW Superintendent, Village Counsel, Fire & Police chiefs, and the Sustainability Advisory Council; drafting/refining the BESS standards.",
+        "<b>Planning Board</b> — Tier 2 site-plan review."
+      ],
+      "meetings": [
+        "<b>Schedule:</b> Board of Trustees meets the 1st & 3rd Tuesdays at 7:30 PM at the William J. Vescio Community Center, 1 Library Road. Meetings are broadcast (Optimum Ch. 78 / Verizon FiOS Ch. 30), livestreamed at briarclifftv.viebit.com, and available via Zoom. Written public comment can be emailed ahead of time to the Village Clerk (cdennett@briarcliffmanor.org); agendas post the Friday before each meeting."
+      ],
       "officials": [
         {
           "role": "Mayor",
@@ -753,18 +774,22 @@
           "phone": "(914) 944-2782"
         },
         {
-          "role": "Board of Trustees",
-          "name": "Mayor + four Trustees",
-          "phone": "(914) 944-2782"
+          "role": "Village Manager",
+          "name": "Josh Ringel",
+          "phone": "(914) 944-2700"
+        },
+        {
+          "role": "Village Engineer",
+          "name": "Kevin P. Leddy, P.E."
         },
         {
           "role": "Village Clerk",
           "name": "Christine Dennett",
-          "email": "clerksoffice@briarcliffmanor.org",
+          "email": "cdennett@briarcliffmanor.org",
           "phone": "(914) 941-4801"
         },
         {
-          "role": "Village Office",
+          "role": "Village Hall",
           "name": "1111 Pleasantville Road, Briarcliff Manor, NY 10510",
           "phone": "(914) 941-4800"
         }
@@ -773,17 +798,35 @@
         [
           "Board of Trustees",
           "https://briarcliffmanor.gov/281/Board-of-Trustees"
+        ],
+        [
+          "BESS code (eCode360 §178, Art. II)",
+          "https://ecode360.com/38680345"
+        ],
+        [
+          "BESS Committee — Initial Recommendations (PDF)",
+          "https://www.briarcliffmanor.gov/DocumentCenter/View/2993/BESS-Committee-Initial-Recommendations"
+        ],
+        [
+          "Agenda Center",
+          "https://www.briarcliffmanor.gov/AgendaCenter"
+        ],
+        [
+          "Board meeting calendars",
+          "https://www.briarcliffmanor.gov/mayor-board-trustees/pages/board-trustees-meeting-calendars"
         ]
       ],
       "flags": [
-        "Over-strict: Prohibits Tier 2 (>600 kWh) — blocks utility-scale storage. An engagement target to loosen toward a Croton-style tiered code."
+        "CONFLICT to reconcile with the workgroup sheet: the sheet says Briarcliff \"prohibits Tier 2 > 600 kWh,\" but the current eCode360 text and the Village BESS Committee recommendations show Tier 2 is permitted via special-use permit (not banned). Likely the sheet is shorthand for the very restrictive SUP siting. Confirm the exact adopted June 2025 amendment text before finalizing the classification.",
+        "Judgment call: because Tier 2 is technically allowed (a full tiered framework), Briarcliff could arguably be \"Healthy BESS code\" rather than \"Restrictive.\" Kept as Restrictive for now because the Tier 2 siting rules (5-acre min, avoidance buffers) plus low grid capacity effectively block meaningful storage. Flag for the workgroup to decide.",
+        "Engagement angle: rather than \"add a Tier 2 pathway,\" the ask here is to loosen the existing Tier 2 siting standards toward a workable, Croton-style framework."
       ],
       "dr": false,
       "hosting": {
         "raw": "75% Red, 25% Yellow",
         "tier": "Low capacity"
       },
-      "localLaw": "Adopted June 2025 (Ch 178 Art II): Tier 1 to 600 kWh; prohibits Tier 2 > 600 kWh. (Verified in the workgroup GIS sheet.)"
+      "localLaw": "Village Code Ch. 178, Art. II (§178-9): Tier 1 ≤600 kWh by-right (all districts); Tier 2 >600 kWh allowed by special-use permit + site plan under restrictive siting. NOTE: workgroup sheet records this as \"prohibits Tier 2\" — conflict to reconcile (see flags)."
     },
     {
       "name": "Village of Croton-on-Hudson",
