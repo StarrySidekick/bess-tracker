@@ -247,7 +247,7 @@
       "status": "moratorium",
       "statusLabel": "MORATORIUM",
       "original": true,
-      "scope": "Moratorium lapsed 5/31/26; tiered law proposed (Tier 1 40/80, Tier 2 ≤600, Tier 3 >600 kWh) — not yet adopted",
+      "scope": "Moratorium lapsed 5/31/26; proposed permanent law permits ONLY Tier 1 (≤80 kWh) and prohibits Tier 2 & Tier 3 — advancing but adoption unconfirmed",
       "window": "HIGH",
       "windowClass": "p-high",
       "subtitle": "Central Westchester",
@@ -258,7 +258,7 @@
         ],
         [
           "Proposed permanent law",
-          "A draft permanent BESS local law would allow Tier 1 (≤80 kWh) only and explicitly prohibit Tier 2 and Tier 3 — stricter than the tiered Tier 1/2/3 framework previously described here. Referred to the Planning Board, which issued its response March 4, 2026; not yet shown as adopted by the Town Board."
+          "County referral NWC-25-007 (10/28/25) confirms the draft: Tier 1 (≤80 kWh) permitted town-wide by building permit; Tier 2 and Tier 3 (anything >80 kWh) PROHIBITED town-wide. The County Planning Board objected to the ban (as it did for North Castle). Referred to the Planning Board (response 3/4/26); Town Board adoption not yet confirmed."
         ],
         [
           "Why a moratorium",
@@ -274,6 +274,7 @@
         "The permanent law under consideration has shifted from a permissive tiered framework toward one that would bar Tier 2 and Tier 3 storage entirely (Tier 1 ≤80 kWh only) — a meaningfully stricter direction than earlier drafts. The Planning Board responded to the referral March 4, 2026; the Town Board has not yet voted. Real room to influence the final thresholds before adoption."
       ],
       "flags": [
+        "VERIFIED via Westchester County Planning referral NWC-25-007 (10/28/25): the proposed New Castle law permits only Tier 1 (≤80 kWh) and prohibits Tier 2 & Tier 3 town-wide — a prohibition, not the earlier permissive 3-tier draft this dashboard once described. The County formally objected to the ban. Confirm with the Town Clerk whether the Town Board has ADOPTED it; if adopted, reclassify New Castle from \"Moratorium\" to \"Restrictive\"/effective ban.",
         "Confirm (1) the full Town Board roster + member emails — the site is JavaScript-driven, so only Tipp, Saland, Levin, and Morton were verifiable — and (2) the exact current expiration date: the workgroup spreadsheet implies the original extension chain ran only through 5/31/2026, but Carina's June 2026 update says ACTIVE through ~Aug 2026 and the Town's Approved Legislation page shows no 2026 entries yet — there is a real possibility of a legal gap if no further extension was actually adopted. Verify directly with the Town Clerk before relying on either source.",
         "Confirm whether the Town Board has voted on the proposed permanent law (Tier 1 only, Tier 2/3 prohibited) since the Planning Board's March 4, 2026 referral response.",
         "The six-month moratorium lapsed 5/31/26; the proposed tiered law is not yet adopted — an open window to shape the code."
@@ -341,6 +342,10 @@
         [
           "Town Code (eCode360)",
           "https://ecode360.com/NE0395"
+        ],
+        [
+          "County Planning Referral NWC-25-007 (BESS Prohibition)",
+          "https://experience.arcgis.com/experience/e5fa3d5d5b80476396a3f68eaf606db2/"
         ]
       ],
       "dr": false,
@@ -349,7 +354,7 @@
         "tier": "Moderate capacity"
       },
       "moratoriumReason": "A six-month moratorium (lapsed 5/31/26) was enacted to develop tiered siting rules; a Tier 1/2/3 law is proposed but not yet adopted.",
-      "localLaw": "Moratorium on BESS / large-scale solar (LL 1-2025, extended by LL 7-2025); the workgroup's spreadsheet shows the extension chain running through ~5/31/2026, but Carina Energy's June 2026 statewide update lists New Castle as ACTIVE through approximately August 2026 — likely a further extension not yet posted to the Town's online Approved Legislation page (checked 6/29/26, no 2026 entries listed yet). (per the workgroup GIS sheet)."
+      "localLaw": "Moratorium (LL 1-2025, extended by LL 7-2025) lapsed ~5/31/26. Proposed permanent law — per County referral NWC-25-007 (10/28/25) — permits only Tier 1 (≤80 kWh) and prohibits Tier 2 & Tier 3 town-wide; County Planning Board objected. Adoption by the Town Board not yet confirmed. (Reconcile with the workgroup GIS sheet.)"
     },
     {
       "name": "Village of Ossining",
@@ -485,6 +490,10 @@
         [
           "Local Law prohibiting BESS (PDF)",
           "https://mtpleasantny.gov/DocumentCenter/View/2165/Local-Law-Prohibiting-Battery-Energy-Storage-Systems-8252025"
+        ],
+        [
+          "County Planning Referral MTP-25-010 (BESS Prohibition, 7/21/25)",
+          "https://experience.arcgis.com/experience/e5fa3d5d5b80476396a3f68eaf606db2/"
         ]
       ],
       "dr": false,
@@ -633,6 +642,10 @@
         [
           "Mount Kisco BESS prohibition law (eCode360)",
           "https://ecode360.com/MO0865/laws/LF2153752.pdf"
+        ],
+        [
+          "County Planning Referral MTK-25-001 (BESS Prohibition, 7/7/25)",
+          "https://experience.arcgis.com/experience/e5fa3d5d5b80476396a3f68eaf606db2/"
         ]
       ],
       "dr": false,
@@ -818,12 +831,17 @@
         [
           "Board meeting calendars",
           "https://www.briarcliffmanor.gov/mayor-board-trustees/pages/board-trustees-meeting-calendars"
+        ],
+        [
+          "County Planning Referral BMR-25-005 (BESS, 10/1/25)",
+          "https://experience.arcgis.com/experience/e5fa3d5d5b80476396a3f68eaf606db2/"
         ]
       ],
       "flags": [
         "CONFLICT to reconcile with the workgroup sheet: the sheet says Briarcliff \"prohibits Tier 2 > 600 kWh,\" but the current eCode360 text and the Village BESS Committee recommendations show Tier 2 is permitted via special-use permit (not banned). Likely the sheet is shorthand for the very restrictive SUP siting. Confirm the exact adopted June 2025 amendment text before finalizing the classification.",
         "Judgment call: because Tier 2 is technically allowed (a full tiered framework), Briarcliff could arguably be \"Healthy BESS code\" rather than \"Restrictive.\" Kept as Restrictive for now because the Tier 2 siting rules (5-acre min, avoidance buffers) plus low grid capacity effectively block meaningful storage. Flag for the workgroup to decide.",
-        "Engagement angle: rather than \"add a Tier 2 pathway,\" the ask here is to loosen the existing Tier 2 siting standards toward a workable, Croton-style framework."
+        "Engagement angle: rather than \"add a Tier 2 pathway,\" the ask here is to loosen the existing Tier 2 siting standards toward a workable, Croton-style framework.",
+        "A County Planning referral (BMR-25-005, 10/1/25) corresponds to Briarcliff’s 2025 BESS code activity — worth pulling for the exact adopted-vs-proposed Tier 2 language when reconciling the \"prohibits Tier 2\" vs \"permitted by special-use permit\" question above."
       ],
       "dr": false,
       "hosting": {
@@ -3031,6 +3049,13 @@
     ]
   ],
   "changelog": [
+    {
+      "date": "2026-07-02d",
+      "items": [
+        "New Castle: verified via Westchester County Planning referral NWC-25-007 (10/28/25) that the proposed permanent law permits ONLY Tier 1 (≤80 kWh) and PROHIBITS Tier 2 & Tier 3 town-wide (the County objected to the ban). Corrected the scope line, which had described a permissive 3-tier framework; added the referral confirmation to snapshot/localLaw/flags. Status kept as Moratorium pending confirmation the Town Board has adopted the law — if adopted, reclassify to Restrictive/effective ban.",
+        "Scanned the County 239-M Referrals Hub for all BESS referrals and cross-checked: Mount Kisco (MTK-25-001) and Mount Pleasant (MTP-25-010) \"BESS Prohibition\" referrals corroborate their ban status; Cortlandt, Ossining Village, Mamaroneck Village, Larchmont, Yorktown, and Bedford referrals all consistent with current entries. Added confirming referral links to Mount Kisco, Mount Pleasant, New Castle, and Briarcliff (BMR-25-005)."
+      ]
+    },
     {
       "date": "2026-07-02c",
       "items": [
