@@ -53,6 +53,10 @@
       [
         "NY Senate Bill S5506",
         "https://www.nysenate.gov/legislation/bills/2025/S5506"
+      ],
+      [
+        "Westchester County Planning — 239-M Referrals Hub",
+        "https://experience.arcgis.com/experience/e5fa3d5d5b80476396a3f68eaf606db2/"
       ]
     ]
   },
@@ -1523,7 +1527,7 @@
       "name": "Town of North Castle",
       "status": "overstrict",
       "statusLabel": "RESTRICTIVE",
-      "scope": "Restrictive — utility-scale/standalone BESS effectively barred (excluded from \"public utility,\" LL adopted 8/14/24); small household systems exempt",
+      "scope": "Restrictive — Type 1 (utility, >600 kWh) & Type 2 (commercial, 80–600 kWh) prohibited town-wide; only Type 3 (≤80 kWh residential) possibly allowed (LL 4-2024)",
       "window": "TOO STRICT",
       "windowClass": "p-strict",
       "subtitle": "Northern Westchester — Armonk, North White Plains, Banksville",
@@ -1534,37 +1538,38 @@
         ],
         [
           "Governing law",
-          "On Aug 14, 2024 the Town Board adopted a local law amending the Town Code so that battery energy storage systems are NOT a \"public utility.\" With no affirmative permitted use, this effectively bars utility-scale/standalone BESS. Residential solar and household systems (e.g., Tesla chargers) over 80 kW are expressly exempted."
+          "Local Law 4 of 2024 (adopted Aug 14, 2024) amended Town Code §355-4 to exclude BESS from \"public utility\" and define three types, then amended the permitted-use sections to prohibit them: §355-21 and §355-23 (IND-A) exclude Type 1 & Type 2; §355-22 (CB-A and GB business districts) excludes all BESS. Effect: no commercial or utility-scale BESS anywhere in Town."
         ],
         [
-          "Town’s own framing",
-          "Town Attorney Roland Baroni called it \"just a stop-gap measure\" pending safer technology and suitable large-acreage sites; Councilman Saleem Hussain suggested the Town may later allow and better regulate systems."
+          "BESS types (North Castle numbering)",
+          "Type 1 = utility (>600 kWh or grid-serving); Type 2 = commercial (80–600 kWh, on-site only, no sale of excess to the grid); Type 3 = residential (≤80 kWh). Type 1 & 2 are prohibited; Type 3 is neither permitted nor prohibited."
         ],
         [
-          "Engagement window",
-          "TOO STRICT — advocate replacing the public-utility exclusion with a real, well-sited Tier 2/3 pathway."
+          "County pushback",
+          "The Westchester County Planning Board (Referral NOC 24-008, July 1, 2024) found the law would \"effectively ban BESS systems of Types 1 and 2,\" disagreed that a near-total ban is appropriate, and urged the Town to adopt the NYSERDA Model Law and clarify Type 3 status."
         ]
       ],
       "summary": [
-        "CORRECTION (7/2/26): North Castle is not a permissive \"model\" town. On August 14, 2024 the Town Board adopted a local law redefining \"public utility\" to exclude battery energy storage systems — the same mechanism used by North Salem and Mount Kisco — which effectively prohibits utility-scale and standalone BESS. Small household systems (residential solar, Tesla chargers) over 80 kW are exempted. The town code’s §355-4 merely *defines* Type 1/2/3 systems; it does not affirmatively permit them, so the workgroup sheet’s read of \"3 tiers allowed\" was a misinterpretation.",
-        "The Town described the measure as a stop-gap while safety technology matures, and officials signaled openness to allowing better-regulated systems later. That makes North Castle an engagement target to open a genuine Tier 2/3 pathway, not a code to emulate."
+        "North Castle adopted Local Law 4 of 2024 on August 14, 2024, which redefined \"public utility\" to exclude battery energy storage and amended the Town Code’s permitted-use sections to prohibit Type 1 (utility, >600 kWh) and Type 2 (commercial, 80–600 kWh) BESS in the residential and IND-A industrial zones, and to prohibit all BESS in the CB-A and GB business districts. Only Type 3 residential systems (≤80 kWh) are left unaddressed — neither permitted nor prohibited.",
+        "The Westchester County Planning Board reviewed the measure (Referral NOC 24-008) and called it an effective ban on Types 1 and 2, formally disagreeing with a near-total ban and recommending the NYSERDA Model Law instead. This confirms North Castle is a restrictive, near-ban jurisdiction — an engagement target to replace the prohibition with a real, well-sited tiered pathway, not a model to emulate."
       ],
       "flags": [
-        "RECLASSIFIED 7/2/26 from \"BESS Allowed / MODEL\" to \"Restrictive.\" Confirmed via press coverage (Examiner, 8/27/24) that North Castle adopted an 8/14/24 local law excluding BESS from \"public utility,\" effectively barring utility-scale storage. Flagged by a workgroup contact who noted a 2024 referral for the ban.",
-        "CONFLICT to reconcile: the workgroup GIS sheet lists North Castle as \"BESS allowed (3 Tiers)\" and the project guidance previously treated it as a model (dr) town — both based on §355-4 definitions, which only define the tiers and do not permit them. Recommend confirming with Leo/Don and updating the sheet."
+        "Primary sources confirmed (7/2/26): Town of North Castle Local Law 4 of 2024 (adopted 8/14/24) and Westchester County Planning Board Referral NOC 24-008 (7/1/24). The County itself characterized the law as an effective ban on Type 1 & Type 2 BESS.",
+        "CONFLICT to reconcile: the workgroup GIS sheet lists North Castle as \"BESS allowed (3 Tiers)\" (a misread of the §355-4 definitions, which the law uses to PROHIBIT Types 1 & 2). Recommend updating the sheet and removing any \"model\" designation.",
+        "Classification note: kept as \"Restrictive\" because Type 3 (≤80 kWh) residential systems are not expressly prohibited; the workgroup could reasonably treat this as a \"Ban\" given the County’s \"effective ban\" finding."
       ],
       "committees": [
-        "<b>Town Board</b> — adopted the public-utility exclusion; leads any change.",
+        "<b>Town Board</b> — adopted LL 4-2024; leads any change.",
         "<b>Planning Board & Zoning Board of Appeals</b> — permitting/variances.",
         "<b>Conservation Board / sustainability committees</b> — potential allies."
       ],
       "meetings": [
-        "<b>Schedule:</b> Town Board meets the 2nd & 4th Wednesdays at 7:30 PM in the Town Hall Meeting Room, 17 Bedford Road, Armonk. Meetings are broadcast on NCTV and streamed on the town website; agendas via the CivicClerk portal."
+        "<b>Schedule:</b> Town Board meets the 2nd & 4th Wednesdays at 7:30 PM in the Town Hall Meeting Room, 15 Bedford Road, Armonk. Meetings are broadcast on NCTV and streamed on the town website; agendas via the CivicClerk portal."
       ],
       "officials": [
         {
           "role": "Town Supervisor",
-          "name": "Joseph A. Rende (confirm — leadership changed since prior entry)",
+          "name": "Joseph A. Rende (confirm current roster)",
           "phone": "(914) 273-3000"
         },
         {
@@ -1579,7 +1584,7 @@
         },
         {
           "role": "Town Hall",
-          "name": "17 Bedford Road, Armonk, NY 10504",
+          "name": "15 Bedford Road, Armonk, NY 10504",
           "phone": "(914) 273-3000"
         }
       ],
@@ -1593,6 +1598,10 @@
           "https://www.northcastleny.com/129/Agendas-Minutes"
         ],
         [
+          "County Planning Referrals Hub (find NOC 24-008)",
+          "https://experience.arcgis.com/experience/e5fa3d5d5b80476396a3f68eaf606db2/"
+        ],
+        [
           "News — No. Castle acts on BESS (Examiner, 8/27/24)",
           "https://www.theexaminernews.com/no-castle-latest-town-to-take-action-on-battery-storage-systems/"
         ]
@@ -1602,7 +1611,7 @@
         "raw": "25% Red, 75% Yellow",
         "tier": "Moderate capacity"
       },
-      "localLaw": "Local law adopted 8/14/2024 excludes BESS from the definition of \"public utility,\" effectively barring utility-scale/standalone systems (small household systems >80 kW exempt). Code §355-4 only *defines* Type 1/2/3; it does not permit them. (Corrects the workgroup GIS sheet’s \"3 tiers allowed\" reading.)"
+      "localLaw": "Local Law 4 of 2024 (adopted 8/14/24): excludes BESS from \"public utility\" (§355-4) and prohibits Type 1 (>600 kWh) & Type 2 (80–600 kWh) BESS in residential and IND-A zones and all BESS in the CB-A/GB business zones (§§355-21/22/23). Type 3 (≤80 kWh) unaddressed. Confirmed by the adopted local law and County Referral NOC 24-008."
     },
     {
       "name": "Town of North Salem",
@@ -2953,6 +2962,10 @@
   ],
   "sources": [
     [
+      "Westchester County Planning Board — 239-M Referrals Hub (map of municipal referrals, incl. BESS)",
+      "https://experience.arcgis.com/experience/e5fa3d5d5b80476396a3f68eaf606db2/"
+    ],
+    [
       "Carina Energy — NY BESS Moratoriums tracker (May 2026)",
       "https://carina.energy/bess-moratoriums/new-york/"
     ],
@@ -3018,6 +3031,13 @@
     ]
   ],
   "changelog": [
+    {
+      "date": "2026-07-02c",
+      "items": [
+        "North Castle: added primary-source detail from the adopted Local Law 4 of 2024 and Westchester County Planning Board Referral NOC 24-008 (both provided from email). LL 4-2024 (8/14/24) excludes BESS from \"public utility\" and prohibits Type 1 (>600 kWh) & Type 2 (80–600 kWh) in residential/IND-A zones and all BESS in the CB-A/GB business zones; the County called it an effective ban on Types 1 & 2 and recommended the NYSERDA Model Law. Corrected the Town Hall address (15 Bedford Road) and the earlier imprecise \"systems >80 kW exempt\" note.",
+        "Added the Westchester County Planning Department 239-M Referrals Hub (ArcGIS) as a project resource/source for tracking municipal BESS referrals."
+      ]
+    },
     {
       "date": "2026-07-02b",
       "items": [
