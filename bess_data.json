@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02",
+  "lastUpdated": "2026-07-03",
   "statusMeta": {
     "moratorium": {
       "label": "Active moratorium",
@@ -1810,7 +1810,7 @@
       ],
       "flags": [
         "Primary sources confirmed (7/2/26): Town of North Castle Local Law 4 of 2024 (adopted 8/14/24) and Westchester County Planning Board Referral NOC 24-008 (7/1/24). The County itself characterized the law as an effective ban on Type 1 & Type 2 BESS.",
-        "CONFLICT to reconcile: the workgroup GIS sheet lists North Castle as \"BESS allowed (3 Tiers)\" (a misread of the §355-4 definitions, which the law uses to PROHIBIT Types 1 & 2). Recommend updating the sheet and removing any \"model\" designation.",
+        "RESOLVED 7/3/26: the workgroup GIS sheet now lists North Castle as a BESS ban (row updated 7/2/26), matching this dashboard's reading of LL 4-2024 — the earlier \"BESS allowed (3 Tiers)\" entry was corrected. Verified in the workgroup GIS sheet.",
         "Classification note: kept as \"Restrictive\" because Type 3 (≤80 kWh) residential systems are not expressly prohibited; the workgroup could reasonably treat this as a \"Ban\" given the County’s \"effective ban\" finding."
       ],
       "committees": [
@@ -3556,6 +3556,13 @@
     ]
   ],
   "changelog": [
+    {
+      "date": "2026-07-03",
+      "items": [
+        "Daily reconciliation vs the workgroup GIS sheet and town sources: no new moratoriums, bans, extensions, adopted laws, or hearing notices found. All 45 municipality statuses re-confirmed.",
+        "North Castle: resolved the standing sheet conflict — the workgroup GIS sheet (row updated 7/2/26) now records North Castle as a BESS ban, agreeing with the dashboard's LL 4-2024 analysis; classification stays RESTRICTIVE because Type 3 (≤80 kWh) residential systems remain unaddressed rather than prohibited."
+      ]
+    },
     {
       "date": "2026-07-02g",
       "items": [
