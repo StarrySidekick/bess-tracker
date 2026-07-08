@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07",
+  "lastUpdated": "2026-07-08",
   "statusMeta": {
     "moratorium": {
       "label": "Active moratorium",
@@ -195,7 +195,7 @@
         "With the moratorium expiring July 31, 2026, this is the most urgent window on the board: the July 21 Town Board meeting is likely the last regular meeting before expiry. Because the town is openly drafting, this is one of the best chances to influence the actual ordinance — setbacks, fire/safety standards, permitted zones."
       ],
       "flags": [
-        "EXPIRATION CORRECTED 7/2/26: the certified text of LL 7-2025 (filed with NYS; adopted at the Dec 9, 2025 regular meeting) states the moratorium is extended “through July 31, 2026” — not “the end of 2026” as the hearing notice implied. The adopted law controls; the workgroup GIS sheet's “until 07-2026” was correct. Confirm with the Town Clerk whether any FURTHER extension is adopted at or before the July 21, 2026 meeting. As of 7/6/26 no BESS public-hearing notice or extension appears on the town’s Public Postings & Legal Notices page (latest BESS item remains LL 7-2025, posted 12/10/25)."
+        "EXPIRATION CORRECTED 7/2/26: the certified text of LL 7-2025 (filed with NYS; adopted at the Dec 9, 2025 regular meeting) states the moratorium is extended “through July 31, 2026” — not “the end of 2026” as the hearing notice implied. The adopted law controls; the workgroup GIS sheet's “until 07-2026” was correct. Confirm with the Town Clerk whether any FURTHER extension is adopted at or before the July 21, 2026 meeting. As of 7/8/26 no BESS public-hearing notice or extension appears on the town’s Public Postings & Legal Notices page (latest BESS item remains LL 7-2025, posted 12/10/25)."
       ],
       "committees": [
         "<b>Green Team / Climate Smart Task Force</b> — sustainability body; natural ally.",
@@ -2211,7 +2211,7 @@
       ],
       "meetings": [
         "<b>Schedule:</b> Town Board meets the 1st & 3rd Tuesday at 7:30 PM at the Town House (179 Westchester Avenue). In person, Zoom, or livestream; agendas post ~3 days ahead.",
-        "<b>Upcoming 2026 (7:30 PM):</b> Jul 7, Jul 21, Aug 4.",
+        "<b>Upcoming 2026 (7:30 PM):</b> Jul 21, Aug 4.",
         "<b>To get on the agenda:</b> email the Supervisor's office ≥5 days ahead and copy the Town Clerk (townclerk@townofpoundridge.gov)."
       ],
       "officials": [
@@ -3944,6 +3944,14 @@
     ]
   ],
   "changelog": [
+    {
+      "date": "2026-07-08",
+      "items": [
+        "Daily reconciliation: no new moratoriums, bans, extensions, adopted laws, or hearing notices found. The workgroup GIS sheet is unchanged (no row updated after 7/2/26); Carina remains on its June 2026 refresh (86 active statewide; Westchester actives: Bedford, New Castle, Cortlandt, Yonkers, Peekskill). All 45 municipality statuses re-confirmed.",
+        "Cortlandt watch (expires 7/31/26): re-checked the town's Public Postings & Legal Notices page — still no BESS hearing notice or further extension posted as of 7/8/26 (latest posting is a 6/30/26 bid notice; the last BESS item remains LL 7-2025, posted 12/10/25). The July 21 Town Board meeting remains the key date.",
+        "Housekeeping: dropped Pound Ridge's past July 7 Town Board date (next: Jul 21, Aug 4)."
+      ]
+    },
     {
       "date": "2026-07-07",
       "items": [
