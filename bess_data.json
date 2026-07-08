@@ -158,13 +158,14 @@
       ],
       "priorityScore": 71,
       "priorityParts": {
-        "time": 30,
-        "severity": 18,
-        "grid": 5,
+        "urgency": 30,
+        "restrictiveness": 18,
+        "hosting": 5,
         "population": 8,
         "receptivity": 10
       },
-      "priorityRank": 5
+      "priorityRank": 4,
+      "population": 17335
     },
     {
       "name": "Town of Cortlandt (Cortlandt Manor)",
@@ -271,13 +272,14 @@
       ],
       "priorityScore": 93,
       "priorityParts": {
-        "time": 30,
-        "severity": 22,
-        "grid": 20,
+        "urgency": 30,
+        "restrictiveness": 22,
+        "hosting": 20,
         "population": 11,
         "receptivity": 10
       },
-      "priorityRank": 1
+      "priorityRank": 1,
+      "population": 45124
     },
     {
       "name": "Town of New Castle (Chappaqua / Millwood)",
@@ -396,13 +398,14 @@
       ],
       "priorityScore": 83,
       "priorityParts": {
-        "time": 30,
-        "severity": 22,
-        "grid": 13,
+        "urgency": 30,
+        "restrictiveness": 22,
+        "hosting": 13,
         "population": 8,
         "receptivity": 10
       },
-      "priorityRank": 2
+      "priorityRank": 2,
+      "population": 19069
     },
     {
       "name": "Village of Ossining",
@@ -487,13 +490,14 @@
       ],
       "priorityScore": 76,
       "priorityParts": {
-        "time": 28,
-        "severity": 22,
-        "grid": 5,
+        "urgency": 28,
+        "restrictiveness": 22,
+        "hosting": 5,
         "population": 11,
         "receptivity": 10
       },
-      "priorityRank": 3
+      "priorityRank": 3,
+      "population": 27551
     },
     {
       "name": "Town of Mount Pleasant",
@@ -587,13 +591,14 @@
       ],
       "priorityScore": 64,
       "priorityParts": {
-        "time": 8,
-        "severity": 25,
-        "grid": 13,
+        "urgency": 8,
+        "restrictiveness": 25,
+        "hosting": 13,
         "population": 11,
         "receptivity": 7
       },
-      "priorityRank": 7
+      "priorityRank": 6,
+      "population": 44436
     },
     {
       "name": "Town of Somers",
@@ -657,15 +662,17 @@
           "label": "BESS barred via solar code §170-80 — confirm thresholds"
         }
       ],
-      "priorityScore": 56,
+      "priorityScore": 0,
       "priorityParts": {
-        "time": 8,
-        "severity": 25,
-        "grid": 8,
-        "population": 8,
-        "receptivity": 7
+        "urgency": 0,
+        "restrictiveness": 0,
+        "hosting": 0,
+        "population": 0,
+        "receptivity": 0
       },
-      "priorityRank": 13
+      "priorityRank": 45,
+      "population": 20434,
+      "priorityExcluded": "NYSEG territory (not on the ConEd map — outside the coalition's grid focus)"
     },
     {
       "name": "Village/Town of Mount Kisco",
@@ -762,13 +769,14 @@
       ],
       "priorityScore": 53,
       "priorityParts": {
-        "time": 8,
-        "severity": 25,
-        "grid": 5,
+        "urgency": 8,
+        "restrictiveness": 25,
+        "hosting": 5,
         "population": 8,
         "receptivity": 7
       },
-      "priorityRank": 15
+      "priorityRank": 13,
+      "population": 10959
     },
     {
       "name": "Town of Greenburgh",
@@ -871,13 +879,14 @@
       ],
       "priorityScore": 35,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 13,
+        "urgency": 2,
+        "restrictiveness": 0,
+        "hosting": 13,
         "population": 13,
         "receptivity": 7
       },
-      "priorityRank": 35
+      "priorityRank": 31,
+      "population": 94105
     },
     {
       "name": "Village of Briarcliff Manor",
@@ -990,13 +999,14 @@
       ],
       "priorityScore": 43,
       "priorityParts": {
-        "time": 10,
-        "severity": 16,
-        "grid": 5,
+        "urgency": 10,
+        "restrictiveness": 16,
+        "hosting": 5,
         "population": 5,
         "receptivity": 7
       },
-      "priorityRank": 27
+      "priorityRank": 24,
+      "population": 8145
     },
     {
       "name": "Village of Croton-on-Hudson",
@@ -1082,13 +1092,14 @@
       ],
       "priorityScore": 16,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 5,
+        "urgency": 2,
+        "restrictiveness": 0,
+        "hosting": 5,
         "population": 5,
         "receptivity": 4
       },
-      "priorityRank": 44
+      "priorityRank": 39,
+      "population": 8327
     },
     {
       "name": "Village of Larchmont",
@@ -1188,13 +1199,14 @@
       ],
       "priorityScore": 58,
       "priorityParts": {
-        "time": 10,
-        "severity": 16,
-        "grid": 20,
+        "urgency": 10,
+        "restrictiveness": 16,
+        "hosting": 20,
         "population": 5,
         "receptivity": 7
       },
-      "priorityRank": 11
+      "priorityRank": 10,
+      "population": 6588
     },
     {
       "name": "Village of Port Chester",
@@ -1278,13 +1290,14 @@
       ],
       "priorityScore": 40,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 20,
+        "urgency": 2,
+        "restrictiveness": 0,
+        "hosting": 20,
         "population": 11,
         "receptivity": 7
       },
-      "priorityRank": 30
+      "priorityRank": 26,
+      "population": 31693
     },
     {
       "name": "City of Mount Vernon",
@@ -1362,13 +1375,14 @@
       ],
       "priorityScore": 24,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 5,
+        "urgency": 2,
+        "restrictiveness": 0,
+        "hosting": 5,
         "population": 13,
         "receptivity": 4
       },
-      "priorityRank": 41
+      "priorityRank": 37,
+      "population": 73893
     },
     {
       "name": "City of Peekskill",
@@ -1461,13 +1475,14 @@
       ],
       "priorityScore": 70,
       "priorityParts": {
-        "time": 16,
-        "severity": 16,
-        "grid": 20,
+        "urgency": 16,
+        "restrictiveness": 16,
+        "hosting": 20,
         "population": 11,
         "receptivity": 7
       },
-      "priorityRank": 6
+      "priorityRank": 5,
+      "population": 25431
     },
     {
       "name": "City of Rye",
@@ -1559,13 +1574,14 @@
       ],
       "priorityScore": 58,
       "priorityParts": {
-        "time": 10,
-        "severity": 16,
-        "grid": 20,
+        "urgency": 10,
+        "restrictiveness": 16,
+        "hosting": 20,
         "population": 8,
         "receptivity": 4
       },
-      "priorityRank": 10
+      "priorityRank": 9,
+      "population": 16592
     },
     {
       "name": "Town / Village of Harrison",
@@ -1695,13 +1711,14 @@
       ],
       "priorityScore": 43,
       "priorityParts": {
-        "time": 8,
-        "severity": 0,
-        "grid": 20,
+        "urgency": 8,
+        "restrictiveness": 0,
+        "hosting": 20,
         "population": 11,
         "receptivity": 4
       },
-      "priorityRank": 26
+      "priorityRank": 23,
+      "population": 28943
     },
     {
       "name": "Town of Lewisboro",
@@ -1773,15 +1790,17 @@
           "label": "Covered by solar code (Ch 220 Art XIII) — thresholds unconfirmed"
         }
       ],
-      "priorityScore": 22,
+      "priorityScore": 0,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 8,
-        "population": 8,
-        "receptivity": 4
+        "urgency": 0,
+        "restrictiveness": 0,
+        "hosting": 0,
+        "population": 0,
+        "receptivity": 0
       },
-      "priorityRank": 42
+      "priorityRank": 41,
+      "population": 12441,
+      "priorityExcluded": "NYSEG territory (not on the ConEd map — outside the coalition's grid focus)"
     },
     {
       "name": "Town of Mamaroneck",
@@ -1858,13 +1877,14 @@
       ],
       "priorityScore": 37,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 20,
+        "urgency": 2,
+        "restrictiveness": 0,
+        "hosting": 20,
         "population": 11,
         "receptivity": 4
       },
-      "priorityRank": 33
+      "priorityRank": 29,
+      "population": 31758
     },
     {
       "name": "Town of North Castle",
@@ -1967,13 +1987,14 @@
       ],
       "priorityScore": 54,
       "priorityParts": {
-        "time": 10,
-        "severity": 16,
-        "grid": 13,
+        "urgency": 10,
+        "restrictiveness": 16,
+        "hosting": 13,
         "population": 8,
         "receptivity": 7
       },
-      "priorityRank": 14
+      "priorityRank": 12,
+      "population": 12337
     },
     {
       "name": "Town of North Salem",
@@ -2056,15 +2077,17 @@
           "label": "On-site (behind-the-meter) use only, any size (§250-13)"
         }
       ],
-      "priorityScore": 46,
+      "priorityScore": 0,
       "priorityParts": {
-        "time": 10,
-        "severity": 16,
-        "grid": 8,
-        "population": 5,
-        "receptivity": 7
+        "urgency": 0,
+        "restrictiveness": 0,
+        "hosting": 0,
+        "population": 0,
+        "receptivity": 0
       },
-      "priorityRank": 21
+      "priorityRank": 42,
+      "population": 5244,
+      "priorityExcluded": "NYSEG territory (not on the ConEd map — outside the coalition's grid focus)"
     },
     {
       "name": "Town of Ossining",
@@ -2140,13 +2163,14 @@
       ],
       "priorityScore": 22,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 5,
+        "urgency": 2,
+        "restrictiveness": 0,
+        "hosting": 5,
         "population": 11,
         "receptivity": 4
       },
-      "priorityRank": 43
+      "priorityRank": 38,
+      "population": 40062
     },
     {
       "name": "Town of Pound Ridge",
@@ -2274,15 +2298,17 @@
           "label": "All sizes paused to 9/24/26; baseline rule is on-site only"
         }
       ],
-      "priorityScore": 73,
+      "priorityScore": 0,
       "priorityParts": {
-        "time": 28,
-        "severity": 22,
-        "grid": 8,
-        "population": 5,
-        "receptivity": 10
+        "urgency": 0,
+        "restrictiveness": 0,
+        "hosting": 0,
+        "population": 0,
+        "receptivity": 0
       },
-      "priorityRank": 4
+      "priorityRank": 43,
+      "population": 5205,
+      "priorityExcluded": "NYSEG territory (not on the ConEd map — outside the coalition's grid focus)"
     },
     {
       "name": "Town of Yorktown",
@@ -2379,13 +2405,14 @@
       ],
       "priorityScore": 57,
       "priorityParts": {
-        "time": 10,
-        "severity": 16,
-        "grid": 13,
+        "urgency": 10,
+        "restrictiveness": 16,
+        "hosting": 13,
         "population": 11,
         "receptivity": 7
       },
-      "priorityRank": 12
+      "priorityRank": 11,
+      "population": 36569
     },
     {
       "name": "Village of Elmsford",
@@ -2450,13 +2477,14 @@
       ],
       "priorityScore": 31,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 20,
+        "urgency": 2,
+        "restrictiveness": 0,
+        "hosting": 20,
         "population": 5,
         "receptivity": 4
       },
-      "priorityRank": 38
+      "priorityRank": 34,
+      "population": 5153
     },
     {
       "name": "Village of Hastings-on-Hudson",
@@ -2510,13 +2538,14 @@
       ],
       "priorityScore": 16,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 5,
+        "urgency": 2,
+        "restrictiveness": 0,
+        "hosting": 5,
         "population": 5,
         "receptivity": 4
       },
-      "priorityRank": 45
+      "priorityRank": 40,
+      "population": 8588
     },
     {
       "name": "Village of Irvington",
@@ -2570,13 +2599,14 @@
       ],
       "priorityScore": 31,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 20,
+        "urgency": 2,
+        "restrictiveness": 0,
+        "hosting": 20,
         "population": 5,
         "receptivity": 4
       },
-      "priorityRank": 39
+      "priorityRank": 35,
+      "population": 6652
     },
     {
       "name": "Village of Mamaroneck",
@@ -2670,13 +2700,14 @@
       ],
       "priorityScore": 61,
       "priorityParts": {
-        "time": 10,
-        "severity": 16,
-        "grid": 20,
+        "urgency": 10,
+        "restrictiveness": 16,
+        "hosting": 20,
         "population": 8,
         "receptivity": 7
       },
-      "priorityRank": 8
+      "priorityRank": 7,
+      "population": 20065
     },
     {
       "name": "Village of Rye Brook",
@@ -2790,13 +2821,14 @@
       ],
       "priorityScore": 61,
       "priorityParts": {
-        "time": 10,
-        "severity": 16,
-        "grid": 20,
+        "urgency": 10,
+        "restrictiveness": 16,
+        "hosting": 20,
         "population": 8,
         "receptivity": 7
       },
-      "priorityRank": 9
+      "priorityRank": 8,
+      "population": 10036
     },
     {
       "name": "Village of Sleepy Hollow",
@@ -2850,13 +2882,14 @@
       ],
       "priorityScore": 34,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 20,
+        "urgency": 2,
+        "restrictiveness": 0,
+        "hosting": 20,
         "population": 8,
         "receptivity": 4
       },
-      "priorityRank": 36
+      "priorityRank": 32,
+      "population": 10375
     },
     {
       "name": "Village of Tarrytown",
@@ -2922,13 +2955,14 @@
       ],
       "priorityScore": 34,
       "priorityParts": {
-        "time": 2,
-        "severity": 0,
-        "grid": 20,
+        "urgency": 2,
+        "restrictiveness": 0,
+        "hosting": 20,
         "population": 8,
         "receptivity": 4
       },
-      "priorityRank": 37
+      "priorityRank": 33,
+      "population": 11860
     },
     {
       "name": "City of New Rochelle",
@@ -2986,13 +3020,14 @@
       ],
       "priorityScore": 47,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 13,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 13,
         "population": 13,
         "receptivity": 7
       },
-      "priorityRank": 19
+      "priorityRank": 17,
+      "population": 79726
     },
     {
       "name": "City of White Plains",
@@ -3050,13 +3085,14 @@
       ],
       "priorityScore": 47,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 13,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 13,
         "population": 13,
         "receptivity": 7
       },
-      "priorityRank": 20
+      "priorityRank": 18,
+      "population": 59559
     },
     {
       "name": "City of Yonkers",
@@ -3146,13 +3182,14 @@
       ],
       "priorityScore": 52,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 13,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 13,
         "population": 15,
         "receptivity": 10
       },
-      "priorityRank": 16
+      "priorityRank": 14,
+      "population": 211569
     },
     {
       "name": "Town of Eastchester",
@@ -3209,13 +3246,14 @@
       ],
       "priorityScore": 45,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 13,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 13,
         "population": 11,
         "receptivity": 7
       },
-      "priorityRank": 24
+      "priorityRank": 21,
+      "population": 34690
     },
     {
       "name": "Town of Pelham",
@@ -3273,13 +3311,14 @@
       ],
       "priorityScore": 49,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 20,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 20,
         "population": 8,
         "receptivity": 7
       },
-      "priorityRank": 17
+      "priorityRank": 15,
+      "population": 13078
     },
     {
       "name": "Town of Rye",
@@ -3334,15 +3373,17 @@
           "label": "No BESS provisions — defaults to general zoning"
         }
       ],
-      "priorityScore": 40,
+      "priorityScore": 0,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 8,
-        "population": 11,
-        "receptivity": 7
+        "urgency": 0,
+        "restrictiveness": 0,
+        "hosting": 0,
+        "population": 0,
+        "receptivity": 0
       },
-      "priorityRank": 29
+      "priorityRank": 44,
+      "population": 47130,
+      "priorityExcluded": "NYSEG territory (not on the ConEd map — outside the coalition's grid focus)"
     },
     {
       "name": "Town/Village of Scarsdale",
@@ -3400,13 +3441,14 @@
       ],
       "priorityScore": 49,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 20,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 20,
         "population": 8,
         "receptivity": 7
       },
-      "priorityRank": 18
+      "priorityRank": 16,
+      "population": 18253
     },
     {
       "name": "Village of Ardsley",
@@ -3450,13 +3492,14 @@
       ],
       "priorityScore": 37,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 13,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 13,
         "population": 3,
         "receptivity": 7
       },
-      "priorityRank": 34
+      "priorityRank": 30,
+      "population": 4750
     },
     {
       "name": "Village of Bronxville",
@@ -3500,13 +3543,14 @@
       ],
       "priorityScore": 39,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 13,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 13,
         "population": 5,
         "receptivity": 7
       },
-      "priorityRank": 31
+      "priorityRank": 27,
+      "population": 6656
     },
     {
       "name": "Village of Buchanan",
@@ -3551,13 +3595,14 @@
       ],
       "priorityScore": 44,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 20,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 20,
         "population": 3,
         "receptivity": 7
       },
-      "priorityRank": 25
+      "priorityRank": 22,
+      "population": 2300
     },
     {
       "name": "Village of Dobbs Ferry",
@@ -3601,13 +3646,14 @@
       ],
       "priorityScore": 42,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 13,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 13,
         "population": 8,
         "receptivity": 7
       },
-      "priorityRank": 28
+      "priorityRank": 25,
+      "population": 11570
     },
     {
       "name": "Village of Pelham",
@@ -3654,13 +3700,14 @@
       ],
       "priorityScore": 46,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 20,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 20,
         "population": 5,
         "receptivity": 7
       },
-      "priorityRank": 22
+      "priorityRank": 19,
+      "population": 7300
     },
     {
       "name": "Village of Pelham Manor",
@@ -3704,13 +3751,14 @@
       ],
       "priorityScore": 31,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 5,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 5,
         "population": 5,
         "receptivity": 7
       },
-      "priorityRank": 40
+      "priorityRank": 36,
+      "population": 5752
     },
     {
       "name": "Village of Pleasantville",
@@ -3754,13 +3802,14 @@
       ],
       "priorityScore": 39,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 13,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 13,
         "population": 5,
         "receptivity": 7
       },
-      "priorityRank": 32
+      "priorityRank": 28,
+      "population": 7321
     },
     {
       "name": "Village of Tuckahoe",
@@ -3804,13 +3853,14 @@
       ],
       "priorityScore": 46,
       "priorityParts": {
-        "time": 6,
-        "severity": 8,
-        "grid": 20,
+        "urgency": 6,
+        "restrictiveness": 8,
+        "hosting": 20,
         "population": 5,
         "receptivity": 7
       },
-      "priorityRank": 23
+      "priorityRank": 20,
+      "population": 6754
     }
   ],
   "steps": [
@@ -3899,7 +3949,8 @@
       "items": [
         "Restructured town cards: tier rules merged into Governing law, duplicate Governing Law / Moratorium Reasoning / Local Law Entry sections removed, engagement-window rows retired, side-facts folded into General Info, and confidence flags consolidated to one per town.",
         "New weighted priority scoring system (time sensitivity 30, severity 25, grid capacity 20, population 15, receptivity 10) — every town scored and ranked; top ten hold the ★ Priority label. Methodology documented in Verification & Confidence.",
-        "Added card sorting: Priority (default), A–Z, and earliest expiration."
+        "Added card sorting: Priority (default), A–Z, and earliest expiration.",
+        "Scoring categories renamed (Urgency, Restrictiveness, Hosting Capacity, Population, Receptivity); NYSEG-territory towns now score 0 and are excluded from ranking; priority and population now shown in At a Glance."
       ]
     },
     {
@@ -4164,7 +4215,7 @@
   "priority": [
     {
       "name": "Town of Cortlandt (Cortlandt Manor)",
-      "why": "Priority score 93/100 — time sensitivity 30/30, severity 22/25, grid 20/20, population 11/15, receptivity 10/10. Active moratorium on ALL BESS expires 7/31/26 (LL 7-2025, certified text) — the most urgent deadline on the board; large town; High grid capacity (100% yellow). Next (and likely last pre-expiry) Town Board: July 21, 2026.",
+      "why": "Priority score 93/100. Active moratorium on ALL BESS expires 7/31/26 (LL 7-2025, certified text) — the most urgent deadline on the board; large town; High grid capacity (100% yellow). Next (and likely last pre-expiry) Town Board: July 21, 2026.",
       "action": "Engage Town Board now — push a Croton-style tiered code so permanent rules allow Tier 2+ rather than defaulting to the current Tier 3 prohibition.",
       "engage": "Town Board meets monthly on a Tuesday, 7:00 PM, Nyberg Room, Town Hall (1 Heady St). Use the public-comment period. Watch the town's Legal Notices / Public Hearings page for the BESS hearing before the 7/31/26 expiry (confirmed from the certified LL 7-2025 text); if none is posted, email the Town Clerk to be added to notifications.",
       "notify": {
@@ -4175,7 +4226,7 @@
     },
     {
       "name": "Town of New Castle (Chappaqua / Millwood)",
-      "why": "Priority score 83/100 — time sensitivity 30/30, severity 22/25, grid 13/20, population 8/15, receptivity 10/10. Moratorium lapsed 5/31/26; tiered law proposed but not adopted — open window now; Moderate capacity.",
+      "why": "Priority score 83/100. Moratorium lapsed 5/31/26; tiered law proposed but not adopted — open window now; Moderate capacity.",
       "action": "Comment at Town Board to shape thresholds toward a permissive Tier 1 and reasonable Tier 3.",
       "engage": "Town Board work sessions & meetings at 200 S. Greeley Ave, Chappaqua. The draft BESS law is on the town's Proposed Legislation page. Email the Town Clerk to be notified of the hearing and comment at the work session.",
       "notify": {
@@ -4186,7 +4237,7 @@
     },
     {
       "name": "Village of Ossining",
-      "why": "Priority score 76/100 — time sensitivity 28/30, severity 22/25, grid 5/20, population 11/15, receptivity 10/10. Fresh 8-month moratorium (ends ~Dec 2026) — good timing, but Low grid capacity (100% red) limits impact.",
+      "why": "Priority score 76/100. Fresh 8-month moratorium (ends ~Dec 2026) — good timing, but Low grid capacity (100% red) limits impact.",
       "action": "Engage the Village Board to steer toward 'allowed,' but prioritize higher-capacity towns first.",
       "engage": "Board of Trustees at 16 Croton Ave; the 8-month moratorium study (to ~Dec 2026) is the window. Comment at Board meetings; email the Clerk to be notified of the BESS hearing.",
       "notify": {
@@ -4196,19 +4247,8 @@
       }
     },
     {
-      "name": "Town of Pound Ridge",
-      "why": "Priority score 73/100 — time sensitivity 28/30, severity 22/25, grid 8/20, population 5/15, receptivity 10/10.",
-      "action": "Engage the board during the moratorium window — push a Croton-style tiered code so the permanent rules allow storage with sensible limits rather than defaulting to prohibition.",
-      "engage": "Schedule: Town Board meets the 1st & 3rd Tuesday at 7:30 PM at the Town House (179 Westchester Avenue). In person, Zoom, or livestream; agendas post ~3 days ahead.",
-      "notify": {
-        "who": "Town Clerk (agenda / record) Clerk of the Town Board",
-        "email": "townclerk@townofpoundridge.gov",
-        "phone": "(914) 764-5511"
-      }
-    },
-    {
       "name": "Town of Bedford",
-      "why": "Priority score 71/100 — time sensitivity 30/30, severity 18/25, grid 5/20, population 8/15, receptivity 10/10. Large-scale moratorium until 8/17/26 (urgent deadline), but Low grid capacity (100% red) tempers payoff.",
+      "why": "Priority score 71/100. Large-scale moratorium until 8/17/26 (urgent deadline), but Low grid capacity (100% red) tempers payoff.",
       "action": "Engage before 8/17/26 to add a Tier 2 pathway; weigh effort vs. limited grid value.",
       "engage": "Town Board meets 1st & 3rd Tuesday at the Town House (321 Bedford Rd, Bedford Hills); public sessions at start/end, Zoom available. Agendas on the Agenda Center; watch for the large-scale BESS hearing before 8/17/26.",
       "notify": {
@@ -4219,7 +4259,7 @@
     },
     {
       "name": "City of Peekskill",
-      "why": "Priority score 70/100 — time sensitivity 16/30, severity 16/25, grid 20/20, population 11/15, receptivity 7/10. Tier 1 only with the Tier 2 moratorium just lapsed (5/31/26) — clear opening; Hudson city; High capacity.",
+      "why": "Priority score 70/100. Tier 1 only with the Tier 2 moratorium just lapsed (5/31/26) — clear opening; Hudson city; High capacity.",
       "action": "Advocate a Tier 2 standard at Common Council now.",
       "engage": "Common Council meets Mondays (work session then meeting) at City Hall, 840 Main St. Email the City Clerk; comment at Common Council. Hearings post on the city Agenda Center.",
       "notify": {
@@ -4230,13 +4270,13 @@
     },
     {
       "name": "Town of Mount Pleasant",
-      "why": "Priority score 64/100 — time sensitivity 8/30, severity 25/25, grid 13/20, population 11/15, receptivity 7/10.",
+      "why": "Priority score 64/100.",
       "action": "Longer-game target: build local support and bring model tiered codes (Croton, Greenburgh) to reopen the conversation.",
       "engage": "Schedule & agendas: Town Board agendas and the meeting calendar are posted on the town site; confirm current dates there."
     },
     {
       "name": "Village of Mamaroneck",
-      "why": "Priority score 61/100 — time sensitivity 10/30, severity 16/25, grid 20/20, population 8/15, receptivity 7/10. Restrictive — prohibits >80 kWh (LL 7-2026); High capacity.",
+      "why": "Priority score 61/100. Restrictive — prohibits >80 kWh (LL 7-2026); High capacity.",
       "action": "Advocate raising the cap / adding a Tier 2 pathway.",
       "engage": "Board of Trustees meets 2nd & 4th Monday (work session ~5 PM, regular ~8 PM), Village Courtroom (169 Mt. Pleasant Ave). Agendas on the village site; comment at the meeting.",
       "notify": {
@@ -4247,7 +4287,7 @@
     },
     {
       "name": "Village of Rye Brook",
-      "why": "Priority score 61/100 — time sensitivity 10/30, severity 16/25, grid 20/20, population 8/15, receptivity 7/10. Restrictive — Tier 1 only (no Tier 2 pathway); High grid capacity, making it a strong target to loosen.",
+      "why": "Priority score 61/100. Restrictive — Tier 1 only (no Tier 2 pathway); High grid capacity, making it a strong target to loosen.",
       "action": "Push the Board of Trustees to add a Tier 2 pathway with siting and safety standards.",
       "engage": "Board of Trustees meets 2nd & 4th Tuesday at Village Hall (938 King St). Agendas/video on the CivicWeb meeting portal; reach officials via the Village Administrator's office.",
       "notify": {
@@ -4258,7 +4298,7 @@
     },
     {
       "name": "City of Rye",
-      "why": "Priority score 58/100 — time sensitivity 10/30, severity 16/25, grid 20/20, population 8/15, receptivity 4/10.",
+      "why": "Priority score 58/100.",
       "action": "Advocate amending the adopted code to add a viable Tier 2+ pathway.",
       "engage": "Schedule: City Council meets at City Hall, 1051 Boston Post Road (evening meetings, generally on Wednesdays roughly monthly — e.g., 2026 dates include July 15 and Sept 16). Agendas and minutes are posted at ryeny.gov.",
       "notify": {
@@ -4266,12 +4306,23 @@
         "email": "cityclerk@ryeny.gov",
         "phone": "(914) 967-7371"
       }
+    },
+    {
+      "name": "Village of Larchmont",
+      "action": "Advocate amending the adopted code to add a viable Tier 2+ pathway.",
+      "engage": "Schedule: Board of Trustees meets monthly at Village Hall, 120 Larchmont Avenue (2026 agenda packets fall on late-month Mondays, e.g., Jan 26, Feb 23, Mar 23). Agendas & minutes are posted on the village site.",
+      "notify": {
+        "who": "Village Clerk Aylone Katzin",
+        "email": "villageclerk@larchmontny.gov",
+        "phone": "(914) 834-6230 x1"
+      },
+      "why": "Priority score 58/100."
     }
   ],
   "hearingNote": "Specific public-hearing dates are not centrally published — towns post them as one-off legal notices (often via eCode360 or the town-clerk page). Recurring board meetings below are computed; confirm exact hearing dates per town. Gaps to research: firm 2026 hearing dates for Cortlandt, New Castle, and Ossining Village.",
   "hostingNote": "Grid hosting capacity is a proxy read from the ConEd hosting-capacity map colors in the workgroup sheet: more green/yellow = more available capacity (better BESS siting value); orange = limited; red = constrained. NYSEG-territory towns aren't on that map. Confirm against the utility legend before relying on it.",
   "trackerVintage": "June 2026",
-  "priorityIntro": "Ranked by the scored priority system below (see How Priority Is Ranked in Verification & Confidence): time sensitivity, severity of the current rule, grid hosting capacity, population, and receptivity to change. The top ten scores carry the ★ Priority label.",
+  "priorityIntro": "Ranked by the scored priority system (see How Priority Is Ranked in Verification & Confidence): urgency, restrictiveness, hosting capacity, population, and receptivity. NYSEG-territory municipalities are excluded (score 0). The top ten scores carry the ★ Priority label.",
   "meterMeta": {
     "ftm": {
       "label": "Front-of-meter (grid-scale) pathway",
@@ -4291,5 +4342,5 @@
     }
   },
   "meterNote": "Behind-the-meter (BTM) systems sit behind a customer's utility meter and serve the load on that property — home and business batteries, typically Tier 1. Front-of-the-meter (FTM) systems are standalone, grid-serving projects that store and sell power to the grid — the storage that delivers transmission-level value. Pathway classifications for solar-code and silent-code towns are provisional; confirm against the code text.",
-  "priorityMethod": "<h3 style='margin-top:14px'>How Priority Is Ranked</h3><p>Every municipality gets a 0–100 priority score; the top ten carry the ★ Priority label and a spot in the Priority Municipalities list. Weights reflect impact:</p><p><b>Time sensitivity — 30 pts.</b> Is there a live chance to affect the code? Active moratoriums score highest (base 24), with bonuses as expiration approaches (+6 within 60 days, +4 within 180, +2 within a year) and +6 where a moratorium just lapsed or a permanent law is in open drafting. Adopted-but-restrictive codes score 10, bans 8, silent codes 6, healthy codes 2.</p><p><b>Severity of the current rule — 25 pts.</b> How bad is it? Outright ban 25; moratorium on all BESS 22; large-scale-only moratorium 18; adopted-but-effectively-blocking code 16; silent code 8; healthy code 0.</p><p><b>Grid hosting capacity — 20 pts.</b> From the ConEd/NYSEG maps: High 20, Moderate 13, Low 5, NYSEG/unmapped 8 (unknown, scored mid-low).</p><p><b>Population — 15 pts.</b> 2020 Census bands: ≥100k = 15, 50–100k = 13, 25–50k = 11, 10–25k = 8, 5–10k = 5, &lt;5k = 3. Bigger municipalities mean more residents served and more precedent value.</p><p><b>Receptivity to change — 10 pts.</b> Party registration data is uneven at the municipal level (and nearly all of Westchester leans Democratic), so this uses more direct signals: an active BESS study/draft process (+4), a sustainability, climate, or conservation body to ally with (+3), and rules not yet locked in — silent or moratorium status — since shaping a code in motion is easier than reopening an adopted one (+3).</p><p style='font-size:13px;color:var(--muted)'>Each town card shows its score, rank, and component breakdown under <b>Priority</b>. Scores are recomputed whenever the underlying data changes.</p>"
+  "priorityMethod": "<h3 style='margin-top:14px'>How Priority Is Ranked</h3><p>Every municipality gets a 0–100 priority score; the top ten carry the ★ Priority label and a spot in the Priority Municipalities list. Weights reflect impact:</p><p><b>Urgency — 30 pts.</b> Is there a live chance to affect the code? Active moratoriums score highest (base 24), with bonuses as expiration approaches (+6 within 60 days, +4 within 180, +2 within a year) and +6 where a moratorium just lapsed or a permanent law is in open drafting. Adopted-but-restrictive codes score 10, bans 8, silent codes 6, healthy codes 2.</p><p><b>Restrictiveness — 25 pts.</b> How bad is the current rule? Outright ban 25; moratorium on all BESS 22; large-scale-only moratorium 18; adopted-but-effectively-blocking code 16; silent code 8; healthy code 0.</p><p><b>Hosting Capacity — 20 pts.</b> From the ConEd hosting-capacity map: High 20, Moderate 13, Low 5. <b>NYSEG territory is scored 0 overall</b> — it isn't on the ConEd map and sits outside the coalition's grid focus, so those municipalities are excluded from the ranking.</p><p><b>Population — 15 pts.</b> 2020 Census bands: ≥100k = 15, 50–100k = 13, 25–50k = 11, 10–25k = 8, 5–10k = 5, &lt;5k = 3. Bigger municipalities mean more residents served and more precedent value.</p><p><b>Receptivity — 10 pts.</b> Party registration data is uneven at the municipal level (and nearly all of Westchester leans Democratic), so this uses more direct signals: an active BESS study/draft process (+4), a sustainability, climate, or conservation body to ally with (+3), and rules not yet locked in — silent or moratorium status — since shaping a code in motion is easier than reopening an adopted one (+3).</p><p style='font-size:13px;color:var(--muted)'>Each town card lists its rank and score under At a Glance. Scores are recomputed whenever the underlying data changes.</p>"
 }
