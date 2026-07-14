@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-13",
+  "lastUpdated": "2026-07-14",
   "statusMeta": {
     "moratorium": {
       "label": "Active moratorium",
@@ -783,7 +783,7 @@
       "status": "healthy",
       "statusLabel": "BESS ALLOWED",
       "scope": "Allowed — full 3-tier (≤80 / ≤6,000 kWh / ≤80 MWh)",
-      "window": "MODEL",
+      "window": "HEALTHY",
       "windowClass": "p-open",
       "subtitle": "Central Westchester — six villages + unincorporated area",
       "snapshot": [
@@ -849,7 +849,7 @@
           "https://greenburghny.com/485/Watch-Live-Board-Meetings"
         ]
       ],
-      "dr": true,
+      "dr": false,
       "drReason": "Adopted a complete, balanced three-tier BESS code (small / medium / utility-scale) back in 2021 — a full framework other towns can copy, now being refreshed.",
       "hosting": {
         "raw": "75% Yellow, 25% Orange",
@@ -3944,6 +3944,14 @@
     ]
   ],
   "changelog": [
+    {
+      "date": "2026-07-14",
+      "items": [
+        "Restructured the site into three selectable views below the status boxes — About Battery Storage (default), Model Law, and the Live Policy Tracker — to make the page generally informative, not just a tracker.",
+        "Added an About Battery Storage view (what BESS is, why storage matters for reliability/affordability/the clean-energy transition, local results, and safety) drawn from the CEAC Local Leaders briefing.",
+        "Replaced the Model Municipalities list with a Model Law view centered on the NYSERDA model law, with Croton-on-Hudson and Tarrytown as adopt-and-customize examples; removed the MODEL label from Greenburgh (its code is mid-amendment)."
+      ]
+    },
     {
       "date": "2026-07-10",
       "items": [
