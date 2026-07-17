@@ -29,12 +29,25 @@
   h1{font-size:29px;line-height:1.12;letter-spacing:-.5px;margin:7px 0 3px;color:#fff;font-weight:800}
   .sub{color:#CFDCEF;font-size:16px}
   .updated{display:inline-block;margin-top:10px;font-size:12.5px;color:#DCE7F5;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:20px;padding:3px 11px}
-  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:4px 0 20px}
-  .stat{border:none;border-radius:12px;padding:15px 16px;text-align:left;cursor:pointer;font-family:inherit;width:100%;color:#fff;transition:transform .12s,box-shadow .12s;opacity:.96}
-  .stat:hover{box-shadow:var(--shadow);transform:translateY(-1px);opacity:1}
-  .stat.sel{box-shadow:0 0 0 3px var(--navy)}
-  .stat .n{font-size:30px;font-weight:800;line-height:1;color:#fff}
-  .stat .l{font-size:12.5px;color:rgba(255,255,255,.92);margin-top:6px;font-weight:500}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin:4px 0 22px}
+  /* battery-styled status boxes */
+  .stat{position:relative;border:none;border-radius:8px;padding:13px 16px 14px;min-height:96px;
+    display:flex;flex-direction:column;text-align:left;cursor:pointer;font-family:inherit;width:100%;color:#fff;
+    transition:transform .16s ease,box-shadow .16s ease;
+    box-shadow:0 2px 5px rgba(20,40,80,.18), inset 0 1px 0 rgba(255,255,255,.28), inset 0 -3px 8px rgba(0,0,0,.14);
+    background-image:linear-gradient(180deg,rgba(255,255,255,.20),rgba(255,255,255,0) 40%),
+      repeating-linear-gradient(90deg,rgba(255,255,255,.11) 0 1.5px,transparent 1.5px 30px)}
+  .stat::after{content:"";position:absolute;right:-5px;top:50%;transform:translateY(-50%);width:5px;height:30px;
+    border-radius:0 3px 3px 0;background-color:inherit;box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
+  .stat::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:0;
+    background:linear-gradient(115deg,transparent 34%,rgba(255,255,255,.38) 50%,transparent 66%);
+    background-size:250% 100%;background-position:160% 0;transition:background-position .7s ease}
+  .stat:hover::before{background-position:-60% 0}
+  .stat>*{position:relative;z-index:1}
+  .stat:hover{box-shadow:0 8px 18px rgba(20,40,80,.22), inset 0 1px 0 rgba(255,255,255,.30), inset 0 -3px 8px rgba(0,0,0,.14);transform:translateY(-2px)}
+  .stat.sel{box-shadow:0 0 0 3px var(--navy), 0 2px 5px rgba(20,40,80,.18), inset 0 1px 0 rgba(255,255,255,.28)}
+  .stat .n{font-size:33px;font-weight:800;line-height:1;color:#fff;font-variant-numeric:tabular-nums;text-shadow:0 1px 1px rgba(0,0,0,.18)}
+  .stat .l{font-size:12px;color:rgba(255,255,255,.95);margin-top:auto;padding-top:8px;font-weight:600;line-height:1.25}
   .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 18px}
   .controls input{flex:1;min-width:180px;padding:9px 12px;border:1px solid #ccd3e0;border-radius:8px;font-size:15px;font-family:inherit}
   .exportbtn{border:1px solid #cdd6e6;background:#fff;border-radius:10px;padding:9px 15px;font-size:14px;cursor:pointer;font-family:inherit;font-weight:600;color:var(--navy);transition:.15s}
@@ -156,9 +169,22 @@
   .viewtab.sel{color:var(--navy)}
   .viewtab.sel::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:3px;border-radius:3px 3px 0 0;background:var(--accent)}
   .viewtab .vt-sub{display:block;font-size:11px;font-weight:500;color:#9aa4b2;margin-top:2px}
-  .view{display:none;animation:fade .18s ease}
-  .view.sel{display:block}
-  @keyframes fade{from{opacity:.4}to{opacity:1}}
+  .view{display:none}
+  .view.sel{display:block;animation:viewIn .3s cubic-bezier(.2,.7,.3,1) both}
+  @keyframes viewIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  /* ---- Motion ---- */
+  @keyframes cardIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  @keyframes popIn{from{opacity:0;transform:translateY(8px) scale(.97)}to{opacity:1;transform:none}}
+  .stat{animation:popIn .5s cubic-bezier(.2,.7,.3,1) both}
+  .card{transition:box-shadow .16s ease,transform .16s ease}
+  .card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(20,40,80,.12)}
+  #cards.reveal .card{animation:cardIn .5s cubic-bezier(.2,.7,.3,1) both}
+  .viewtab.sel::after{animation:tabUnder .28s ease both}
+  @keyframes tabUnder{from{transform:scaleX(.3);opacity:0}to{transform:scaleX(1);opacity:1}}
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:.001ms!important;animation-delay:0ms!important;transition-duration:.001ms!important}
+    .stat:hover,.card:hover{transform:none}
+  }
   /* ---- Informational (About / Model Law) views ---- */
   .info h2{font-size:23px;color:var(--navy);margin:26px 0 4px}
   .info h2:first-child{margin-top:14px}
@@ -271,9 +297,31 @@ function renderStats(){
   DATA.towns.forEach(t=>{counts[t.status]=(counts[t.status]||0)+1;});
   el("#stats").innerHTML=order.map(k=>{
     const m=DATA.statusMeta[k];
-    return `<button type="button" class="stat" data-status="${k}" onclick="setFilter('${k}')" title="Filter to: ${m.label}" style="background:${m.color}"><div class="n">${counts[k]||0}</div><div class="l">${m.label}</div></button>`;
+    return `<button type="button" class="stat" data-status="${k}" onclick="setFilter('${k}')" title="Filter to: ${m.label}" style="background-color:${m.color}"><div class="n" data-n="${counts[k]||0}">0</div><div class="l">${m.label}</div></button>`;
   }).join("");
   highlightStats();
+}
+function animateCounts(){
+  const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.querySelectorAll("#stats .n").forEach(el=>{
+    const target=+el.dataset.n||0;
+    if(reduce||target<=0){el.textContent=target;return;}
+    const dur=850, t0=performance.now();
+    (function step(now){
+      const p=Math.min(1,(now-t0)/dur);
+      const eased=1-Math.pow(1-p,3);
+      el.textContent=Math.round(eased*target);
+      if(p<1) requestAnimationFrame(step);
+    })(t0);
+  });
+}
+let _cardsRevealed=false;
+function revealCards(){
+  if(_cardsRevealed) return; _cardsRevealed=true;
+  const c=el("#cards"); if(!c) return;
+  c.classList.add("reveal");
+  [...c.children].forEach((card,i)=>{ if(i<16) card.style.animationDelay=(i*45)+"ms"; });
+  setTimeout(()=>c.classList.remove("reveal"),1600);  // so later sorts/filters don't re-animate
 }
 function highlightStats(){
   document.querySelectorAll(".stat").forEach(s=>s.classList.toggle("sel", s.dataset.status===currentFilter));
@@ -288,7 +336,8 @@ function setFilter(s){
 function setView(v){
   document.querySelectorAll(".view").forEach(sec=>sec.classList.toggle("sel", sec.id==="view-"+v));
   document.querySelectorAll(".viewtab").forEach(b=>b.classList.toggle("sel", b.dataset.view===v));
-  if(v!=="tracker"){ window.scrollTo({top:0,behavior:"smooth"}); }
+  if(v==="tracker") revealCards();
+  else window.scrollTo({top:0,behavior:"smooth"});
 }
 
 const sec = (title, html) => html ? `<h3>${title}</h3>${html}` : "";
@@ -676,6 +725,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   el("#updated").textContent="Data verified: "+fmtDate(DATA.lastUpdated)+" · "+DATA.towns.length+" towns · refreshed every weekday";
   el("#footer").innerHTML=`Prepared for the BCW / EarthKind BESS Workgroup · Data as of ${fmtDate(DATA.lastUpdated)}.<br>BESS status reflects the ${DATA.trackerVintage||""} statewide tracker and town records; confirm the latest votes at each town's next meeting.`;
   renderStats();renderCards();renderBlocks();renderAbout();renderProjects();renderModelLaw();
+  requestAnimationFrame(animateCounts);
   el("#search").addEventListener("input",applyFilter);
 });
 </script>
