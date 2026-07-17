@@ -1,25 +1,25 @@
 {
-  "lastUpdated": "2026-07-15",
+  "lastUpdated": "2026-07-17",
   "statusMeta": {
     "moratorium": {
       "label": "Towns With Active BESS Moratorium",
-      "color": "var(--red)"
+      "color": "#C33B2B"
     },
     "ban": {
       "label": "Towns That Ban BESS",
-      "color": "var(--maroon)"
+      "color": "#7B1D12"
     },
     "healthy": {
       "label": "Towns That Allow BESS",
-      "color": "var(--green)"
+      "color": "#1F8A4C"
     },
     "overstrict": {
       "label": "Towns With Restrictive BESS Code",
-      "color": "#c2680a"
+      "color": "#B8791B"
     },
     "silent": {
       "label": "Towns With Silent BESS Code",
-      "color": "#777777"
+      "color": "#5B6675"
     }
   },
   "state": {
@@ -3944,6 +3944,13 @@
     ]
   ],
   "changelog": [
+    {
+      "date": "2026-07-17",
+      "items": [
+        "Visual redesign: switched to the Inter typeface, refined the accent palette around the BCW navy, added a navy header band, restyled the section tabs, and gave cards and panels soft shadows and rounded corners.",
+        "Status boxes now use the full status color as their background with white text; removed all emojis sitewide."
+      ]
+    },
     {
       "date": "2026-07-15",
       "items": [
