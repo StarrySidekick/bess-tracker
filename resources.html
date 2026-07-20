@@ -148,7 +148,7 @@
   const viewer=el("viewer"), book=el("book"), cL=el("pgL"), cR=el("pgR"),
         ctxL=cL.getContext("2d"), ctxR=cR.getContext("2d"), vspin=el("vspin");
   const prev=el("prev"), next=el("next"), prev2=el("prev2"), next2=el("next2");
-  let pdfDoc=null, total=0, spread=1, rendering=false, pending=null;
+  let pdfDoc=null, total=0, spread=1, rendering=false, pending=null, pendingDir=0;
 
   function lastStart(){ return (total%2===0) ? Math.max(1,total-1) : total; }  // spreads start on odd pages
 
@@ -179,28 +179,26 @@
     el("pageind").textContent = rightNum ? `Pages ${start}–${shownEnd} / ${total}` : `Page ${start} / ${total}`;
     const atStart=start<=1, atEnd=shownEnd>=total;
     prev.disabled=prev2.disabled=atStart; next.disabled=next2.disabled=atEnd;
-    if(pending!==null){ const p=pending; pending=null; go(p,0); }
+    if(pending!==null){ const p=pending, pd=pendingDir; pending=null; pendingDir=0; go(p,pd); }
   }
 
+  function animateTurn(dir){
+    // Web Animations API: animates from a keyframe back to the element's own
+    // style, so the book always ends fully visible even if interrupted.
+    if(reduceMotion || dir===0 || !book.animate) return;
+    book.animate(
+      [{opacity:.4, transform:`translateX(${dir>0?22:-22}px)`}, {opacity:1, transform:"none"}],
+      {duration:320, easing:"cubic-bezier(.2,.7,.3,1)"}
+    );
+  }
   function go(newStart, dir){
     if(!pdfDoc) return;
     newStart=Math.max(1, Math.min(lastStart(), newStart));
     if(newStart%2===0) newStart-=1;                 // spreads always begin on an odd page
     if(newStart===spread && dir!==0) return;
-    if(rendering){ pending=newStart; return; }
+    if(rendering){ pending=newStart; pendingDir=dir; return; }
     spread=newStart;
-    if(!reduceMotion && dir!==0){
-      book.style.transition="none";
-      book.style.opacity="0";
-      book.style.transform=`translateX(${dir>0?26:-26}px)`;
-    }
-    renderSpread(spread).then(()=>{
-      if(reduceMotion || dir===0){ book.style.transition="none"; book.style.opacity="1"; book.style.transform="none"; return; }
-      requestAnimationFrame(()=>requestAnimationFrame(()=>{
-        book.style.transition="transform .34s cubic-bezier(.2,.7,.3,1), opacity .3s ease";
-        book.style.opacity="1"; book.style.transform="none";
-      }));
-    });
+    renderSpread(spread).then(()=>animateTurn(dir));
   }
   prev.onclick=prev2.onclick=()=>go(spread-2,-1);
   next.onclick=next2.onclick=()=>go(spread+2, 1);
