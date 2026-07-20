@@ -129,7 +129,8 @@
   }
 
   const el = id => document.getElementById(id);
-  const viewer=el("viewer"), flipEl=el("flip"), vspin=el("vspin"), flipwrap=document.querySelector(".flipwrap");
+  const viewer=el("viewer"), vspin=el("vspin"), flipwrap=document.querySelector(".flipwrap");
+  let flipEl=el("flip");
   const prev=el("prev"), next=el("next"), prev2=el("prev2"), next2=el("next2");
   let pageFlip=null, pageImgs=[], pageRatio=0.773, total=0;
 
@@ -188,7 +189,11 @@
 
   function buildFlip(){
     destroyFlip();
-    flipEl.innerHTML="";
+    // Recreate a fresh container each time — StPageFlip leaves wrapper DOM behind
+    // on destroy, which would break a re-init on the same element.
+    if(flipEl) flipEl.remove();
+    flipEl=document.createElement("div"); flipEl.id="flip";
+    flipwrap.insertBefore(flipEl, vspin);
     // Single-page documents: StPageFlip needs a real book, so just show the page.
     if(total===1){
       const img=document.createElement("img");
