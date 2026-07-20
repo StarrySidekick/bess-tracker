@@ -145,7 +145,7 @@
   const viewer=el("viewer"), vspin=el("vspin"), flipwrap=document.querySelector(".flipwrap");
   let flipEl=el("flip");
   const prev=el("prev"), next=el("next"), prev2=el("prev2"), next2=el("next2");
-  let pageFlip=null, pageImgs=[], pageRatio=0.773, total=0, currentDoc=null;
+  let pageFlip=null, pageImgs=[], pageImgEls=[], pageRatio=0.773, total=0, currentDoc=null, openToken=0;
 
   // ---- Document list ----
   el("doclist").innerHTML = DOCS.map((d,i)=>`
@@ -168,27 +168,43 @@
     el("vdownload").href=d.file;
     el("vdownload").setAttribute("download", d.title.replace(/[^\w]+/g,"_")+".pdf");
     if(d.id && location.hash!=="#"+d.id) history.replaceState(null,"","#"+d.id);
+    const token=++openToken;                     // cancels a slower prior render if the user switches docs
     viewer.classList.add("on"); document.body.style.overflow="hidden";
-    destroyFlip(); flipEl.innerHTML=""; el("pageind").textContent="";
+    destroyFlip(); if(flipEl) flipEl.innerHTML=""; el("pageind").textContent="";
     vspin.style.display=""; vspin.textContent="Preparing document…";
     try{
       const pdf=await pdfjsLib.getDocument(d.file).promise;
+      if(token!==openToken) return;
       total=pdf.numPages;
-      pageImgs=[];
-      for(let p=1;p<=total;p++){
-        const page=await pdf.getPage(p);
-        const v1=page.getViewport({scale:1});
-        pageRatio=v1.width/v1.height;
-        const targetW=1650, scale=targetW/v1.width;
-        const vp=page.getViewport({scale});
-        const c=document.createElement("canvas");
-        c.width=vp.width; c.height=vp.height;
-        await page.render({canvasContext:c.getContext("2d"), viewport:vp}).promise;
-        pageImgs.push(c.toDataURL("image/jpeg", 0.85));
-      }
+      const p1=await pdf.getPage(1);
+      const v1=p1.getViewport({scale:1}); pageRatio=v1.width/v1.height;
+      // Show the book immediately with blank pages, then fill each page in as it renders.
+      pageImgs=new Array(total).fill(makePlaceholder(pageRatio));
       vspin.style.display="none";
       buildFlip();
-    }catch(err){ vspin.textContent="Could not load this document."; console.error(err); }
+      for(let p=1;p<=total;p++){
+        if(token!==openToken) return;
+        const src=await renderPage(pdf,p);
+        if(token!==openToken) return;
+        pageImgs[p-1]=src;
+        if(pageImgEls[p-1]) pageImgEls[p-1].src=src;
+      }
+    }catch(err){ if(token===openToken){ vspin.style.display=""; vspin.textContent="Could not load this document."; } console.error(err); }
+  }
+  async function renderPage(pdf,p){
+    const page=await pdf.getPage(p);
+    const v1=page.getViewport({scale:1});
+    const targetW=1300, scale=targetW/v1.width;   // balanced resolution for fast, crisp rendering
+    const vp=page.getViewport({scale});
+    const c=document.createElement("canvas"); c.width=vp.width; c.height=vp.height;
+    await page.render({canvasContext:c.getContext("2d"), viewport:vp}).promise;
+    return c.toDataURL("image/jpeg", 0.85);
+  }
+  function makePlaceholder(ratio){
+    const w=80, h=Math.max(1,Math.round(80/ratio));
+    const c=document.createElement("canvas"); c.width=w; c.height=h;
+    const x=c.getContext("2d"); x.fillStyle="#ffffff"; x.fillRect(0,0,w,h);
+    return c.toDataURL("image/png");
   }
   window.openDoc=openDoc;
 
@@ -209,6 +225,7 @@
     if(flipEl) flipEl.remove();
     flipEl=document.createElement("div"); flipEl.id="flip";
     flipwrap.insertBefore(flipEl, vspin);
+    pageImgEls=[];
     // Single-page documents: StPageFlip needs a real book, so just show the page.
     if(total===1){
       // fill the viewer so the whole page is visible (fit, not zoomed)
@@ -216,7 +233,7 @@
       const img=document.createElement("img");
       img.src=pageImgs[0]; img.alt="Page 1"; img.draggable=false;
       img.style.cssText="max-width:100%;max-height:100%;width:auto;height:auto;display:block;background:#fff;border-radius:3px;box-shadow:0 14px 40px rgba(0,0,0,.45)";
-      flipEl.appendChild(img);
+      flipEl.appendChild(img); pageImgEls=[img];
       el("pageind").textContent="Page 1 / 1";
       prev.disabled=prev2.disabled=next.disabled=next2.disabled=true;
       return;
@@ -228,6 +245,7 @@
     pageImgs.forEach((src,i)=>{
       const d=document.createElement("div"); d.className="page";
       const im=document.createElement("img"); im.src=src; im.alt="Page "+(i+1); im.draggable=false;
+      pageImgEls[i]=im;
       d.appendChild(im); frag.appendChild(d);
     });
     flipEl.appendChild(frag);
