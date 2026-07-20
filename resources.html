@@ -104,6 +104,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
 <script>
+  // Keep rendering alive even if the tab is backgrounded (browsers throttle
+  // requestAnimationFrame when hidden, which would otherwise stall pdf.js).
+  (function(){
+    const raf=window.requestAnimationFrame.bind(window);
+    window.requestAnimationFrame=function(cb){
+      return document.hidden ? setTimeout(()=>cb(performance.now()),16) : raf(cb);
+    };
+  })();
+
   const DOCS = [
     {title:"Energy Storage Fire & Safety Fact Sheet", file:"docs/fire-safety-fact-sheet.pdf", pages:5,
       desc:"How modern BESS installations are engineered and regulated for fire safety, with risk in perspective."},
