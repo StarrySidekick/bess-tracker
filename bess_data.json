@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-17",
+  "lastUpdated": "2026-07-20",
   "statusMeta": {
     "moratorium": {
       "label": "Towns With Active BESS Moratorium",
@@ -3944,6 +3944,15 @@
     ]
   ],
   "changelog": [
+    {
+      "date": "2026-07-20",
+      "items": [
+        "Daily reconciliation: no new moratoriums, bans, extensions, adopted laws, or hearing notices. The workgroup GIS sheet is unchanged (latest rows dated 6/15–6/18/26); Carina remains on its June 2026 refresh (Westchester actives: Bedford, New Castle, Cortlandt, Yonkers, Peekskill). All 45 municipality statuses re-confirmed.",
+        "Cortlandt watch (moratorium expires 7/31/26 per certified LL 7-2025): the Town Board meets 7/21/26 — the key engagement date before expiration. No further extension or replacement code posted to the town Legal Notices page as of this run.",
+        "Peekskill: confirmed the >80 kWh (Tier 2) moratorium was extended into 2026 by unanimous Council vote; exact expiration still unposted — flag retained.",
+        "S5506/A8378 (ORES standalone-storage) still in committee, no movement."
+      ]
+    },
     {
       "date": "2026-07-17",
       "items": [
