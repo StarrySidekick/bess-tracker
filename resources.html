@@ -83,16 +83,17 @@
 <div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="Document viewer">
   <div class="vbar">
     <span class="vtitle" id="vtitle"></span>
+    <button class="vbtn ghost" id="vcopy">Copy link</button>
     <a class="vbtn ghost" id="vdownload" download>Download PDF</a>
     <button class="vbtn ghost" id="vclose" aria-label="Close viewer">Close &times;</button>
   </div>
   <div class="stage">
-    <button class="navbtn" id="prev" aria-label="Previous pages">&#8249;</button>
+    <button class="navbtn" id="prev" aria-label="Previous pages"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
     <div class="flipwrap">
       <div id="flip"></div>
       <span class="vspin" id="vspin" style="display:none">Preparing document&hellip;</span>
     </div>
-    <button class="navbtn" id="next" aria-label="Next pages">&#8250;</button>
+    <button class="navbtn" id="next" aria-label="Next pages"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
   </div>
   <div class="vbar" style="justify-content:center;margin:10px 0 0">
     <button class="vbtn" id="prev2">&larr; Prev</button>
@@ -114,14 +115,24 @@
   })();
 
   const DOCS = [
-    {title:"Energy Storage Fire & Safety Fact Sheet", file:"docs/fire-safety-fact-sheet.pdf", pages:5,
+    {id:"ceac-bess-slide-deck", title:"Battery Storage: A Guide for Local Leaders", file:"docs/ceac-bess-slide-deck.pdf", pages:15,
+      desc:"The full CEAC briefing deck: what battery storage is, why it matters, safety, and model policy."},
+    {id:"fire-safety-fact-sheet", title:"Energy Storage Fire & Safety Fact Sheet", file:"docs/fire-safety-fact-sheet.pdf", pages:5,
       desc:"How modern BESS installations are engineered and regulated for fire safety, with risk in perspective."},
-    {title:"BESS Fact Sheet: Economic & Community Considerations", file:"docs/economic-community-considerations.pdf", pages:3,
+    {id:"economic-community-considerations", title:"BESS Fact Sheet: Economic & Community Considerations", file:"docs/economic-community-considerations.pdf", pages:3,
       desc:"The local economic and community benefits of battery storage for Westchester municipalities."},
-    {title:"Legal Moratorium Criteria Summary", file:"docs/legal-moratorium-criteria-summary.pdf", pages:1,
+    {id:"legal-moratorium-criteria-summary", title:"Legal Moratorium Criteria Summary", file:"docs/legal-moratorium-criteria-summary.pdf", pages:1,
       desc:"A concise summary of the legal criteria that apply to local BESS moratoriums."},
-    {title:"Filed Decision", file:"docs/filed-decision.pdf", pages:6,
-      desc:"Full text of the filed decision, provided for reference."},
+    {id:"filed-decision", title:"Filed Decision (Yorktown ESS v. ZBA)", file:"docs/filed-decision.pdf", pages:6,
+      desc:"Full text of the filed Article 78 decision and order, provided for reference."},
+    {id:"clean-energy-workforce", title:"Key Insights: Clean Energy Workforce", file:"docs/clean-energy-workforce.pdf", pages:3,
+      desc:"Takeaways from the Clean Energy Workforce breakout session."},
+    {id:"climate-smart-communities", title:"Key Insights: Climate Smart Communities", file:"docs/climate-smart-communities.pdf", pages:4,
+      desc:"Takeaways from the Climate Smart Communities breakout session."},
+    {id:"passivhaus-mixed-use-multifamily", title:"Key Insights: Passive House for Mixed-Use & Multifamily", file:"docs/passivhaus-mixed-use-multifamily.pdf", pages:3,
+      desc:"Takeaways on Passive House design for mixed-use and multifamily buildings."},
+    {id:"stormwater-resiliency-financing", title:"Key Insights: Stormwater Resiliency & Financing", file:"docs/stormwater-resiliency-financing.pdf", pages:3,
+      desc:"Takeaways on stormwater resiliency and financing approaches."},
   ];
 
   if(window.pdfjsLib){
@@ -132,7 +143,7 @@
   const viewer=el("viewer"), vspin=el("vspin"), flipwrap=document.querySelector(".flipwrap");
   let flipEl=el("flip");
   const prev=el("prev"), next=el("next"), prev2=el("prev2"), next2=el("next2");
-  let pageFlip=null, pageImgs=[], pageRatio=0.773, total=0;
+  let pageFlip=null, pageImgs=[], pageRatio=0.773, total=0, currentDoc=null;
 
   // ---- Document list ----
   el("doclist").innerHTML = DOCS.map((d,i)=>`
@@ -150,10 +161,11 @@
 
   // ---- Render every PDF page to an image, then build the flipbook ----
   async function openDoc(i){
-    const d=DOCS[i];
+    const d=DOCS[i]; currentDoc=d;
     el("vtitle").textContent=d.title;
     el("vdownload").href=d.file;
     el("vdownload").setAttribute("download", d.title.replace(/[^\w]+/g,"_")+".pdf");
+    if(d.id && location.hash!=="#"+d.id) history.replaceState(null,"","#"+d.id);
     viewer.classList.add("on"); document.body.style.overflow="hidden";
     destroyFlip(); flipEl.innerHTML=""; el("pageind").textContent="";
     vspin.style.display=""; vspin.textContent="Preparing document…";
@@ -180,7 +192,8 @@
 
   function pageSize(){
     const availW=Math.max(200, flipwrap.clientWidth-6), availH=Math.max(260, flipwrap.clientHeight-6);
-    const portrait = availW < 680 || total===1;
+    // one page at a time on narrow screens, single-page docs, or landscape pages (e.g. slide decks)
+    const portrait = availW < 680 || total===1 || pageRatio > 1.3;
     let h=availH, w=h*pageRatio;
     const perBook = portrait ? 1 : 2;
     if(w*perBook > availW){ w=availW/perBook; h=w/pageRatio; }
@@ -196,8 +209,10 @@
     flipwrap.insertBefore(flipEl, vspin);
     // Single-page documents: StPageFlip needs a real book, so just show the page.
     if(total===1){
+      // fill the viewer so the whole page is visible (fit, not zoomed)
+      flipEl.style.cssText="height:100%;width:100%;display:flex;align-items:center;justify-content:center";
       const img=document.createElement("img");
-      img.src=pageImgs[0]; img.alt="Page 1";
+      img.src=pageImgs[0]; img.alt="Page 1"; img.draggable=false;
       img.style.cssText="max-width:100%;max-height:100%;width:auto;height:auto;display:block;background:#fff;border-radius:3px;box-shadow:0 14px 40px rgba(0,0,0,.45)";
       flipEl.appendChild(img);
       el("pageind").textContent="Page 1 / 1";
@@ -240,8 +255,30 @@
   prev.onclick=prev2.onclick=flipPrev;
   next.onclick=next2.onclick=flipNext;
 
-  function closeViewer(){ viewer.classList.remove("on"); document.body.style.overflow=""; destroyFlip(); pageImgs=[]; }
+  function closeViewer(){ viewer.classList.remove("on"); document.body.style.overflow=""; destroyFlip(); pageImgs=[]; currentDoc=null;
+    if(location.hash) history.replaceState(null,"", location.pathname+location.search); }
   el("vclose").onclick=closeViewer;
+
+  // Copy a direct link to the current document
+  el("vcopy").onclick=()=>{
+    if(!currentDoc) return;
+    const url=location.origin+location.pathname+"#"+currentDoc.id;
+    const btn=el("vcopy");
+    const done=()=>{ btn.textContent="Copied!"; setTimeout(()=>btn.textContent="Copy link",1500); };
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, done);
+    else { const t=document.createElement("textarea"); t.value=url; document.body.appendChild(t); t.select();
+      try{document.execCommand("copy");}catch(e){} t.remove(); done(); }
+  };
+
+  // Deep-link: open a specific document from the URL hash (e.g. …/resources.html#fire-safety-fact-sheet)
+  function openFromHash(){
+    const id=decodeURIComponent((location.hash||"").replace(/^#/,""));
+    if(!id) return;
+    const i=DOCS.findIndex(d=>d.id===id);
+    if(i>=0) openDoc(i);
+  }
+  window.addEventListener("hashchange", openFromHash);
+  openFromHash();
   viewer.addEventListener("click", e=>{ if(e.target===viewer) closeViewer(); });
   document.addEventListener("keydown", e=>{
     if(!viewer.classList.contains("on")) return;
