@@ -189,6 +189,16 @@
   function buildFlip(){
     destroyFlip();
     flipEl.innerHTML="";
+    // Single-page documents: StPageFlip needs a real book, so just show the page.
+    if(total===1){
+      const img=document.createElement("img");
+      img.src=pageImgs[0]; img.alt="Page 1";
+      img.style.cssText="max-width:100%;max-height:100%;width:auto;height:auto;display:block;background:#fff;border-radius:3px;box-shadow:0 14px 40px rgba(0,0,0,.45)";
+      flipEl.appendChild(img);
+      el("pageind").textContent="Page 1 / 1";
+      prev.disabled=prev2.disabled=next.disabled=next2.disabled=true;
+      return;
+    }
     const {w,h,portrait}=pageSize();
     pageFlip=new St.PageFlip(flipEl,{
       width:w, height:h, size:"fixed",
