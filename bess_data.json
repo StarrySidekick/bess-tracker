@@ -3941,6 +3941,18 @@
     [
       "NYSERDA, NY State BESS Guidebook",
       "https://www.nyserda.ny.gov/All-Programs/Clean-Energy-Siting-Resources/Battery-Energy-Storage-Guidebook"
+    ],
+    [
+      "Con Edison, Hosting Capacity Maps (grid capacity for storage & DG)",
+      "https://www.coned.com/en/business-partners/hosting-capacity"
+    ],
+    [
+      "EPA, Battery Energy Storage Systems, Main Considerations for Safe Installation & Incident Response",
+      "https://www.epa.gov/electronics-batteries-management/battery-energy-storage-systems-main-considerations-safe"
+    ],
+    [
+      "eCode360, municipal code library",
+      "https://ecode360.com/"
     ]
   ],
   "changelog": [
