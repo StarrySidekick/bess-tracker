@@ -41,7 +41,7 @@
   .doc .open{display:inline-block;margin-top:9px;font-size:12.5px;font-weight:700;color:var(--accent)}
 
   /* Viewer overlay */
-  .viewer{position:fixed;inset:0;background:rgba(16,26,44,.74);backdrop-filter:blur(2px);display:none;z-index:50;padding:16px;flex-direction:column}
+  .viewer{position:fixed;inset:0;background:rgba(16,26,44,.78);backdrop-filter:blur(2px);display:none;z-index:50;padding:16px;flex-direction:column}
   .viewer.on{display:flex}
   .vbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:#fff;margin-bottom:10px}
   .vbar .vtitle{font-weight:700;font-size:15px;flex:1;min-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -55,19 +55,13 @@
   .navbtn{flex:0 0 auto;width:46px;height:46px;border-radius:50%;border:none;background:rgba(255,255,255,.92);color:var(--navy);font-size:22px;font-weight:700;cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;transition:.12s}
   .navbtn:hover{background:#fff;transform:scale(1.06)}
   .navbtn:disabled{opacity:.35;cursor:default;transform:none}
-  .pagewrap{flex:1;max-width:calc(100% - 130px);height:100%;display:flex;align-items:center;justify-content:center}
-  /* the open book: two pages side by side */
-  .book{display:flex;align-items:stretch;background:#fff;border-radius:3px;
-    box-shadow:0 14px 40px rgba(0,0,0,.45);will-change:transform,opacity;position:relative}
-  .book canvas{display:block;max-height:100%;background:#fff}
-  .book canvas.pgL{border-radius:3px 0 0 3px}
-  .book canvas.pgR{border-radius:0 3px 3px 0}
-  /* center spine shading when two pages are shown */
-  .book.two::after{content:"";position:absolute;top:0;bottom:0;left:50%;width:34px;transform:translateX(-50%);pointer-events:none;
-    background:linear-gradient(90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.12) 46%,rgba(0,0,0,.16) 50%,rgba(0,0,0,.12) 54%,rgba(0,0,0,0) 100%)}
-  .vspin{color:#fff;font-size:14px;opacity:.85}
+  .flipwrap{flex:1;max-width:calc(100% - 130px);height:100%;display:flex;align-items:center;justify-content:center;position:relative}
+  #flip{margin:0 auto}
+  #flip .page{background:#fff}
+  #flip img{display:block;width:100%;height:100%}
+  .vspin{position:absolute;color:#fff;font-size:14px;opacity:.9}
   @media (prefers-reduced-motion: reduce){ .doc:hover{transform:none} }
-  @media (max-width:560px){ .navbtn{width:40px;height:40px} .pagewrap{max-width:calc(100% - 96px)} }
+  @media (max-width:560px){ .navbtn{width:40px;height:40px} .flipwrap{max-width:calc(100% - 92px)} }
   footer{color:var(--muted);font-size:12.5px;margin-top:30px;text-align:center}
 </style>
 </head>
@@ -94,12 +88,9 @@
   </div>
   <div class="stage">
     <button class="navbtn" id="prev" aria-label="Previous pages">&#8249;</button>
-    <div class="pagewrap">
-      <div class="book" id="book">
-        <canvas class="pgL" id="pgL"></canvas>
-        <canvas class="pgR" id="pgR"></canvas>
-      </div>
-      <span class="vspin" id="vspin" style="display:none">Loading&hellip;</span>
+    <div class="flipwrap">
+      <div id="flip"></div>
+      <span class="vspin" id="vspin" style="display:none">Preparing document&hellip;</span>
     </div>
     <button class="navbtn" id="next" aria-label="Next pages">&#8250;</button>
   </div>
@@ -111,6 +102,7 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
 <script>
   const DOCS = [
     {title:"Energy Storage Fire & Safety Fact Sheet", file:"docs/fire-safety-fact-sheet.pdf", pages:5,
@@ -126,11 +118,14 @@
   if(window.pdfjsLib){
     pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
   }
-  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const el = id => document.getElementById(id);
+  const viewer=el("viewer"), flipEl=el("flip"), vspin=el("vspin"), flipwrap=document.querySelector(".flipwrap");
+  const prev=el("prev"), next=el("next"), prev2=el("prev2"), next2=el("next2");
+  let pageFlip=null, pageImgs=[], pageRatio=0.773, total=0;
 
   // ---- Document list ----
-  const listEl = document.getElementById("doclist");
-  listEl.innerHTML = DOCS.map((d,i)=>`
+  el("doclist").innerHTML = DOCS.map((d,i)=>`
     <button class="doc" onclick="openDoc(${i})">
       <span class="ic" aria-hidden="true"></span>
       <span class="tx">
@@ -140,99 +135,98 @@
         <span class="open">Open document &rarr;</span>
       </span>
     </button>`).join("");
-  document.getElementById("footer").innerHTML =
+  el("footer").innerHTML =
     "Prepared for the BCW / EarthKind Clean Energy Action Coalition. Documents open in your browser; use Download to save a copy.";
 
-  // ---- Book viewer (two-page spread) ----
-  const el = id => document.getElementById(id);
-  const viewer=el("viewer"), book=el("book"), cL=el("pgL"), cR=el("pgR"),
-        ctxL=cL.getContext("2d"), ctxR=cR.getContext("2d"), vspin=el("vspin");
-  const prev=el("prev"), next=el("next"), prev2=el("prev2"), next2=el("next2");
-  let pdfDoc=null, total=0, spread=1, rendering=false, pending=null, pendingDir=0;
-
-  function lastStart(){ return (total%2===0) ? Math.max(1,total-1) : total; }  // spreads start on odd pages
-
-  async function drawPage(num, canvas, ctx, scale, dpr){
-    const page=await pdfDoc.getPage(num);
-    const vp=page.getViewport({scale:scale*dpr});
-    canvas.width=vp.width; canvas.height=vp.height;
-    canvas.style.width=(vp.width/dpr)+"px"; canvas.style.height=(vp.height/dpr)+"px";
-    await page.render({canvasContext:ctx, viewport:vp}).promise;
-  }
-
-  async function renderSpread(start){
-    rendering=true;
-    const rightNum = (start+1<=total) ? start+1 : null;
-    const wrap=book.parentElement;
-    const availW=Math.max(240, wrap.clientWidth-8), availH=Math.max(240, wrap.clientHeight-8);
-    const first=await pdfDoc.getPage(start);
-    const v1=first.getViewport({scale:1});
-    const nUp = rightNum ? 2 : 1;
-    const dpr=Math.min(window.devicePixelRatio||1, 2);
-    const scale=Math.min((availW/nUp)/v1.width, availH/v1.height);
-    await drawPage(start, cL, ctxL, scale, dpr);
-    if(rightNum){ await drawPage(rightNum, cR, ctxR, scale, dpr); cR.style.display=""; book.classList.add("two"); }
-    else { cR.style.display="none"; book.classList.remove("two"); }
-    rendering=false;
-    // update controls
-    const shownEnd = rightNum || start;
-    el("pageind").textContent = rightNum ? `Pages ${start}–${shownEnd} / ${total}` : `Page ${start} / ${total}`;
-    const atStart=start<=1, atEnd=shownEnd>=total;
-    prev.disabled=prev2.disabled=atStart; next.disabled=next2.disabled=atEnd;
-    if(pending!==null){ const p=pending, pd=pendingDir; pending=null; pendingDir=0; go(p,pd); }
-  }
-
-  function animateTurn(dir){
-    // Web Animations API: animates from a keyframe back to the element's own
-    // style, so the book always ends fully visible even if interrupted.
-    if(reduceMotion || dir===0 || !book.animate) return;
-    book.animate(
-      [{opacity:.4, transform:`translateX(${dir>0?22:-22}px)`}, {opacity:1, transform:"none"}],
-      {duration:320, easing:"cubic-bezier(.2,.7,.3,1)"}
-    );
-  }
-  function go(newStart, dir){
-    if(!pdfDoc) return;
-    newStart=Math.max(1, Math.min(lastStart(), newStart));
-    if(newStart%2===0) newStart-=1;                 // spreads always begin on an odd page
-    if(newStart===spread && dir!==0) return;
-    if(rendering){ pending=newStart; pendingDir=dir; return; }
-    spread=newStart;
-    renderSpread(spread).then(()=>animateTurn(dir));
-  }
-  prev.onclick=prev2.onclick=()=>go(spread-2,-1);
-  next.onclick=next2.onclick=()=>go(spread+2, 1);
-
-  function openDoc(i){
+  // ---- Render every PDF page to an image, then build the flipbook ----
+  async function openDoc(i){
     const d=DOCS[i];
     el("vtitle").textContent=d.title;
     el("vdownload").href=d.file;
     el("vdownload").setAttribute("download", d.title.replace(/[^\w]+/g,"_")+".pdf");
     viewer.classList.add("on"); document.body.style.overflow="hidden";
-    pdfDoc=null; spread=1; vspin.style.display=""; book.style.visibility="hidden"; book.style.opacity="1"; book.style.transform="none";
-    el("pageind").textContent="";
-    pdfjsLib.getDocument(d.file).promise.then(doc=>{
-      pdfDoc=doc; total=doc.numPages; vspin.style.display="none"; book.style.visibility="visible";
-      go(1,0);
-    }).catch(err=>{ vspin.textContent="Could not load this document."; console.error(err); });
+    destroyFlip(); flipEl.innerHTML=""; el("pageind").textContent="";
+    vspin.style.display=""; vspin.textContent="Preparing document…";
+    try{
+      const pdf=await pdfjsLib.getDocument(d.file).promise;
+      total=pdf.numPages;
+      pageImgs=[];
+      for(let p=1;p<=total;p++){
+        const page=await pdf.getPage(p);
+        const v1=page.getViewport({scale:1});
+        pageRatio=v1.width/v1.height;
+        const targetW=1000, scale=targetW/v1.width;
+        const vp=page.getViewport({scale});
+        const c=document.createElement("canvas");
+        c.width=vp.width; c.height=vp.height;
+        await page.render({canvasContext:c.getContext("2d"), viewport:vp}).promise;
+        pageImgs.push(c.toDataURL("image/jpeg", 0.85));
+      }
+      vspin.style.display="none";
+      buildFlip();
+    }catch(err){ vspin.textContent="Could not load this document."; console.error(err); }
   }
   window.openDoc=openDoc;
-  function closeViewer(){ viewer.classList.remove("on"); document.body.style.overflow=""; pdfDoc=null; }
+
+  function pageSize(){
+    const availW=Math.max(200, flipwrap.clientWidth-6), availH=Math.max(260, flipwrap.clientHeight-6);
+    const portrait = availW < 680 || total===1;
+    let h=availH, w=h*pageRatio;
+    const perBook = portrait ? 1 : 2;
+    if(w*perBook > availW){ w=availW/perBook; h=w/pageRatio; }
+    return {w:Math.floor(w), h:Math.floor(h), portrait};
+  }
+
+  function buildFlip(){
+    destroyFlip();
+    flipEl.innerHTML="";
+    const {w,h,portrait}=pageSize();
+    pageFlip=new St.PageFlip(flipEl,{
+      width:w, height:h, size:"fixed",
+      showCover:false, usePortrait:portrait, drawShadow:true,
+      maxShadowOpacity:0.5, flippingTime:650, mobileScrollSupport:false, clickEventForward:false
+    });
+    pageFlip.loadFromImages(pageImgs);
+    pageFlip.on("flip", e=>updateInd(e.data));
+    updateInd(0);
+  }
+  function destroyFlip(){ if(pageFlip){ try{pageFlip.destroy();}catch(e){} pageFlip=null; } }
+
+  function updateInd(idx){
+    const portrait = pageFlip && pageFlip.getOrientation && pageFlip.getOrientation()==="portrait";
+    let left, right;
+    if(portrait){ left=idx+1; right=left; }
+    else { left = idx%2===0 ? idx+1 : idx; right=Math.min(left+1, total); }
+    el("pageind").textContent = (left===right) ? `Page ${left} / ${total}` : `Pages ${left}–${right} / ${total}`;
+    const atStart=left<=1, atEnd=right>=total;
+    prev.disabled=prev2.disabled=atStart; next.disabled=next2.disabled=atEnd;
+  }
+
+  function flipNext(){ if(pageFlip) pageFlip.flipNext(); }
+  function flipPrev(){ if(pageFlip) pageFlip.flipPrev(); }
+  prev.onclick=prev2.onclick=flipPrev;
+  next.onclick=next2.onclick=flipNext;
+
+  function closeViewer(){ viewer.classList.remove("on"); document.body.style.overflow=""; destroyFlip(); pageImgs=[]; }
   el("vclose").onclick=closeViewer;
   viewer.addEventListener("click", e=>{ if(e.target===viewer) closeViewer(); });
   document.addEventListener("keydown", e=>{
     if(!viewer.classList.contains("on")) return;
-    if(e.key==="ArrowRight"||e.key==="PageDown"){e.preventDefault();go(spread+2,1);}
-    else if(e.key==="ArrowLeft"||e.key==="PageUp"){e.preventDefault();go(spread-2,-1);}
+    if(e.key==="ArrowRight"||e.key==="PageDown"){e.preventDefault();flipNext();}
+    else if(e.key==="ArrowLeft"||e.key==="PageUp"){e.preventDefault();flipPrev();}
     else if(e.key==="Escape"){closeViewer();}
   });
-  // click the left / right half of the spread to turn, like a book
-  el("book").addEventListener("click", e=>{
-    if(!pdfDoc) return;
-    const r=book.getBoundingClientRect();
-    if(e.clientX < r.left+r.width/2) go(spread-2,-1); else go(spread+2,1);
+  // rebuild on resize (keeps the book fitted; restores current page)
+  let _rt;
+  window.addEventListener("resize", ()=>{
+    if(!pageFlip||!pageImgs.length) return;
+    clearTimeout(_rt);
+    _rt=setTimeout(()=>{
+      const cur = pageFlip.getCurrentPageIndex();
+      buildFlip();
+      if(cur>0 && pageFlip) pageFlip.turnToPage(cur);
+    }, 180);
   });
-  let _rt; window.addEventListener("resize",()=>{ if(!pdfDoc)return; clearTimeout(_rt); _rt=setTimeout(()=>renderSpread(spread),150); });
 </script>
 </body>
 </html>
