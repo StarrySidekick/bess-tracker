@@ -202,6 +202,15 @@
   .or-biz{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 11px;font-size:13px}
   .or-tag{font-size:10px;font-weight:700;color:var(--green);background:var(--green-soft);border-radius:5px;padding:1px 6px;margin-left:3px}
   .or-addr{font-size:12px;color:var(--muted);margin-top:2px}
+  .or-sec{border:1px solid var(--line);border-radius:8px;margin:8px 0;overflow:hidden;background:var(--card)}
+  .or-sec>summary{list-style:none;cursor:pointer;padding:10px 12px;font-size:12px;font-weight:800;letter-spacing:.5px;color:var(--navy);text-transform:uppercase;background:#f4f7fb;display:flex;align-items:center;gap:8px}
+  .or-sec>summary::-webkit-details-marker{display:none}
+  .or-sec>summary::before{content:"▸";color:var(--accent);font-weight:700}
+  .or-sec[open]>summary{border-bottom:1px solid var(--line)}
+  .or-sec[open]>summary::before{content:"▾"}
+  .or-sec>summary:hover{background:#eef2f8}
+  .or-count{font-size:10.5px;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:10px;padding:1px 8px}
+  .or-body{padding:11px 12px}
   .hide{display:none!important}
   /* ---- Top-level view selector ---- */
   .views{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 4px;border-bottom:2px solid var(--line)}
@@ -472,34 +481,26 @@ function outreachHTML(t){
   const o=t.outreach; if(!o) return "";
   const mail=e=>`<a href="mailto:${e}">${e}</a>`;
   const web=(u,label)=>{const href=/^https?:\/\//.test(u)?u:("https://"+u); return `<a href="${href}" target="_blank" rel="noopener">${label||u.replace(/^https?:\/\//,'').replace(/\/$/,'')}</a>`;};
-  let h="";
-  if(o.slug){
-    h+=`<div class="or-dl"><a class="or-btn" href="docs/outreach-${o.slug}.pdf" target="_blank" rel="noopener">⤓ Contact sheet (PDF)</a><a class="or-btn ghost" href="docs/outreach-${o.slug}.xlsx">⤓ Excel</a></div>`;
-  }
-  h+=`<p class="or-note">Internal coalition outreach &amp; targeting contacts — please use responsibly.</p>`;
-  if(o.keyPeople&&o.keyPeople.length){
-    h+=`<div class="or-h">Key People &amp; Champions</div>`;
-    h+=o.keyPeople.map(p=>`<div class="or-item"><b>${p.name}</b>${p.note?` — <span class="or-muted">${p.note}</span>`:""}${(p.email||p.phone||p.linkedin)?`<div class="or-c">${p.email?mail(p.email):""}${p.phone?(p.email?" · ":"")+p.phone:""}${p.linkedin?" · "+web(p.linkedin,"LinkedIn"):""}</div>`:""}</div>`).join("");
-  }
+  const drop=(title,inner,count)=>inner?`<details class="or-sec"><summary>${title}${count!=null?` <span class="or-count">${count}</span>`:""}</summary><div class="or-body">${inner}</div></details>`:"";
+
+  const kp=(o.keyPeople||[]).map(p=>`<div class="or-item"><b>${p.name}</b>${p.note?` — <span class="or-muted">${p.note}</span>`:""}${(p.email||p.phone||p.linkedin)?`<div class="or-c">${p.email?mail(p.email):""}${p.phone?(p.email?" · ":"")+p.phone:""}${p.linkedin?" · "+web(p.linkedin,"LinkedIn"):""}</div>`:""}</div>`).join("");
+  let gov="";
   if(o.officials&&o.officials.length){
-    h+=`<div class="or-h">Town Government</div>`;
-    if(o.meetings) h+=`<p class="or-muted" style="font-size:12.5px;margin:0 0 8px">${o.meetings}</p>`;
-    h+=o.officials.map(x=>`<div class="or-item"><b>${x.name}</b>${x.role?` <span class="or-role">${x.role}</span>`:""}<div class="or-c">${mail(x.email)}${x.phone?" · "+x.phone:""}</div>${x.bio?`<div class="or-bio">${x.bio}</div>`:""}</div>`).join("");
+    if(o.meetings) gov+=`<p class="or-muted" style="font-size:12.5px;margin:0 0 8px">${o.meetings}</p>`;
+    gov+=o.officials.map(x=>`<div class="or-item"><b>${x.name}</b>${x.role?` <span class="or-role">${x.role}</span>`:""}<div class="or-c">${mail(x.email)}${x.phone?" · "+x.phone:""}</div>${x.bio?`<div class="or-bio">${x.bio}</div>`:""}</div>`).join("");
     if(o.boards&&o.boards.length){
-      h+=`<div class="or-boards">`+o.boards.map(b=>`<div class="or-board"><b>${b.name}</b>${b.contact?`<div class="or-muted" style="font-size:12px">${b.contact}</div>`:""}<div class="or-c">${b.email?mail(b.email):""}${b.phone?(b.email?" · ":"")+b.phone:""}${b.website?" · "+web(b.website,"site"):""}</div>${b.meetings?`<div class="or-bio">${b.meetings}</div>`:""}</div>`).join("")+`</div>`;
+      gov+=`<div class="or-boards">`+o.boards.map(b=>`<div class="or-board"><b>${b.name}</b>${b.contact?`<div class="or-muted" style="font-size:12px">${b.contact}</div>`:""}<div class="or-c">${b.email?mail(b.email):""}${b.phone?(b.email?" · ":"")+b.phone:""}${b.website?" · "+web(b.website,"site"):""}</div>${b.meetings?`<div class="or-bio">${b.meetings}</div>`:""}</div>`).join("")+`</div>`;
     }
   }
-  if(o.businesses&&o.businesses.length){
-    h+=`<div class="or-h">Businesses &amp; Allies (${o.businesses.length})</div><div class="or-grid">`;
-    h+=o.businesses.map(b=>`<div class="or-biz"><b>${b.name}</b>${b.category?` <span class="or-tag">${b.category}</span>`:""}<div class="or-c">${b.website?web(b.website,"site")+" · ":""}${b.email?mail(b.email)+" · ":""}${b.phone||""}</div>${b.address?`<div class="or-addr">${b.address}</div>`:""}</div>`).join("");
-    h+=`</div>`;
-  }
-  if(o.fire&&o.fire.length){
-    h+=`<div class="or-h">Fire Departments</div><div class="or-grid">`;
-    h+=o.fire.map(f=>`<div class="or-biz"><b>${f.name}</b><div class="or-c">${f.website?web(f.website,"site")+" · ":""}${f.email?mail(f.email)+" · ":""}${f.phone||""}</div>${f.address?`<div class="or-addr">${f.address}</div>`:""}${(f.contacts&&f.contacts.length)?`<div class="or-bio">`+f.contacts.map(c=>`${c.who}${c.email?" ("+mail(c.email)+")":""}`).join("; ")+`</div>`:""}</div>`).join("");
-    h+=`</div>`;
-  }
-  return `<h3>Outreach & Key Contacts</h3>${h}`;
+  const biz=(o.businesses&&o.businesses.length)?`<div class="or-grid">`+o.businesses.map(b=>`<div class="or-biz"><b>${b.name}</b>${b.category?` <span class="or-tag">${b.category}</span>`:""}<div class="or-c">${b.website?web(b.website,"site")+" · ":""}${b.email?mail(b.email)+" · ":""}${b.phone||""}</div>${b.address?`<div class="or-addr">${b.address}</div>`:""}</div>`).join("")+`</div>`:"";
+  const fire=(o.fire&&o.fire.length)?`<div class="or-grid">`+o.fire.map(f=>`<div class="or-biz"><b>${f.name}</b><div class="or-c">${f.website?web(f.website,"site")+" · ":""}${f.email?mail(f.email)+" · ":""}${f.phone||""}</div>${f.address?`<div class="or-addr">${f.address}</div>`:""}${(f.contacts&&f.contacts.length)?`<div class="or-bio">`+f.contacts.map(c=>`${c.who}${c.email?" ("+mail(c.email)+")":""}`).join("; ")+`</div>`:""}</div>`).join("")+`</div>`:"";
+
+  const dl=o.slug?`<div class="or-dl"><a class="or-btn" href="docs/outreach-${o.slug}.pdf" target="_blank" rel="noopener">⤓ Download contact sheet (PDF)</a></div>`:"";
+  return `<h3>Outreach & Key Contacts</h3>${dl}<p class="or-note">Internal coalition outreach &amp; targeting contacts — please use responsibly.</p>`
+    + drop("Key People &amp; Champions", kp, (o.keyPeople||[]).length||null)
+    + drop("Town Government", gov)
+    + drop("Businesses &amp; Allies", biz, (o.businesses||[]).length||null)
+    + drop("Fire Departments", fire, (o.fire||[]).length||null);
 }
 function renderCards(){
   const prank={}; (DATA.priority||[]).forEach((p,idx)=>prank[p.name]=idx+1);
