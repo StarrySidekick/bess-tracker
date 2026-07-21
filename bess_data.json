@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20",
+  "lastUpdated": "2026-07-21",
   "statusMeta": {
     "moratorium": {
       "label": "Towns With Active BESS Moratorium",
@@ -165,7 +165,275 @@
         "receptivity": 10
       },
       "priorityRank": 4,
-      "population": 17335
+      "population": 17335,
+      "outreach": {
+        "businesses": [
+          {
+            "name": "Katonah Chamber of Commerce",
+            "email": "info@katonahchamber.org",
+            "website": "https://www.katonahchamber.org/",
+            "address": "PO Box 389, Katonah, NY 10536"
+          },
+          {
+            "name": "DeCicco and Sons, Bedford",
+            "website": "https://www.deciccoandsons.com/bedford/",
+            "phone": "(914) 288-5800",
+            "address": "422 Old Post Rd, Bedford, NY 10506"
+          },
+          {
+            "name": "Mast Market, Bedford",
+            "email": "hello@mastmarket.com",
+            "website": "https://mastmarket.com/pages/mast-market-bedford",
+            "phone": "914-293-6478",
+            "address": "1 Court Road Bedford, NY"
+          },
+          {
+            "name": "Bedford Gourmet",
+            "website": "https://bedfordgourmet.com/",
+            "phone": "914.234.9409",
+            "address": "460 OLD POST ROAD BEDFORD, NY 10506"
+          },
+          {
+            "name": "Bedford 234",
+            "email": "info@bedford234.com",
+            "website": "https://www.bedford234.com/",
+            "phone": "(914) 234-5656",
+            "address": "635 Old Post Rd, Bedford, NY 10506"
+          },
+          {
+            "name": "Truck Restaurant",
+            "website": "https://www.truckrestaurant.com/",
+            "phone": "(914) 234-8900",
+            "address": "391 Old Post Road Bedford, NY 10506"
+          },
+          {
+            "name": "GE Brown Fine Foods and Provisions",
+            "phone": "914.234.3185",
+            "address": "652 Old Post Road, Bedford NY 10506"
+          },
+          {
+            "name": "Bedford Candy Bar",
+            "phone": "914-234-8645",
+            "address": "627 old Post Road Bedford NY 10506"
+          },
+          {
+            "name": "Bedford-Armonk Rotary Club",
+            "email": "BedfordArmomkRotary@gmail.com",
+            "website": "https://www.bedfordarmonkrotary.org/",
+            "phone": "(917) 969-3560",
+            "address": "41 Hickory Lane Bedford, NY 10506"
+          },
+          {
+            "name": "Bedford Post Inn",
+            "email": "sundayhospitality@monacreative.co",
+            "website": "https://www.bedfordpostinn.com/",
+            "phone": "914.234.7800",
+            "address": "954 Old Post Road, Bedford, NY 10506"
+          },
+          {
+            "name": "The Harvey School",
+            "email": "effiea@harveyschool.org",
+            "website": "https://www.harveyschool.org/",
+            "phone": "914-232-3161",
+            "address": "260 Jay Street, The Harvey School, Katonah NY, 10536"
+          },
+          {
+            "name": "Peppinos Ristorante",
+            "website": "https://www.peppinosristorante.com/",
+            "phone": "(914) 232-3212"
+          },
+          {
+            "name": "Tengda Asian Bistro",
+            "email": "info@tengdakatonah.com",
+            "website": "https://tengdakatonah.com/",
+            "phone": "(914) 232-3900",
+            "address": "286 Katonah Ave, Katonah, NY 10536"
+          },
+          {
+            "name": "Optum Primary Care - Katonah",
+            "website": "https://www.optum.com/en/care/facilities/ny/optum-primary-care-katonah-13599_1005017003.html",
+            "phone": "1005017003",
+            "address": "111 Bedford Rd, Katonah, NY 10536"
+          },
+          {
+            "name": "Northwell Health Physician Partners at Katonah",
+            "website": "https://www.northwell.edu/doctors-offices/northwell-health-physician-partners-at-katonah?utm_source=provider_listing&utm_medium=partner&utm_campaign=yext",
+            "phone": "(914) 269-9630",
+            "address": "60 Goldens Bridge Road, Upper Level Katonah, NY 10536"
+          }
+        ],
+        "officials": [
+          {
+            "name": "Ellen Calves",
+            "email": "ecalves@bedfordny.gov",
+            "role": "Board Supervisor",
+            "phone": "914-666-6530",
+            "bio": "Ellen Calves serves as the Town Supervisor of Bedford after previously serving on the Town Board. According to her official biography and campaign materials, her stated priorities include affordability, housing, resiliency, and sustainability, and she previously served as Executive Director of Bedford 2030."
+          },
+          {
+            "name": "Stephanie McCaine",
+            "email": "smccaine@bedfordny.gov",
+            "role": "Deputy Supervisor and Board Member",
+            "phone": "914-666-6530",
+            "bio": "Stephanie McCaine serves on the Bedford Town Board and is the Town's Deputy Supervisor. According to her official biography, she is a lifelong Katonah resident who has served as the Town Board liaison to the Police Department and the Recreation and Parks Department."
+          },
+          {
+            "name": "Midge Iorio",
+            "email": "miorio@bedfordny.gov",
+            "role": "Board Member",
+            "phone": "914-666-6530",
+            "bio": "Midge Iorio serves on the Bedford Town Board. According to her official biography, she led Bedford 2030 for 13 years before joining the Board and has been active with the Katonah Chamber of Commerce, KVIS, and the Katonah Elementary School PTO"
+          },
+          {
+            "name": "Bobbi M. Bittker",
+            "email": "bbittker@bedfordny.gov",
+            "role": "Board Member",
+            "phone": "914-666-6530",
+            "bio": "Bobbi M. Bittker serves as a member of the Bedford Town Board. The Town of Bedford identifies her as an elected Town Board member, but does not currently publish a detailed official biography"
+          },
+          {
+            "name": "Tom Catoliato",
+            "email": "tcatoliato@bedfordny.gov",
+            "role": "Board Member",
+            "phone": "914-666-6530",
+            "bio": "Tom Catoliato serves as a member of the Bedford Town Board. The Town of Bedford lists him as an elected Board member but does not currently provide additional biographical information on its website"
+          },
+          {
+            "name": "Jennifer Wedge",
+            "email": "businesspromoter@bedfordny.gov",
+            "role": "Bedford Buisness Promoter",
+            "phone": "732-762-0292",
+            "bio": "Jennifer Wedge serves as Bedford's Business Promoter, working with the Town on economic development and business outreach. Town Board meeting minutes show that she regularly provides updates on downtown events, merchant engagement, and initiatives to support Bedford's business community."
+          },
+          {
+            "name": "Kim Kowalski",
+            "email": "kkowalski@bedfordny.gov",
+            "role": "Secretary and Office Manager",
+            "phone": "914-666-4585"
+          },
+          {
+            "name": "Peter Michaelis",
+            "email": "pmichaelis@bedfordny.gov",
+            "role": "Board Chair",
+            "bio": "Other Members: Meridith Black, Rosemary Lee, Roger Van Loveren, Howard Stern"
+          },
+          {
+            "name": "Deirdre Courtney-Batson",
+            "email": "dcourtneybatson@bedfordny.gov",
+            "role": "Planning Board Chair"
+          }
+        ],
+        "boards": [
+          {
+            "name": "Zoning Board of Appeals",
+            "website": "https://bedfordny.gov/DocumentCenter/View/2529/2026-ZBA-Meeting-Schedule-with-Submission-Deadline-Dates-?bidId=",
+            "email": "kkowalski@bedfordny.gov",
+            "phone": "914-666-4585",
+            "meetings": "| https://bedfordny.gov/DocumentCenter/View/2529/2026-ZBA-Meeting-Schedule-with-Submission-Deadline-Dates-?bidId="
+          },
+          {
+            "name": "Planning Board",
+            "website": "http://bedfordpoliceny.org/DocumentCenter/View/4544/2026-Planning-Board-Meeting-Schedule",
+            "email": "sallen@bedfordny.gov",
+            "phone": "914-666-4434",
+            "meetings": "| http://bedfordpoliceny.org/DocumentCenter/View/4544/2026-Planning-Board-Meeting-Schedule",
+            "contact": "Primary Contact: Shea Allen-Administrative Staff Member,"
+          }
+        ],
+        "fire": [
+          {
+            "name": "Bedford Village Fire Department",
+            "contacts": [
+              {
+                "who": "Chief of Department: Graham E. Glauber",
+                "email": "chiefs@bedfordfire.com"
+              },
+              {
+                "who": "directors@bedfordfire.com",
+                "email": "directors@bedfordfire.com"
+              },
+              {
+                "who": "Board of Fire Commissioners",
+                "email": "Commissioners@bedfordvillagefiredistrict.com"
+              },
+              {
+                "who": "Kyle Carlton - Chair of the Board of Fire Commissioners",
+                "email": "KCarleton@bedfordvillagefiredistrict.com"
+              },
+              {
+                "who": "Robert Mazurak - Board Member",
+                "email": "RMazurak@bedfordvillagefiredistrict.com"
+              },
+              {
+                "who": "Robert Sour - Treasurer",
+                "email": "RSour@bedfordvillagefiredistrict.com"
+              },
+              {
+                "who": "Angela Sour - Secretary",
+                "email": "ASour@bedfordvillagefiredistrict.com"
+              }
+            ],
+            "website": "https://www.bedfordfire.com/",
+            "phone": "(914) 234-3133",
+            "address": "550 Old Post Road P.O. Box 230 Bedford, New York 10506-0230",
+            "email": "info@bedfordfire.com"
+          },
+          {
+            "name": "Bedford Hills Fire Department",
+            "contacts": [
+              {
+                "who": "Chief of Department: Zachary S. Patierno",
+                "email": "chiefs@bedfordhillsfd.org"
+              },
+              {
+                "who": "Board of Directors -",
+                "email": "director@bedfordhillsfd.org"
+              },
+              {
+                "who": "Diane Bancroft - Secretary/Treasurer of",
+                "email": "dbancroft@bedfordhillsfd.org"
+              }
+            ],
+            "website": "https://www.bedfordhillsfd.org/",
+            "phone": "914-666-8253",
+            "address": "Bedford Hills Fire Department 332 Bedford Road Bedford Hills, New York, 10507",
+            "email": "info@bedfordhillsfd.org"
+          },
+          {
+            "name": "Katonah Fire Departmnet",
+            "contacts": [],
+            "website": "https://www.katonahfd.org/",
+            "phone": "914-232-4570",
+            "address": "65 Bedford Road Katonah, New York, 10536",
+            "email": "info@katonahfd.org"
+          }
+        ],
+        "keyPeople": [
+          {
+            "name": "Mariah Okrongly",
+            "note": "Bedford 2030 (local climate nonprofit).",
+            "email": "mariah.orkrongly@bedford2030.org",
+            "phone": "914-620-2411"
+          },
+          {
+            "name": "Midge Iorio",
+            "note": "Bedford 2030.",
+            "email": "midge.iorio@bedford2030.org"
+          },
+          {
+            "name": "Chris DelCampo",
+            "note": "The Harvey School, Communications Associate.",
+            "email": "cdelcampo@harveyschool.org"
+          },
+          {
+            "name": "Frank Lutz",
+            "note": "The Harvey School, Director of Buildings & Properties.",
+            "email": "flutz@harveyschool.org"
+          }
+        ],
+        "meetings": "See Bedford Town Board page. Business Promoter: Jennifer Wedge, businesspromoter@bedfordny.gov.",
+        "slug": "bedford"
+      }
     },
     {
       "name": "Town of Cortlandt (Cortlandt Manor)",
@@ -279,7 +547,303 @@
         "receptivity": 10
       },
       "priorityRank": 1,
-      "population": 45124
+      "population": 45124,
+      "outreach": {
+        "businesses": [
+          {
+            "name": "Hudson Valley Gateway Chamber of Commerce",
+            "email": "info@hvgatewaychamber.com",
+            "website": "https://www.hvgatewaychamber.com/",
+            "phone": "(914) 737-3600",
+            "address": "1 S Division St, Peekskill, NY 10566"
+          },
+          {
+            "name": "Yorktown Assisted Living Residence",
+            "category": "Nursing Home",
+            "email": "info@yorktownal.com",
+            "website": "https://yorktownal.com/",
+            "phone": "914-737-2255",
+            "address": "2276 Catherine Street Cortlandt Manor, NY 10567"
+          },
+          {
+            "name": "North Westchester Restorative Therapy and Nursing Center",
+            "category": "Therapy center and Nursing Home",
+            "website": "https://www.northwestchester.com/",
+            "phone": "(914) 522 8489",
+            "address": "3550 Lexington Ave Mohegan Lake NY 10547"
+          },
+          {
+            "name": "Cortlandt Healthcare",
+            "category": "Nursing Home",
+            "website": "https://cortlandthealthcare.com/",
+            "phone": "(914) 739-9150 x3020",
+            "address": "110 Oregon Road Cortlandt Manor NY 10567"
+          },
+          {
+            "name": "NewYork-Presbyterian Hudson Valley Hospital",
+            "category": "Large Scale Hospital",
+            "website": "https://www.nyp.org/locations/westchester-hudson-valley/nyp-hudson-valley-hospital",
+            "phone": "(914) 737-9000",
+            "address": "1980 Crompond Road Cortlandt Manor NY 10567"
+          },
+          {
+            "name": "Cortlandt Colonial Restaurant & Ballroom",
+            "category": "Restaurant",
+            "phone": "(914) 739-3900",
+            "address": "714 Old Albany Post Road Cortlandt Manor, NY 10567"
+          },
+          {
+            "name": "AJ's Bar and Grill",
+            "category": "Restaurant",
+            "phone": "(914) 737-5058",
+            "address": "3833 Crompond Road Cortlandt, NY 10567"
+          },
+          {
+            "name": "K&P Lounge",
+            "category": "Restaurant",
+            "website": "https://www.kandplounge.com/",
+            "phone": "(914) 293-7775",
+            "address": "276 Watch Hill Road Cortlandt Manor, NY, NY 10567"
+          },
+          {
+            "name": "Little Sorrento",
+            "category": "Restaurant",
+            "email": "info@littlesorrento.com",
+            "website": "https://littlesorrento.com/",
+            "phone": "(914)-736-6767",
+            "address": "3565 Crompond Road Cortlandt Manor, NY. 10567"
+          },
+          {
+            "name": "Table 9",
+            "category": "Restaurant",
+            "website": "https://tablenine.com/",
+            "phone": "(914) 737-4959",
+            "address": "92 Roa Hook Road, Rt. 9 @ Annsville Circle Cortlandt Manor, NY 10567"
+          },
+          {
+            "name": "Cole's Market",
+            "category": "Local Grocery store",
+            "email": "colesmarket@optonline.net",
+            "website": "https://colesmarket.com/",
+            "phone": "(914) 737-7737",
+            "address": "2147 Albany Post Rd, Montrose, NY 10548"
+          },
+          {
+            "name": "Shoprite of Cortlandt",
+            "category": "Chain grocery store",
+            "website": "https://www.shoprite.com/sm/pickup/rsid/3000/store",
+            "phone": "(914) 737-4335",
+            "address": "3140 East Main Street, Suite 300 Mohegan Lake, NY 10547"
+          },
+          {
+            "name": "Shoprite of Croton on Hudson",
+            "category": "Chain grocery store",
+            "website": "https://www.shoprite.com/sm/pickup/rsid/3000/store",
+            "phone": "(914) 271-6400",
+            "address": "460 South Riverside Avenue Croton-on-Hudson, New York 10520"
+          },
+          {
+            "name": "ACME Markets",
+            "category": "Chain grocery store",
+            "website": "https://local.acmemarkets.com/ny/mohegan-lake/3071-e-main-st.html",
+            "phone": "(914) 526-6688",
+            "address": "3071 E Main St Mohegan Lake, NY 10547"
+          },
+          {
+            "name": "Lapa Dental Associates PC",
+            "website": "https://www.carecredit.com/doctor-locator/cortlandt-manor-ny/lapa-dental-associates-pc-dzh934/",
+            "phone": "(914) 739-2626",
+            "address": "2117 Crompond Rd Ste 21, Cortlandt Manor, NY 10567"
+          },
+          {
+            "name": "Healthy Home and Energy Consulting",
+            "category": "Energy Consulting buisness",
+            "phone": "(914) 242-9733",
+            "address": "66 Fields Lane, Suite 1, Brewster,"
+          },
+          {
+            "name": "Shelter Air",
+            "category": "Sustainably focused HVAC company",
+            "website": "https://shelter-air.com/",
+            "phone": "123-456-7890",
+            "address": "134 Main St, Beacon, NY 12508"
+          },
+          {
+            "name": "Cortlandt Rotary Club",
+            "category": "Rotary Club",
+            "email": "rotaryclubofcortlandtmanor@gmail.com",
+            "website": "https://cortlandtmanorrotary.com/",
+            "phone": "(914) 246-0135",
+            "address": "5714 Albany Post Rd. Cortlandt Manor, NY 10567"
+          },
+          {
+            "name": "Effective Electric LLC",
+            "category": "Electric Company",
+            "phone": "(914) 737-2651",
+            "address": "1860 Jacob Street Cortlandt Manor, NY 10567"
+          },
+          {
+            "name": "Taconic Heating and Cooling Corp",
+            "category": "HVAC Company",
+            "website": "https://www.taconichvac.us/",
+            "phone": "(914) 734-9300",
+            "address": "9 Dogwood Court Cortlandt Manor, NY 10567"
+          },
+          {
+            "name": "Ecological Citizens Project",
+            "email": "jason.angell@ecologicalcitizens.org",
+            "website": "https://ecologicalcitizens.org/",
+            "phone": "(845) 309-0887",
+            "address": "69 South Mountain Pass Garrison, NY 10524"
+          },
+          {
+            "name": "Climate Action and Social Sustainability Non-Profit",
+            "email": "jocelyn.apicello@ecologicalcitizens.org"
+          }
+        ],
+        "officials": [
+          {
+            "name": "James Creighton",
+            "email": "JamesC@townofcortlandtNY.GOV",
+            "bio": "Deputy Supervisor and Town Councilman (since 2017); Hudson Valley Gaqteway Chamber of Commerce Chair of Public Action Committee; Westchester County municipal attorney Cortlandt's sustainability liaison with extensive experience in local planning and conservation.",
+            "role": "Town Board"
+          },
+          {
+            "name": "Christine Jacoby",
+            "email": "CJacoby@townofcortlandtNY.GOV",
+            "bio": "Cristin Jacoby has served on the Cortlandt Town Board since 2021. A former municipal finance professional with a background in public administration and political science, she brings financial and public policy experience to local government.",
+            "role": "Town Board"
+          },
+          {
+            "name": "Robert Mayes",
+            "email": "RMayes@townofcortlandtny.GOV",
+            "bio": "Robert Mayes has served on the Cortlandt Town Board since 2022. An attorney and former Assistant District Attorney, he previously served on the Town Planning Board and Lakeland Board of Education and has been actively involved in local nonprofit and community organizations.",
+            "role": "Town Board"
+          },
+          {
+            "name": "Joyce White",
+            "email": "jwhite@townofcortlandtNY.GOV",
+            "bio": "Joyce White has served on the Cortlandt Town Board since 2024. A healthcare business development and marketing professional, she has been active in local education advocacy and community organizations, with a focus on supporting seniors, families, and quality-of-life initiatives.",
+            "role": "Town Board"
+          },
+          {
+            "name": "Richard Becker",
+            "email": "supervisor@townofcortlandtny.gov",
+            "role": "Town Supervisor"
+          },
+          {
+            "name": "Laroue Rose Shatzkin",
+            "role": "Town Clerk",
+            "email": "Laroues@townofcortlandt.com"
+          }
+        ],
+        "boards": [
+          {
+            "name": "Planning Board",
+            "contact": "Chris Kehoe, Director of Planning & Community Development",
+            "phone": "914-734-1081",
+            "email": "chrisk@townofcortlandtny.gov",
+            "meetings": "Regular meetings ~6:30 pm following a 6:00 pm work session; see 2026 submittal schedule."
+          },
+          {
+            "name": "Zoning Board of Appeals",
+            "contact": "Planning Department",
+            "phone": "914-734-1080",
+            "meetings": "3rd Thursday evenings, 7:00 pm (work session 6:30 pm)."
+          }
+        ],
+        "fire": [
+          {
+            "name": "Cortlandt Engine Co. (Montrose Fire District)",
+            "website": "https://www.montrosefire.com/",
+            "address": "2143 Albany Post Road, Montrose, NY 10548",
+            "email": "info@montrosefire.com",
+            "phone": "914-737-0354",
+            "contacts": [
+              {
+                "who": "Thomas Gilleo, Chief of Department",
+                "email": "Firechiefs@montrosefire.com"
+              },
+              {
+                "who": "Officers",
+                "email": "Officers@montrosefire.com"
+              }
+            ]
+          },
+          {
+            "name": "Mohegan Fire Department",
+            "website": "https://www.moheganfire.com/",
+            "address": "1975 East Main St, Mohegan Lake, NY 10547",
+            "email": "info@moheganfire.com",
+            "phone": "(914) 526-0823",
+            "contacts": [
+              {
+                "who": "Donald DeChent, President"
+              },
+              {
+                "who": "Kristopher Thornton, Captain"
+              }
+            ]
+          },
+          {
+            "name": "Verplanck Fire District",
+            "website": "https://www.verplanckfire.org/",
+            "address": "238 8th Street, Verplanck, NY 10596",
+            "email": "info@verplanckfire.org",
+            "phone": "914-737-8233",
+            "contacts": [
+              {
+                "who": "James O'Brien, Chief of Department"
+              },
+              {
+                "who": "Board of Fire Commissioners",
+                "email": "vercomm5@gmail.com"
+              }
+            ]
+          },
+          {
+            "name": "Croton Fire Department",
+            "website": "https://www.crotonfd.org/",
+            "address": "Croton-on-Hudson, NY 10520",
+            "email": "info@crotonfd.org",
+            "phone": "914-271-2693",
+            "contacts": [
+              {
+                "who": "Chris Colombo, Chief of Department"
+              },
+              {
+                "who": "Josh Karpoff, Deputy Chief",
+                "email": "JKarpoff@CrotonFD.org"
+              }
+            ]
+          }
+        ],
+        "meetings": "Town Board meets once a month on a Tuesday. Town Hall: (914) 734-1002.",
+        "keyPeople": [
+          {
+            "name": "Marianne Oros",
+            "note": "Hudson Valley Gateway Chamber of Commerce board of directors; Civic member.",
+            "linkedin": "https://www.linkedin.com/in/marianne-oros-12b9616/",
+            "phone": "(914) 734-2660"
+          },
+          {
+            "name": "Ellen Bloom",
+            "note": "Chamber board chair & representative; NewYork-Presbyterian Hudson Valley Hospital.",
+            "linkedin": "https://www.linkedin.com/in/ellenbloom/"
+          },
+          {
+            "name": "Kimberly Sevilla",
+            "note": "CEO at Shelter Air; Chamber member.",
+            "email": "kimberlyjsevilla@gmail.com"
+          },
+          {
+            "name": "Jason Angell & Jocelyn Apicello",
+            "note": "Co-Directors, Ecological Citizens Project; Chamber members.",
+            "email": "jason.angell@ecologicalcitizens.org"
+          }
+        ],
+        "slug": "cortlandt"
+      }
     },
     {
       "name": "Town of New Castle (Chappaqua / Millwood)",
@@ -405,7 +969,67 @@
         "receptivity": 10
       },
       "priorityRank": 2,
-      "population": 19069
+      "population": 19069,
+      "outreach": {
+        "officials": [
+          {
+            "name": "Victoria Tipp",
+            "email": "Vtipp@mynewcastleny.gov",
+            "role": "Town Supervisor",
+            "bio": "Victoria Tipp has served as New Castle Town Supervisor since 2022. She oversees the town's executive operations and works closely with the Town Board on budgeting, land use, economic development, and municipal policy. She also serves as liaison to several town committees, including economic revitalization and inclusion initiatives"
+          },
+          {
+            "name": "Holly A.F. McCall",
+            "email": "hmccall@mynewcastleny.gov",
+            "role": "Deputy Town Supervisor",
+            "bio": "Holly McCall serves as Deputy Town Supervisor and has been a member of the Town Board since 2022. She is the Board's liaison to New Castle's Climate Smart Communities, Conservation Board, Landmark Advisory Committee, and Sustainability Advisory Board, reflecting a strong focus on environmental and sustainability issues."
+          },
+          {
+            "name": "Alexandra Chemtob",
+            "email": "AChemtob@mynewcastleny.gov",
+            "bio": "Alexandra Chemtob has served on the New Castle Town Board since 2024. She serves as liaison to the Recreation & Parks Commission, Beautification Advisory Board, Chamber of Commerce, and Police Department, with responsibilities spanning community services and public safety.",
+            "role": "Town Board"
+          },
+          {
+            "name": "Eric Marmon",
+            "email": "emarmon@mynewcastleny.gov",
+            "bio": "Eric Marmon joined the Town Board in 2026. He serves as liaison to the Airport Advisory Board, Ethics Board, Farmers Market, and Holocaust & Human Rights Committee, bringing a focus on civic engagement and community oversight.",
+            "role": "Town Board"
+          },
+          {
+            "name": "Jennifer Naparstek Klein",
+            "email": "Jklein@mynewcastleny.gov",
+            "bio": "Jennifer Naparstek Klein has served on the New Castle Town Board since 2024. She is the Board's liaison to the Arts & Culture Committee, Committee on Inclusion & Belonging, Friends of ChappPAC, and the Committee for Mental Resilience, with a focus on community engagement and resident well-being.",
+            "role": "Town Board"
+          }
+        ],
+        "boards": [
+          {
+            "name": "Zoning Board of Appeals",
+            "website": "https://www.mynewcastleny.gov/305/Zoning-Board-of-Appeals"
+          },
+          {
+            "name": "Sustainability Advisory Board",
+            "website": "https://www.mynewcastleny.gov/303/Sustainability-Advisory-Board",
+            "email": "sab@mynewcastleny.gov",
+            "meetings": "7pm, last Wednesday of each month, at the Town Hall, 200 South Greeley Avenue, Chappaqua, NY 10514"
+          },
+          {
+            "name": "Environmental Review Board",
+            "website": "https://www.mynewcastleny.gov/278/Environmental-Review-Board",
+            "email": "dcorelli@mynewcastleny.gov",
+            "meetings": "7:30 pm, on the 3rd Monday of every month, at the Town Hall, 200 South Greeley Avenue, Chappaqua, NY 10514"
+          },
+          {
+            "name": "Planning Board",
+            "website": "https://www.mynewcastleny.gov/300/Planning-Board",
+            "email": "planningboard@mynewcastleny.gov",
+            "meetings": "| https://www.mynewcastleny.gov/DocumentCenter/View/5326/Planning-Board-Meeting-Schedule-2026-PDF"
+          }
+        ],
+        "meetings": "Town Board at 200 S Greeley Ave, Chappaqua. TownBoard@mynewcastle.org · 914-238-4771.",
+        "slug": "new-castle"
+      }
     },
     {
       "name": "Village of Ossining",
@@ -497,7 +1121,66 @@
         "receptivity": 10
       },
       "priorityRank": 3,
-      "population": 27551
+      "population": 27551,
+      "outreach": {
+        "officials": [
+          {
+            "name": "Elizabeth R. Feldman",
+            "email": "feldman@townofossiningny.gov",
+            "role": "Town Supervisor",
+            "phone": "(914) 762-6001",
+            "bio": "Elizabeth Feldman has served as Ossining Town Supervisor since 2022 after previously serving on the Town Board beginning in 2015. A lifelong Ossining resident, she has focused on infrastructure improvements, stormwater management, protecting open space, and maintaining affordability for residents."
+          },
+          {
+            "name": "Jennifer Fields-Tawil",
+            "email": "fields-tawil@townofossiningny.gov",
+            "role": "Tawil",
+            "bio": "Jennifer Fields-Tawil has served on the Ossining Town Board since 2022. Before joining the Board, she worked as District Office Manager for Assemblywoman Sandy Galef, helping residents navigate state government and constituent services."
+          },
+          {
+            "name": "Angelo Manicchio",
+            "email": "amanicchio@townofossiningny.gov",
+            "bio": "Angelo Manicchio has served on the Ossining Town Board since 2022. A lifelong Ossining resident, he is a graduate of Pace University, a local business owner, and manages several residential and mixed-use properties in the community.",
+            "role": "Town Board"
+          },
+          {
+            "name": "Gregory G. Meyer",
+            "email": "meyer@townofossiningny.gov",
+            "bio": "Gregory Meyer has served on the Ossining Town Board since 2020 and currently serves as Deputy Town Supervisor. He is an attorney with experience in municipal governance and works with the Board on budgeting, infrastructure, and local policy.",
+            "role": "Town Board"
+          },
+          {
+            "name": "Matthew Weiss",
+            "email": "mweiss@townofossiningny.gov",
+            "bio": "Matthew Weiss has served on the Ossining Town Board since 2023. As a member of the Town Board, he works on municipal legislation, budgeting, and community initiatives affecting residents of the Town of Ossining.",
+            "role": "Town Board"
+          }
+        ],
+        "boards": [
+          {
+            "name": "Planning Board",
+            "website": "https://www.townofossiningny.gov/cms/boards-committees/planning-board",
+            "phone": "(914) 762-8419",
+            "meetings": "The Planning Board usually meets the first and third Wednesday of each month, with the first meeting of the month serving as a \"Work Session\" -"
+          },
+          {
+            "name": "Environmental Advisory Committee",
+            "website": "https://www.townofossiningny.gov/cms/boards-committees/environmental-advisory",
+            "email": "EAC@townofossiningny.gov",
+            "phone": "(914) 762-6000",
+            "meetings": "The EAC generally meets via zoom on the first Monday of each month from 6:30 till 8:00pm."
+          },
+          {
+            "name": "Zoning Board",
+            "website": "https://www.townofossiningny.gov/cms/boards-committees/zoning-board",
+            "email": "sanelli@townofossiningny.gov",
+            "phone": "(914) 762-8419",
+            "meetings": "The Zoning Board usually meets the first and/or third Monday of the month."
+          }
+        ],
+        "meetings": "Work sessions 1st & 3rd Tuesdays 7:30 pm (16 Croton Ave); board meetings 2nd & 4th Tuesdays 7:30 pm (86 Spring St). TC@townofossiningny.gov · (914) 762-6000.",
+        "slug": "ossining"
+      }
     },
     {
       "name": "Town of Mount Pleasant",
@@ -2308,7 +2991,66 @@
       },
       "priorityRank": 43,
       "population": 5205,
-      "priorityExcluded": "NYSEG territory (not on the ConEd map, outside the coalition's grid focus)"
+      "priorityExcluded": "NYSEG territory (not on the ConEd map, outside the coalition's grid focus)",
+      "outreach": {
+        "officials": [
+          {
+            "name": "Kevin Hansan",
+            "email": "supervisor@townofpoundridge.gov",
+            "role": "Town Supervisor",
+            "bio": "Kevin Hansan has served as Pound Ridge Town Supervisor since January 2018. A Pound Ridge resident since 1995, he is also a technology company executive and oversees the town's executive operations, budgeting, and policy implementation."
+          },
+          {
+            "name": "Alison Boak",
+            "email": "aboak@townofpoundridge.gov",
+            "bio": "Alison Boak serves on the Pound Ridge Town Board and is the Board liaison to the Board of Assessment Review, Old Pound Road Committee, and Water Wastewater Task Force. As a Town Board member, she helps oversee municipal policy, budgeting, and local government operations",
+            "role": "Town Board"
+          },
+          {
+            "name": "Diane Briggs",
+            "email": "dbriggs@townofpoundridge.gov",
+            "bio": "Diane Briggs serves as Deputy Town Supervisor and a member of the Pound Ridge Town Board. She is the Board liaison to the Highway Department, Recreation Commission, THRIVE, and the Zoning Board of Appeals, with responsibilities that include infrastructure and community services.",
+            "role": "Town Board"
+          },
+          {
+            "name": "Dan Paschkes",
+            "email": "dpaschkes@townofpoundridge.gov",
+            "bio": "Dan Paschkes serves on the Pound Ridge Town Board and is the liaison to the Conservation Board, Sustainability Committee, Housing Board, Open Space Committee, and Water Control Commission. His assignments reflect a strong involvement in environmental, conservation, and land use issues.",
+            "role": "Town Board"
+          },
+          {
+            "name": "Namasha Schelling",
+            "email": "nschelling@townofpoundridge.gov",
+            "bio": "Namasha Schelling serves on the Pound Ridge Town Board and chairs the Town's Human Rights Advisory Committee. She is also the Board liaison to the Human Rights Advisory Committee, Planning Board, Landmarks & Historic District Commission, and Audit Bills, with a focus on civic engagement and community governance.",
+            "role": "Town Board"
+          }
+        ],
+        "boards": [
+          {
+            "name": "Zoning Board of Appeals",
+            "website": "https://www.townofpoundridge.gov/boardsandcommissions-zb",
+            "email": "chiefofstaff@townofpoundridge.com",
+            "meetings": "Zoning Board of Appeals meetings are held on the third Wednesday of each month at 7:00 pm at the Town House (see calendar)",
+            "contact": "Administrator Nicole Engle:"
+          },
+          {
+            "name": "Sustainability Committee",
+            "website": "https://www.townofpoundridge.gov/boardsandcommissions/sustainability-committee",
+            "email": "chiefofstaff@townofpoundridge.com",
+            "meetings": "The Committee meets virtually on a monthly basis, typically the first Thursday of each month via Zoom (see Calendar/contact committee)"
+          },
+          {
+            "name": "Planning Board",
+            "website": "https://www.townofpoundridge.gov/boardsandcommissions-pb",
+            "email": "cdur@townofpoundridge.gov",
+            "phone": "914.764.3982",
+            "meetings": "The Planning Board typically meets on the 4th Thursday of each month at 7pm at the Town House (see Calendar)",
+            "contact": "Contact: Christine CB Dur"
+          }
+        ],
+        "meetings": "Town Board 1st & 3rd Tuesdays 7:30 pm at the Town House, 179 Westchester Ave. townclerk@townofpoundridge.gov · (914) 764-5511.",
+        "slug": "pound-ridge"
+      }
     },
     {
       "name": "Town of Yorktown",
