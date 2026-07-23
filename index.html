@@ -41,7 +41,8 @@
   .stat::after{content:"";position:absolute;right:-5px;top:50%;transform:translateY(-50%);width:5px;height:30px;
     border-radius:0 3px 3px 0;background-color:inherit;box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
   .stat:hover{box-shadow:0 7px 16px rgba(20,40,80,.20), inset 0 1px 0 rgba(255,255,255,.28), inset 0 -3px 8px rgba(0,0,0,.12);transform:translateY(-2px)}
-  .stat.sel{box-shadow:0 0 0 3px var(--navy), 0 2px 5px rgba(20,40,80,.18), inset 0 1px 0 rgba(255,255,255,.28)}
+  .stat.sel{box-shadow:inset 0 0 0 3px rgba(255,255,255,.9), 0 4px 12px rgba(20,40,80,.28); transform:translateY(-1px)}
+  .stat.sel::after{box-shadow:inset -2px 0 0 rgba(255,255,255,.9), inset 0 1px 0 rgba(255,255,255,.3)}
   .stat .n{font-size:33px;font-weight:800;line-height:1;color:#fff;font-variant-numeric:tabular-nums;text-shadow:0 1px 1px rgba(0,0,0,.18)}
   .stat .l{font-size:12px;color:rgba(255,255,255,.95);margin-top:auto;padding-top:8px;font-weight:600;line-height:1.25}
   .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 18px}
@@ -221,6 +222,17 @@
   .viewtab.sel{color:var(--navy)}
   .viewtab.sel::after{content:"";position:absolute;left:14px;right:14px;bottom:-2px;height:3px;border-radius:3px 3px 0 0;background:var(--accent)}
   .viewtab .vt-sub{display:block;font-size:11px;font-weight:500;color:#9aa4b2;margin-top:2px}
+  /* Mobile section carousel (replaces the tab row on small screens) */
+  .views-m{display:none}
+  @media(max-width:640px){
+    .views{display:none}
+    .views-m{display:flex;align-items:center;gap:8px;margin:6px 0 12px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:6px}
+    .vm-arrow{flex:0 0 auto;width:42px;height:42px;border-radius:9px;border:1px solid var(--line);background:#f4f7fb;color:var(--navy);font-size:22px;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:inherit;line-height:1}
+    .vm-arrow:active{background:var(--accent-soft)}
+    .vm-cur{flex:1;text-align:center;min-width:0;padding:0 2px}
+    .vm-title{display:block;font-size:15.5px;font-weight:800;color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .vm-sub{display:block;font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+  }
   .view{display:none}
   .view.sel{display:block;animation:viewIn .3s cubic-bezier(.2,.7,.3,1) both}
   @keyframes viewIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
@@ -265,7 +277,7 @@
   .checklist li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
   /* ---- Imagery (uniform scaling only; never distorted) ---- */
   .hero{width:100%;max-width:420px;height:auto;display:block;border-radius:12px;border:1px solid var(--line);margin:10px 0 4px}
-  .hero.wide{max-width:600px}
+  .hero.wide{max-width:390px}
   .imgcap{font-size:12px;color:var(--muted);margin:2px 0 14px}
   .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:14px 0 6px}
   .gfig{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
@@ -300,6 +312,11 @@
     <button type="button" class="viewtab" data-view="projects" onclick="setView('projects')">Successful Projects<span class="vt-sub">Storage working in Westchester</span></button>
     <button type="button" class="viewtab" data-view="modellaw" onclick="setView('modellaw')">Model Law<span class="vt-sub">A common-sense code, not a ban</span></button>
     <button type="button" class="viewtab" data-view="tracker" onclick="setView('tracker')">Live Policy Tracker<span class="vt-sub">Town-by-town status</span></button>
+  </div>
+  <div class="views-m" id="viewsM">
+    <button type="button" class="vm-arrow" aria-label="Previous section" onclick="cycleView(-1)">&#8249;</button>
+    <div class="vm-cur"><span class="vm-title" id="vmTitle">About Battery Storage</span><span class="vm-sub" id="vmSub">What it is &amp; why it matters</span></div>
+    <button type="button" class="vm-arrow" aria-label="Next section" onclick="cycleView(1)">&#8250;</button>
   </div>
 
   <section id="view-about" class="view sel info"><div id="about-body"></div></section>
@@ -396,11 +413,19 @@ function setFilter(s){
   const sa=el("#showall"); if(sa) sa.style.display = (currentFilter==="all") ? "none" : "inline-block";
   applyFilter();
 }
+const VIEW_ORDER=["about","projects","modellaw","tracker"];
+const VIEW_META={about:["About Battery Storage","What it is & why it matters"],projects:["Successful Projects","Storage working in Westchester"],modellaw:["Model Law","A common-sense code, not a ban"],tracker:["Live Policy Tracker","Town-by-town status"]};
 function setView(v){
   document.querySelectorAll(".view").forEach(sec=>sec.classList.toggle("sel", sec.id==="view-"+v));
   document.querySelectorAll(".viewtab").forEach(b=>b.classList.toggle("sel", b.dataset.view===v));
+  const m=VIEW_META[v]; if(m){ const tt=el("#vmTitle"), su=el("#vmSub"); if(tt)tt.textContent=m[0]; if(su)su.textContent=m[1]; }
   if(v==="tracker") revealCards();
   else window.scrollTo({top:0,behavior:"smooth"});
+}
+function cycleView(dir){
+  const cur=(document.querySelector(".viewtab.sel")||{dataset:{view:"about"}}).dataset.view;
+  let i=VIEW_ORDER.indexOf(cur); if(i<0) i=0;
+  setView(VIEW_ORDER[(i+dir+VIEW_ORDER.length)%VIEW_ORDER.length]);
 }
 
 const sec = (title, html) => html ? `<h3>${title}</h3>${html}` : "";
